@@ -35,9 +35,11 @@
   <ItemGroup>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\Desktop\Guna\Guna.UI-Framework-Lib-master\Guna.UI_WinForms\.net 4.0\Guna.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\Desktop\Guna\Guna.UI-Framework-Lib-master\Guna.UI2_WinFroms\.net 4.0\Guna.UI2.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
