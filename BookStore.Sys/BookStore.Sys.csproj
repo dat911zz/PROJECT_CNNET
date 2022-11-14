@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4359C592-45B4-4BA3-BDA8-DCD9D7398E99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BookStore.Sys</RootNamespace>
+    <AssemblyName>BookStore.Sys</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Messages.Designer.cs">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Messages.resx">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\Images\1 %281%29.jpg" />
+    <Content Include="Contents\Images\1 %2811%29.png" />
+    <Content Include="Contents\Images\1 %2814%29.png" />
+    <Content Include="Contents\Images\1 %2815%29.png" />
+    <Content Include="Contents\Images\1 %2816%29.png" />
+    <Content Include="Contents\Images\1 %2817%29.png" />
+    <Content Include="Contents\Images\1 %282%29.jpg" />
+    <Content Include="Contents\Images\1 %283%29.jpg" />
+    <Content Include="Contents\Images\1 %283%29.png" />
+    <Content Include="Contents\Images\1 %284%29.jpg" />
+    <Content Include="Contents\Images\1 %285%29.jpg" />
+    <Content Include="Contents\Images\1 %285%29.png" />
+    <Content Include="Contents\Images\1 %286%29.jpg" />
+    <Content Include="Contents\Images\1 %287%29.png" />
+    <Content Include="Contents\Images\1 %288%29.png" />
+    <Content Include="Contents\Images\1 %289%29.png" />
+    <Content Include="Contents\Images\1.png" />
+    <Content Include="Contents\Images\2.png" />
+    <Content Include="Contents\Images\3.png" />
+    <Content Include="Contents\Images\4.png" />
+    <Content Include="Contents\Images\5.png" />
+    <Content Include="Contents\Images\6.png" />
+    <Content Include="Contents\Images\7.png" />
+    <Content Include="Guna.UI.dll" />
+    <Content Include="Guna.UI2.dll" />
+    <Content Include="Resources\book-design-sketch-name.png" />
+    <Content Include="Resources\chat %281%29.png" />
+    <Content Include="Resources\dashboard %2812%29.png" />
+    <Content Include="Resources\istockphoto-1349688040-612x612.jpg" />
+    <Content Include="Resources\istockphoto-1349688040-612x6121.jpg" />
+    <Content Include="Resources\person %281%29.png" />
+    <Content Include="Resources\sos.png" />
+    <Content Include="Resources\user %285%29.png" />
+    <Content Include="Resources\z3734960683619_71e750d2ad70066d7f76ebe682d5efb2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
