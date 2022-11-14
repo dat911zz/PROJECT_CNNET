@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dental_sys
+namespace BookStore.Forms
 {
-    public partial class Form2 : Form
+    public partial class Register : Form
     {
-        public Form2()
+        public Register()
         {
             InitializeComponent();
         }
@@ -24,14 +24,14 @@ namespace dental_sys
 
         private void btn_Signup_Click(object sender, EventArgs e)
         {
-            Form1 _load = new Form1();
+            Login _load = new Login();
             _load.Show();
         }
 
         private void btn_Signin_Click(object sender, EventArgs e)
         {
             Form.ActiveForm.Hide();
-            Form1 _load = new Form1();
+            Login _load = new Login();
             _load.Show();
         }
 

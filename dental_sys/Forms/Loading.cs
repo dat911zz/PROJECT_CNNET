@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dental_sys
+namespace BookStore.Forms
 {
     public partial class Loading : Form
     {

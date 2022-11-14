@@ -1,4 +1,4 @@
-﻿namespace dental_sys
+﻿namespace BookStore
 {
     partial class Product
     {

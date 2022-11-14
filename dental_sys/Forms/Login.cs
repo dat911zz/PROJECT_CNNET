@@ -9,11 +9,11 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dental_sys
+namespace BookStore.Forms
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -51,7 +51,7 @@ namespace dental_sys
         private void btn_Signup_Click(object sender, EventArgs e)
         {
             Form.ActiveForm.Hide();
-            Form2 _load = new Form2();
+            Register _load = new Register();
             _load.Show();
         }
 

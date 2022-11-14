@@ -1,6 +1,6 @@
-﻿namespace dental_sys
+﻿namespace BookStore.Forms
 {
-    partial class Form2
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -301,7 +301,7 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::dental_sys.Properties.Resources.istockphoto_1349688040_612x6121;
+            this.guna2PictureBox1.Image = global::BookStore.Properties.Resources.istockphoto_1349688040_612x6121;
             this.guna2PictureBox1.Location = new System.Drawing.Point(13, 4);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";

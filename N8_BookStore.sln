@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dental_sys", "dental_sys\dental_sys.csproj", "{29798AD8-30B0-4AE5-B5FF-9FA7FD4F7CFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore", "dental_sys\BookStore.csproj", "{29798AD8-30B0-4AE5-B5FF-9FA7FD4F7CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{73EF3248-904C-472B-82F5-9A56BD4D4B01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{29798AD8-30B0-4AE5-B5FF-9FA7FD4F7CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29798AD8-30B0-4AE5-B5FF-9FA7FD4F7CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29798AD8-30B0-4AE5-B5FF-9FA7FD4F7CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EF3248-904C-472B-82F5-9A56BD4D4B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EF3248-904C-472B-82F5-9A56BD4D4B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EF3248-904C-472B-82F5-9A56BD4D4B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EF3248-904C-472B-82F5-9A56BD4D4B01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

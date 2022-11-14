@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dental_sys
+namespace BookStore.Forms
 {
-    public partial class Dashboard : Form
+    public partial class Messages : Form
     {
-        public Dashboard()
+        public Messages()
         {
             InitializeComponent();
         }

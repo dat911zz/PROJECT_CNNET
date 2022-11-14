@@ -1,4 +1,4 @@
-﻿namespace dental_sys
+﻿namespace BookStore.Forms
 {
     partial class Principal
     {
@@ -125,7 +125,7 @@
             // 
             // guna2CirclePictureBox1
             // 
-            this.guna2CirclePictureBox1.Image = global::dental_sys.Properties.Resources.sos;
+            this.guna2CirclePictureBox1.Image = global::BookStore.Properties.Resources.sos;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(19, 703);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -320,7 +320,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::dental_sys.Properties.Resources.istockphoto_1349688040_612x6121;
+            this.guna2PictureBox1.Image = global::BookStore.Properties.Resources.istockphoto_1349688040_612x6121;
             this.guna2PictureBox1.Location = new System.Drawing.Point(63, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
