@@ -54,6 +54,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\BookUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookUpdate.Designer.cs">
+      <DependentUpon>BookUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +90,11 @@
     <Compile Include="Forms\Messages.Designer.cs">
       <DependentUpon>Messages.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Patient.cs">
+    <Compile Include="Forms\Book.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Patient.Designer.cs">
-      <DependentUpon>Patient.cs</DependentUpon>
+    <Compile Include="Forms\Book.Designer.cs">
+      <DependentUpon>Book.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Principal.cs">
       <SubType>Form</SubType>
@@ -98,6 +110,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\BookUpdate.resx">
+      <DependentUpon>BookUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,8 +128,8 @@
     <EmbeddedResource Include="Forms\Messages.resx">
       <DependentUpon>Messages.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Patient.resx">
-      <DependentUpon>Patient.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Book.resx">
+      <DependentUpon>Book.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -177,6 +195,12 @@
     <Content Include="Resources\sos.png" />
     <Content Include="Resources\user %285%29.png" />
     <Content Include="Resources\z3734960683619_71e750d2ad70066d7f76ebe682d5efb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{73ef3248-904c-472b-82f5-9a56bd4d4b01}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

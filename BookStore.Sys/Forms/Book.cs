@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookStore.Sys.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -98,6 +99,17 @@ namespace BookStore
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            BookUpdate _load = new BookUpdate();
+            _load.Show();
         }
     }
 }

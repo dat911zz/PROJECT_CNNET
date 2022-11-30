@@ -20,20 +20,20 @@ namespace BookStore.Sys.Forms
         private void Principal_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
-            label_val.Text = "Dashboard Book Store";
+            label_val.Text = "Dashboard Book Shop";
             guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
             container(new Dashboard());
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            label_val.Text = "Book Store";
+            label_val.Text = "Book Shop";
             guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
             container(new Dashboard());
         }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            label_val.Text = "Book Store";
+            label_val.Text = "Book Shop";
             guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
             container(new Dashboard());
         }
@@ -55,15 +55,13 @@ namespace BookStore.Sys.Forms
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            label_val.Text = "Tìm Sách";
-            guna2PictureBox_val.Image = Properties.Resources.person__1_;
-            container(new Product());
+            label_val.Text = "Quản Lý Khách Hàng";
+            container(new Customer());
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             label_val.Text = "Thanh Toán";
-            guna2PictureBox_val.Image = Properties.Resources.chat__1_;
             container(new Messages());
         }
 
@@ -89,10 +87,22 @@ namespace BookStore.Sys.Forms
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
-
+            label_val.Text = "Quản Lý Hàng Hóa";
+            container(new Product());
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button8_Click_1(object sender, EventArgs e)
+        {
+            label_val.Text = "Báo Cáo & Thống Kê";
+            container(new Messages());
+        }
+
+        private void guna2Panel_container_Paint(object sender, PaintEventArgs e)
         {
 
         }
