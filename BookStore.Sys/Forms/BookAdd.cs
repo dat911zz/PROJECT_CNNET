@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookStore.Sys.Forms
 {
-    public partial class BookUpdate : Form
+    public partial class BookAdd : Form
     {
-        public BookUpdate()
+        public BookAdd()
         {
             InitializeComponent();
         }
@@ -42,6 +42,11 @@ namespace BookStore.Sys.Forms
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

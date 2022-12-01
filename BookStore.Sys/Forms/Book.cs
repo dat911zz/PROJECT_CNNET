@@ -111,5 +111,17 @@ namespace BookStore
             BookUpdate _load = new BookUpdate();
             _load.Show();
         }
+
+        private void btnAdd_Product_Click(object sender, EventArgs e)
+        {
+             BookAdd _load = new BookAdd();
+            _load.Show();
+        }
+
+        private void btnDelete_Product_Click(object sender, EventArgs e)
+        {
+            ConfirmDelete _load = new ConfirmDelete();
+            _load.Show();
+        }
     }
 }

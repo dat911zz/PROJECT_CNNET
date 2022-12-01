@@ -1,6 +1,6 @@
 ﻿namespace BookStore.Sys.Forms
 {
-    partial class BookUpdate
+    partial class CustomerUpdate
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookUpdate));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerUpdate));
             this.btn_Cancel = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Accept = new Guna.UI2.WinForms.Guna2Button();
-            this.txtBox_Language = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBox_Price = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBox_AddressCus = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBox_NameCus = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtBox_NameAuthor = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBox_YearCreate = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBox_PhoneCus = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBox_MissionCus = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBox_Name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBox_State = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBox_IdCus = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBox_RankCus = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -79,7 +79,7 @@
             this.btn_Cancel.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.btn_Cancel.HoverState.Parent = this.btn_Cancel;
             this.btn_Cancel.Location = new System.Drawing.Point(52, 470);
-            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.ShadowDecoration.Parent = this.btn_Cancel;
             this.btn_Cancel.Size = new System.Drawing.Size(141, 41);
@@ -125,7 +125,7 @@
             this.btn_Accept.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.btn_Accept.HoverState.Parent = this.btn_Accept;
             this.btn_Accept.Location = new System.Drawing.Point(252, 470);
-            this.btn_Accept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Accept.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Accept.Name = "btn_Accept";
             this.btn_Accept.ShadowDecoration.Parent = this.btn_Accept;
             this.btn_Accept.Size = new System.Drawing.Size(141, 41);
@@ -133,65 +133,65 @@
             this.btn_Accept.Text = "Đồng Ý";
             this.btn_Accept.Click += new System.EventHandler(this.btn_Signin_Click);
             // 
-            // txtBox_Language
+            // txtBox_AddressCus
             // 
-            this.txtBox_Language.AutoRoundedCorners = true;
-            this.txtBox_Language.BorderRadius = 21;
-            this.txtBox_Language.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBox_Language.DefaultText = "";
-            this.txtBox_Language.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBox_Language.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBox_Language.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_Language.DisabledState.Parent = this.txtBox_Language;
-            this.txtBox_Language.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_Language.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_Language.FocusedState.Parent = this.txtBox_Language;
-            this.txtBox_Language.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_Language.HoverState.Parent = this.txtBox_Language;
-            this.txtBox_Language.Location = new System.Drawing.Point(169, 225);
-            this.txtBox_Language.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtBox_Language.Name = "txtBox_Language";
-            this.txtBox_Language.PasswordChar = '\0';
-            this.txtBox_Language.PlaceholderText = "Ngôn ngữ..";
-            this.txtBox_Language.SelectedText = "";
-            this.txtBox_Language.ShadowDecoration.Parent = this.txtBox_Language;
-            this.txtBox_Language.Size = new System.Drawing.Size(311, 44);
-            this.txtBox_Language.TabIndex = 21;
-            this.txtBox_Language.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtBox_AddressCus.AutoRoundedCorners = true;
+            this.txtBox_AddressCus.BorderRadius = 21;
+            this.txtBox_AddressCus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBox_AddressCus.DefaultText = "";
+            this.txtBox_AddressCus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBox_AddressCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBox_AddressCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_AddressCus.DisabledState.Parent = this.txtBox_AddressCus;
+            this.txtBox_AddressCus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_AddressCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_AddressCus.FocusedState.Parent = this.txtBox_AddressCus;
+            this.txtBox_AddressCus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_AddressCus.HoverState.Parent = this.txtBox_AddressCus;
+            this.txtBox_AddressCus.Location = new System.Drawing.Point(169, 225);
+            this.txtBox_AddressCus.Margin = new System.Windows.Forms.Padding(5);
+            this.txtBox_AddressCus.Name = "txtBox_AddressCus";
+            this.txtBox_AddressCus.PasswordChar = '\0';
+            this.txtBox_AddressCus.PlaceholderText = "Địa chỉ..";
+            this.txtBox_AddressCus.SelectedText = "";
+            this.txtBox_AddressCus.ShadowDecoration.Parent = this.txtBox_AddressCus;
+            this.txtBox_AddressCus.Size = new System.Drawing.Size(311, 44);
+            this.txtBox_AddressCus.TabIndex = 21;
+            this.txtBox_AddressCus.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // txtBox_Price
+            // txtBox_NameCus
             // 
-            this.txtBox_Price.AutoRoundedCorners = true;
-            this.txtBox_Price.BorderRadius = 21;
-            this.txtBox_Price.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBox_Price.DefaultText = "";
-            this.txtBox_Price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBox_Price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBox_Price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_Price.DisabledState.Parent = this.txtBox_Price;
-            this.txtBox_Price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_Price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_Price.FocusedState.Parent = this.txtBox_Price;
-            this.txtBox_Price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_Price.HoverState.Parent = this.txtBox_Price;
-            this.txtBox_Price.Location = new System.Drawing.Point(169, 171);
-            this.txtBox_Price.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtBox_Price.Name = "txtBox_Price";
-            this.txtBox_Price.PasswordChar = '\0';
-            this.txtBox_Price.PlaceholderText = "Giá bán..";
-            this.txtBox_Price.SelectedText = "";
-            this.txtBox_Price.ShadowDecoration.Parent = this.txtBox_Price;
-            this.txtBox_Price.Size = new System.Drawing.Size(311, 44);
-            this.txtBox_Price.TabIndex = 20;
-            this.txtBox_Price.TextOffset = new System.Drawing.Point(8, 0);
-            this.txtBox_Price.TextChanged += new System.EventHandler(this.txtBox_User_TextChanged);
+            this.txtBox_NameCus.AutoRoundedCorners = true;
+            this.txtBox_NameCus.BorderRadius = 21;
+            this.txtBox_NameCus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBox_NameCus.DefaultText = "";
+            this.txtBox_NameCus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBox_NameCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBox_NameCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_NameCus.DisabledState.Parent = this.txtBox_NameCus;
+            this.txtBox_NameCus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_NameCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_NameCus.FocusedState.Parent = this.txtBox_NameCus;
+            this.txtBox_NameCus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_NameCus.HoverState.Parent = this.txtBox_NameCus;
+            this.txtBox_NameCus.Location = new System.Drawing.Point(169, 171);
+            this.txtBox_NameCus.Margin = new System.Windows.Forms.Padding(5);
+            this.txtBox_NameCus.Name = "txtBox_NameCus";
+            this.txtBox_NameCus.PasswordChar = '\0';
+            this.txtBox_NameCus.PlaceholderText = "Họ và Tên..";
+            this.txtBox_NameCus.SelectedText = "";
+            this.txtBox_NameCus.ShadowDecoration.Parent = this.txtBox_NameCus;
+            this.txtBox_NameCus.Size = new System.Drawing.Size(311, 44);
+            this.txtBox_NameCus.TabIndex = 20;
+            this.txtBox_NameCus.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtBox_NameCus.TextChanged += new System.EventHandler(this.txtBox_User_TextChanged);
             // 
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.Lime;
             this.guna2Panel3.FillColor = System.Drawing.Color.Black;
             this.guna2Panel3.Location = new System.Drawing.Point(-3, 0);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(521, 12);
@@ -202,63 +202,63 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.Lime;
             this.guna2Panel2.FillColor = System.Drawing.Color.Black;
             this.guna2Panel2.Location = new System.Drawing.Point(-3, 585);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(521, 12);
             this.guna2Panel2.TabIndex = 30;
             // 
-            // txtBox_NameAuthor
+            // txtBox_PhoneCus
             // 
-            this.txtBox_NameAuthor.AutoRoundedCorners = true;
-            this.txtBox_NameAuthor.BorderRadius = 21;
-            this.txtBox_NameAuthor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBox_NameAuthor.DefaultText = "";
-            this.txtBox_NameAuthor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBox_NameAuthor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBox_NameAuthor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_NameAuthor.DisabledState.Parent = this.txtBox_NameAuthor;
-            this.txtBox_NameAuthor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_NameAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_NameAuthor.FocusedState.Parent = this.txtBox_NameAuthor;
-            this.txtBox_NameAuthor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_NameAuthor.HoverState.Parent = this.txtBox_NameAuthor;
-            this.txtBox_NameAuthor.Location = new System.Drawing.Point(169, 279);
-            this.txtBox_NameAuthor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtBox_NameAuthor.Name = "txtBox_NameAuthor";
-            this.txtBox_NameAuthor.PasswordChar = '\0';
-            this.txtBox_NameAuthor.PlaceholderText = "Tên tác giả..";
-            this.txtBox_NameAuthor.SelectedText = "";
-            this.txtBox_NameAuthor.ShadowDecoration.Parent = this.txtBox_NameAuthor;
-            this.txtBox_NameAuthor.Size = new System.Drawing.Size(311, 44);
-            this.txtBox_NameAuthor.TabIndex = 31;
-            this.txtBox_NameAuthor.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtBox_PhoneCus.AutoRoundedCorners = true;
+            this.txtBox_PhoneCus.BorderRadius = 21;
+            this.txtBox_PhoneCus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBox_PhoneCus.DefaultText = "";
+            this.txtBox_PhoneCus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBox_PhoneCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBox_PhoneCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_PhoneCus.DisabledState.Parent = this.txtBox_PhoneCus;
+            this.txtBox_PhoneCus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_PhoneCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_PhoneCus.FocusedState.Parent = this.txtBox_PhoneCus;
+            this.txtBox_PhoneCus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_PhoneCus.HoverState.Parent = this.txtBox_PhoneCus;
+            this.txtBox_PhoneCus.Location = new System.Drawing.Point(169, 279);
+            this.txtBox_PhoneCus.Margin = new System.Windows.Forms.Padding(5);
+            this.txtBox_PhoneCus.Name = "txtBox_PhoneCus";
+            this.txtBox_PhoneCus.PasswordChar = '\0';
+            this.txtBox_PhoneCus.PlaceholderText = "Điện thoại..";
+            this.txtBox_PhoneCus.SelectedText = "";
+            this.txtBox_PhoneCus.ShadowDecoration.Parent = this.txtBox_PhoneCus;
+            this.txtBox_PhoneCus.Size = new System.Drawing.Size(311, 44);
+            this.txtBox_PhoneCus.TabIndex = 31;
+            this.txtBox_PhoneCus.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // txtBox_YearCreate
+            // txtBox_MissionCus
             // 
-            this.txtBox_YearCreate.AutoRoundedCorners = true;
-            this.txtBox_YearCreate.BorderRadius = 21;
-            this.txtBox_YearCreate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBox_YearCreate.DefaultText = "";
-            this.txtBox_YearCreate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBox_YearCreate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBox_YearCreate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_YearCreate.DisabledState.Parent = this.txtBox_YearCreate;
-            this.txtBox_YearCreate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_YearCreate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_YearCreate.FocusedState.Parent = this.txtBox_YearCreate;
-            this.txtBox_YearCreate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_YearCreate.HoverState.Parent = this.txtBox_YearCreate;
-            this.txtBox_YearCreate.Location = new System.Drawing.Point(169, 334);
-            this.txtBox_YearCreate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtBox_YearCreate.Name = "txtBox_YearCreate";
-            this.txtBox_YearCreate.PasswordChar = '\0';
-            this.txtBox_YearCreate.PlaceholderText = "Nhà xuất bản..";
-            this.txtBox_YearCreate.SelectedText = "";
-            this.txtBox_YearCreate.ShadowDecoration.Parent = this.txtBox_YearCreate;
-            this.txtBox_YearCreate.Size = new System.Drawing.Size(311, 44);
-            this.txtBox_YearCreate.TabIndex = 32;
-            this.txtBox_YearCreate.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtBox_MissionCus.AutoRoundedCorners = true;
+            this.txtBox_MissionCus.BorderRadius = 21;
+            this.txtBox_MissionCus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBox_MissionCus.DefaultText = "";
+            this.txtBox_MissionCus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBox_MissionCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBox_MissionCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_MissionCus.DisabledState.Parent = this.txtBox_MissionCus;
+            this.txtBox_MissionCus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_MissionCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_MissionCus.FocusedState.Parent = this.txtBox_MissionCus;
+            this.txtBox_MissionCus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_MissionCus.HoverState.Parent = this.txtBox_MissionCus;
+            this.txtBox_MissionCus.Location = new System.Drawing.Point(169, 334);
+            this.txtBox_MissionCus.Margin = new System.Windows.Forms.Padding(5);
+            this.txtBox_MissionCus.Name = "txtBox_MissionCus";
+            this.txtBox_MissionCus.PasswordChar = '\0';
+            this.txtBox_MissionCus.PlaceholderText = "Nhiệm vụ..";
+            this.txtBox_MissionCus.SelectedText = "";
+            this.txtBox_MissionCus.ShadowDecoration.Parent = this.txtBox_MissionCus;
+            this.txtBox_MissionCus.Size = new System.Drawing.Size(311, 44);
+            this.txtBox_MissionCus.TabIndex = 32;
+            this.txtBox_MissionCus.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // label3
             // 
@@ -272,57 +272,57 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "Book-Shop";
             // 
-            // txtBox_Name
+            // txtBox_IdCus
             // 
-            this.txtBox_Name.AutoRoundedCorners = true;
-            this.txtBox_Name.BorderRadius = 21;
-            this.txtBox_Name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBox_Name.DefaultText = "";
-            this.txtBox_Name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBox_Name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBox_Name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_Name.DisabledState.Parent = this.txtBox_Name;
-            this.txtBox_Name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_Name.FocusedState.Parent = this.txtBox_Name;
-            this.txtBox_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_Name.HoverState.Parent = this.txtBox_Name;
-            this.txtBox_Name.Location = new System.Drawing.Point(169, 117);
-            this.txtBox_Name.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtBox_Name.Name = "txtBox_Name";
-            this.txtBox_Name.PasswordChar = '\0';
-            this.txtBox_Name.PlaceholderText = "Tên sách..";
-            this.txtBox_Name.SelectedText = "";
-            this.txtBox_Name.ShadowDecoration.Parent = this.txtBox_Name;
-            this.txtBox_Name.Size = new System.Drawing.Size(311, 44);
-            this.txtBox_Name.TabIndex = 34;
-            this.txtBox_Name.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtBox_IdCus.AutoRoundedCorners = true;
+            this.txtBox_IdCus.BorderRadius = 21;
+            this.txtBox_IdCus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBox_IdCus.DefaultText = "";
+            this.txtBox_IdCus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBox_IdCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBox_IdCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_IdCus.DisabledState.Parent = this.txtBox_IdCus;
+            this.txtBox_IdCus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_IdCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_IdCus.FocusedState.Parent = this.txtBox_IdCus;
+            this.txtBox_IdCus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_IdCus.HoverState.Parent = this.txtBox_IdCus;
+            this.txtBox_IdCus.Location = new System.Drawing.Point(169, 117);
+            this.txtBox_IdCus.Margin = new System.Windows.Forms.Padding(5);
+            this.txtBox_IdCus.Name = "txtBox_IdCus";
+            this.txtBox_IdCus.PasswordChar = '\0';
+            this.txtBox_IdCus.PlaceholderText = "Id khách hàng..";
+            this.txtBox_IdCus.SelectedText = "";
+            this.txtBox_IdCus.ShadowDecoration.Parent = this.txtBox_IdCus;
+            this.txtBox_IdCus.Size = new System.Drawing.Size(311, 44);
+            this.txtBox_IdCus.TabIndex = 34;
+            this.txtBox_IdCus.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // txtBox_State
+            // txtBox_RankCus
             // 
-            this.txtBox_State.AutoRoundedCorners = true;
-            this.txtBox_State.BorderRadius = 21;
-            this.txtBox_State.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBox_State.DefaultText = "";
-            this.txtBox_State.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBox_State.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBox_State.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_State.DisabledState.Parent = this.txtBox_State;
-            this.txtBox_State.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_State.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_State.FocusedState.Parent = this.txtBox_State;
-            this.txtBox_State.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_State.HoverState.Parent = this.txtBox_State;
-            this.txtBox_State.Location = new System.Drawing.Point(169, 388);
-            this.txtBox_State.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtBox_State.Name = "txtBox_State";
-            this.txtBox_State.PasswordChar = '\0';
-            this.txtBox_State.PlaceholderText = "Trạng thái..";
-            this.txtBox_State.SelectedText = "";
-            this.txtBox_State.ShadowDecoration.Parent = this.txtBox_State;
-            this.txtBox_State.Size = new System.Drawing.Size(311, 44);
-            this.txtBox_State.TabIndex = 35;
-            this.txtBox_State.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtBox_RankCus.AutoRoundedCorners = true;
+            this.txtBox_RankCus.BorderRadius = 21;
+            this.txtBox_RankCus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBox_RankCus.DefaultText = "";
+            this.txtBox_RankCus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBox_RankCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBox_RankCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_RankCus.DisabledState.Parent = this.txtBox_RankCus;
+            this.txtBox_RankCus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBox_RankCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_RankCus.FocusedState.Parent = this.txtBox_RankCus;
+            this.txtBox_RankCus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBox_RankCus.HoverState.Parent = this.txtBox_RankCus;
+            this.txtBox_RankCus.Location = new System.Drawing.Point(169, 388);
+            this.txtBox_RankCus.Margin = new System.Windows.Forms.Padding(5);
+            this.txtBox_RankCus.Name = "txtBox_RankCus";
+            this.txtBox_RankCus.PasswordChar = '\0';
+            this.txtBox_RankCus.PlaceholderText = "Thứ hạng..";
+            this.txtBox_RankCus.SelectedText = "";
+            this.txtBox_RankCus.ShadowDecoration.Parent = this.txtBox_RankCus;
+            this.txtBox_RankCus.Size = new System.Drawing.Size(311, 44);
+            this.txtBox_RankCus.TabIndex = 35;
+            this.txtBox_RankCus.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // label1
             // 
@@ -332,9 +332,9 @@
             this.label1.Location = new System.Drawing.Point(16, 128);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
+            this.label1.Size = new System.Drawing.Size(128, 20);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Tên sách:";
+            this.label1.Text = "ID khách hàng:";
             // 
             // label9
             // 
@@ -344,9 +344,9 @@
             this.label9.Location = new System.Drawing.Point(19, 183);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 20);
+            this.label9.Size = new System.Drawing.Size(94, 20);
             this.label9.TabIndex = 37;
-            this.label9.Text = "Giá bán:";
+            this.label9.Text = "Họ và Tên:";
             // 
             // label10
             // 
@@ -356,9 +356,9 @@
             this.label10.Location = new System.Drawing.Point(16, 284);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 20);
+            this.label10.Size = new System.Drawing.Size(90, 20);
             this.label10.TabIndex = 38;
-            this.label10.Text = "Tên tác giả:";
+            this.label10.Text = "Điện thoại:";
             // 
             // label11
             // 
@@ -368,9 +368,9 @@
             this.label11.Location = new System.Drawing.Point(16, 234);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 20);
+            this.label11.Size = new System.Drawing.Size(61, 20);
             this.label11.TabIndex = 38;
-            this.label11.Text = "Ngôn ngữ:";
+            this.label11.Text = "Địa chỉ:";
             // 
             // label12
             // 
@@ -380,9 +380,9 @@
             this.label12.Location = new System.Drawing.Point(16, 345);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(122, 20);
+            this.label12.Size = new System.Drawing.Size(89, 20);
             this.label12.TabIndex = 39;
-            this.label12.Text = "Năm xuất bản:";
+            this.label12.Text = "Nhiệm vụ:";
             // 
             // label13
             // 
@@ -392,15 +392,15 @@
             this.label13.Location = new System.Drawing.Point(16, 400);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(93, 20);
+            this.label13.Size = new System.Drawing.Size(87, 20);
             this.label13.TabIndex = 40;
-            this.label13.Text = "Trạng thái:";
+            this.label13.Text = "Thứ hạng:";
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::BookStore.Sys.Properties.Resources.istockphoto_1349688040_612x6121;
             this.guna2PictureBox1.Location = new System.Drawing.Point(149, 15);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(205, 89);
@@ -425,7 +425,7 @@
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Font = new System.Drawing.Font("Nirmala UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel1.Location = new System.Drawing.Point(516, -43);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(516, 656);
@@ -438,12 +438,12 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(123, 294);
+            this.label8.Location = new System.Drawing.Point(107, 288);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(254, 36);
+            this.label8.Size = new System.Drawing.Size(328, 36);
             this.label8.TabIndex = 18;
-            this.label8.Text = "Chỉnh Sửa Sách,";
+            this.label8.Text = "Chỉnh Sửa Thông Tin";
             // 
             // label7
             // 
@@ -462,7 +462,7 @@
             this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
             this.guna2PictureBox4.Location = new System.Drawing.Point(640, 556);
-            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
             this.guna2PictureBox4.Size = new System.Drawing.Size(36, 21);
@@ -488,7 +488,7 @@
             this.guna2Panel6.BorderRadius = 6;
             this.guna2Panel6.FillColor = System.Drawing.Color.Black;
             this.guna2Panel6.Location = new System.Drawing.Point(712, 105);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             this.guna2Panel6.Size = new System.Drawing.Size(21, 388);
@@ -499,7 +499,7 @@
             this.guna2Panel5.BackColor = System.Drawing.Color.Lime;
             this.guna2Panel5.FillColor = System.Drawing.Color.Black;
             this.guna2Panel5.Location = new System.Drawing.Point(688, 577);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(133, 12);
@@ -510,7 +510,7 @@
             this.guna2Panel4.BackColor = System.Drawing.Color.Lime;
             this.guna2Panel4.FillColor = System.Drawing.Color.Black;
             this.guna2Panel4.Location = new System.Drawing.Point(688, 4);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(133, 12);
@@ -528,7 +528,7 @@
             this.label5.Size = new System.Drawing.Size(0, 51);
             this.label5.TabIndex = 13;
             // 
-            // BookUpdate
+            // CustomerUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -541,23 +541,23 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtBox_State);
-            this.Controls.Add(this.txtBox_Name);
+            this.Controls.Add(this.txtBox_RankCus);
+            this.Controls.Add(this.txtBox_IdCus);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtBox_YearCreate);
-            this.Controls.Add(this.txtBox_NameAuthor);
+            this.Controls.Add(this.txtBox_MissionCus);
+            this.Controls.Add(this.txtBox_PhoneCus);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtBox_Price);
+            this.Controls.Add(this.txtBox_NameCus);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtBox_Language);
+            this.Controls.Add(this.txtBox_AddressCus);
             this.Controls.Add(this.btn_Accept);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "BookUpdate";
+            this.Name = "CustomerUpdate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -585,15 +585,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btn_Accept;
-        private Guna.UI2.WinForms.Guna2TextBox txtBox_Language;
-        private Guna.UI2.WinForms.Guna2TextBox txtBox_Price;
+        private Guna.UI2.WinForms.Guna2TextBox txtBox_AddressCus;
+        private Guna.UI2.WinForms.Guna2TextBox txtBox_NameCus;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox txtBox_NameAuthor;
-        private Guna.UI2.WinForms.Guna2TextBox txtBox_YearCreate;
+        private Guna.UI2.WinForms.Guna2TextBox txtBox_PhoneCus;
+        private Guna.UI2.WinForms.Guna2TextBox txtBox_MissionCus;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtBox_Name;
-        private Guna.UI2.WinForms.Guna2TextBox txtBox_State;
+        private Guna.UI2.WinForms.Guna2TextBox txtBox_IdCus;
+        private Guna.UI2.WinForms.Guna2TextBox txtBox_RankCus;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;

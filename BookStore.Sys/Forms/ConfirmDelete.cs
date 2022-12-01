@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookStore.Sys.Forms
 {
-    public partial class BookUpdate : Form
+    public partial class ConfirmDelete : Form
     {
-        public BookUpdate()
+        public ConfirmDelete()
         {
             InitializeComponent();
         }

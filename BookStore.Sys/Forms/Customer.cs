@@ -108,8 +108,42 @@ namespace BookStore
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            BookUpdate _load = new BookUpdate();
+            CustomerUpdate _load = new CustomerUpdate();
             _load.Show();
+        }
+
+        private void btnAdd_Customer_Click(object sender, EventArgs e)
+        {
+            CustomerAdd _load = new CustomerAdd();
+            _load.Show();
+        }
+
+        private void btnDelete_Customer_Click(object sender, EventArgs e)
+        {
+            ConfirmDelete _load = new ConfirmDelete();
+            _load.Show();
+        }
+        public class ComboboxItem
+        {
+            public string Text { get; set; }
+            public override string ToString()
+            {
+                return Text;
+            }
+        }
+        private void Test()
+        {
+            ComboboxItem item = new ComboboxItem();
+            item.Text = "Theo Tháng";
+            cbBox_SearchCustomer.Items.Add(item);
+
+            cbBox_SearchCustomer.SelectedIndex = 0;
+
+            MessageBox.Show((cbBox_SearchCustomer.SelectedItem as ComboboxItem).ToString());
+        }
+        private void cbBox_SearchCustomer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
