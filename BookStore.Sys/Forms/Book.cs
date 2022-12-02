@@ -106,11 +106,6 @@ namespace BookStore
             //guna2DataGridView1.Rows[8].Cells[7].Value = "Jan 21,2020";
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             BookUpdate _load = new BookUpdate();

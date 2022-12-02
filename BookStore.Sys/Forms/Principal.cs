@@ -74,12 +74,6 @@ namespace BookStore.Sys.Forms
         {
 
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Panel_top_Paint(object sender, PaintEventArgs e)
         {
 

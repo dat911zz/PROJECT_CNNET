@@ -54,15 +54,14 @@
             this.guna2CircleProgressBar1.Controls.Add(this.guna2PictureBox1);
             this.guna2CircleProgressBar1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CircleProgressBar1.FillThickness = 800;
-            this.guna2CircleProgressBar1.Location = new System.Drawing.Point(25, -609);
-            this.guna2CircleProgressBar1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2CircleProgressBar1.Location = new System.Drawing.Point(19, -495);
             this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
             this.guna2CircleProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(186)))), ((int)(((byte)(235)))));
             this.guna2CircleProgressBar1.ProgressThickness = 700;
             this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar1.ShadowDecoration.Parent = this.guna2CircleProgressBar1;
-            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(2400, 2215);
+            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(1800, 1800);
             this.guna2CircleProgressBar1.TabIndex = 0;
             this.guna2CircleProgressBar1.ValueChanged += new System.EventHandler(this.guna2CircleProgressBar1_ValueChanged);
             // 
@@ -72,10 +71,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 45.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(257, 1191);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(174, 831);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(490, 89);
+            this.label5.Size = new System.Drawing.Size(386, 71);
             this.label5.TabIndex = 5;
             this.label5.Text = "Book Shop !";
             // 
@@ -85,10 +83,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 45.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(276, 1065);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(188, 728);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(471, 89);
+            this.label4.Size = new System.Drawing.Size(373, 71);
             this.label4.TabIndex = 4;
             this.label4.Text = "bạn đến với";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -99,10 +96,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 45.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(256, 949);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(173, 634);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(491, 89);
+            this.label3.Size = new System.Drawing.Size(388, 71);
             this.label3.TabIndex = 3;
             this.label3.Text = "Chào mừng,";
             // 
@@ -112,10 +108,9 @@
             this.label_val.BackColor = System.Drawing.Color.Transparent;
             this.label_val.Font = new System.Drawing.Font("Bahnschrift Condensed", 90F);
             this.label_val.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(186)))), ((int)(((byte)(235)))));
-            this.label_val.Location = new System.Drawing.Point(1108, 1328);
-            this.label_val.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_val.Location = new System.Drawing.Point(831, 1079);
             this.label_val.Name = "label_val";
-            this.label_val.Size = new System.Drawing.Size(137, 180);
+            this.label_val.Size = new System.Drawing.Size(110, 144);
             this.label_val.TabIndex = 2;
             this.label_val.Text = "0";
             this.label_val.Click += new System.EventHandler(this.label_val_Click);
@@ -125,10 +120,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1158, 1194);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(868, 970);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 21);
+            this.label1.Size = new System.Drawing.Size(65, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Loading ...";
             // 
@@ -136,11 +130,10 @@
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(1015, 913);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(761, 742);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(380, 277);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(285, 225);
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
@@ -151,13 +144,12 @@
             // 
             // Loading
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1611, 928);
+            this.ClientSize = new System.Drawing.Size(1167, 718);
             this.Controls.Add(this.guna2CircleProgressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Loading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading";
