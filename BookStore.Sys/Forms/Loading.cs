@@ -50,10 +50,5 @@ namespace BookStore.Sys.Forms
         {
 
         }
-
-        private void label_val_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
