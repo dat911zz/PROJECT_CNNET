@@ -81,9 +81,5 @@ namespace BookStore.Sys.Forms
                 this.errorProvider1.Clear();
             }
         }
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

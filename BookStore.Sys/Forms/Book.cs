@@ -101,11 +101,6 @@ namespace BookStore
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             BookUpdate _load = new BookUpdate();

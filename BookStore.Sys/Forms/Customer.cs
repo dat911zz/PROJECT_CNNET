@@ -100,12 +100,6 @@ namespace BookStore
         {
 
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             CustomerUpdate _load = new CustomerUpdate();
@@ -122,24 +116,6 @@ namespace BookStore
         {
             ConfirmDelete _load = new ConfirmDelete();
             _load.Show();
-        }
-        public class ComboboxItem
-        {
-            public string Text { get; set; }
-            public override string ToString()
-            {
-                return Text;
-            }
-        }
-        private void Test()
-        {
-            ComboboxItem item = new ComboboxItem();
-            item.Text = "Theo Tháng";
-            cbBox_SearchCustomer.Items.Add(item);
-
-            cbBox_SearchCustomer.SelectedIndex = 0;
-
-            MessageBox.Show((cbBox_SearchCustomer.SelectedItem as ComboboxItem).ToString());
         }
         private void cbBox_SearchCustomer_SelectedIndexChanged(object sender, EventArgs e)
         {
