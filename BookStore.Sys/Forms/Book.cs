@@ -14,6 +14,7 @@ namespace BookStore
 {
     public partial class Product : Form
     {
+
         public Product()
         {
             InitializeComponent();
@@ -21,9 +22,10 @@ namespace BookStore
 
         private void Patient_Load(object sender, EventArgs e)
         {
-            string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
+            var service = Core.Services.Instance;
+            
             guna2DataGridView1.Rows.Add(9);
-            guna2DataGridView1.Rows[0].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\1.png");
+            guna2DataGridView1.Rows[0].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\1.png");
             guna2DataGridView1.Rows[0].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[0].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[0].Cells[4].Value = "Cilacap";
@@ -31,7 +33,7 @@ namespace BookStore
             guna2DataGridView1.Rows[0].Cells[6].Value = "Jan 21,2020";
             guna2DataGridView1.Rows[0].Cells[7].Value = "Jan 21,2020";
 
-            guna2DataGridView1.Rows[1].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\5.png");
+            guna2DataGridView1.Rows[1].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\5.png");
             guna2DataGridView1.Rows[1].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[1].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[1].Cells[4].Value = "Cilacap";
@@ -39,7 +41,7 @@ namespace BookStore
             guna2DataGridView1.Rows[1].Cells[6].Value = "Jan 21,2020";
             guna2DataGridView1.Rows[1].Cells[7].Value = "Jan 21,2020";
 
-            guna2DataGridView1.Rows[2].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\3.png");
+            guna2DataGridView1.Rows[2].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\3.png");
             guna2DataGridView1.Rows[2].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[2].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[2].Cells[4].Value = "Cilacap";
@@ -47,7 +49,7 @@ namespace BookStore
             guna2DataGridView1.Rows[2].Cells[6].Value = "Jan 21,2020";
             guna2DataGridView1.Rows[2].Cells[7].Value = "Jan 21,2020";
 
-            guna2DataGridView1.Rows[3].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\4.png");
+            guna2DataGridView1.Rows[3].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\4.png");
             guna2DataGridView1.Rows[3].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[3].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[3].Cells[4].Value = "Cilacap";
@@ -55,7 +57,7 @@ namespace BookStore
             guna2DataGridView1.Rows[3].Cells[6].Value = "Jan 21,2020";
             guna2DataGridView1.Rows[3].Cells[7].Value = "Jan 21,2020";
 
-            guna2DataGridView1.Rows[4].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\5.png");
+            guna2DataGridView1.Rows[4].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\5.png");
             guna2DataGridView1.Rows[4].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[4].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[4].Cells[4].Value = "Cilacap";
@@ -63,7 +65,7 @@ namespace BookStore
             guna2DataGridView1.Rows[4].Cells[6].Value = "Jan 21,2020";
             guna2DataGridView1.Rows[4].Cells[7].Value = "Jan 21,2020";
 
-            guna2DataGridView1.Rows[5].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\6.png");
+            guna2DataGridView1.Rows[5].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\6.png");
             guna2DataGridView1.Rows[5].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[5].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[5].Cells[4].Value = "Cilacap";
@@ -71,7 +73,7 @@ namespace BookStore
             guna2DataGridView1.Rows[5].Cells[6].Value = "Jan 21,2020";
             guna2DataGridView1.Rows[5].Cells[7].Value = "Jan 21,2020";
 
-            guna2DataGridView1.Rows[6].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\5.png");
+            guna2DataGridView1.Rows[6].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\5.png");
             guna2DataGridView1.Rows[6].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[6].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[6].Cells[4].Value = "Cilacap";
@@ -79,7 +81,7 @@ namespace BookStore
             guna2DataGridView1.Rows[6].Cells[6].Value = "Jan 21,2020";
             guna2DataGridView1.Rows[6].Cells[7].Value = "Jan 21,2020";
 
-            guna2DataGridView1.Rows[7].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\1.png");
+            guna2DataGridView1.Rows[7].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\1.png");
             guna2DataGridView1.Rows[7].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[7].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[7].Cells[4].Value = "Cilacap";
@@ -87,7 +89,7 @@ namespace BookStore
             guna2DataGridView1.Rows[7].Cells[6].Value = "Jan 21,2020";
             guna2DataGridView1.Rows[7].Cells[7].Value = "Jan 21,2020";
 
-            guna2DataGridView1.Rows[8].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\1.png");
+            guna2DataGridView1.Rows[8].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\1.png");
             guna2DataGridView1.Rows[8].Cells[2].Value = "Dian Cooper";
             guna2DataGridView1.Rows[8].Cells[3].Value = "(239)555-2020";
             guna2DataGridView1.Rows[8].Cells[4].Value = "Cilacap";
