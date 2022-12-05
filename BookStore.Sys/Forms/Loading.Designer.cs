@@ -113,7 +113,6 @@
             this.label_val.Size = new System.Drawing.Size(110, 144);
             this.label_val.TabIndex = 2;
             this.label_val.Text = "0";
-            this.label_val.Click += new System.EventHandler(this.label_val_Click);
             // 
             // label1
             // 

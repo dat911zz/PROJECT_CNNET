@@ -93,12 +93,18 @@ namespace BookStore.Sys.Forms
         private void guna2Button8_Click_1(object sender, EventArgs e)
         {
             label_val.Text = "Báo Cáo & Thống Kê";
-            container(new Messages());
+            container(new Report());
         }
 
         private void guna2Panel_container_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Button4_Click_1(object sender, EventArgs e)
+        {
+            label_val.Text = "Mua Hàng";
+            container(new BuyProduct());
         }
     }
 }
