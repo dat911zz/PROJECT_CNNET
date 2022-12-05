@@ -72,7 +72,6 @@
             this.label30 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label40 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -95,6 +94,7 @@
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CircleButton3 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label6 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
@@ -193,7 +193,7 @@
             this.btnDelete_Product.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnDelete_Product.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnDelete_Product.HoverState.Parent = this.btnDelete_Product;
-            this.btnDelete_Product.Location = new System.Drawing.Point(1196, 794);
+            this.btnDelete_Product.Location = new System.Drawing.Point(1097, 739);
             this.btnDelete_Product.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete_Product.Name = "btnDelete_Product";
             this.btnDelete_Product.ShadowDecoration.Parent = this.btnDelete_Product;
@@ -526,6 +526,7 @@
             // 
             // guna2Panel6
             // 
+            this.guna2Panel6.Controls.Add(this.label14);
             this.guna2Panel6.Controls.Add(this.guna2Panel14);
             this.guna2Panel6.Controls.Add(this.guna2Panel13);
             this.guna2Panel6.Controls.Add(this.guna2Panel12);
@@ -540,7 +541,6 @@
             this.guna2Panel6.Controls.Add(this.label30);
             this.guna2Panel6.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel6.Controls.Add(this.label40);
-            this.guna2Panel6.Controls.Add(this.label42);
             this.guna2Panel6.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel6.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -729,17 +729,6 @@
             this.label40.TabIndex = 106;
             this.label40.Text = "Thống Kê:";
             // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(1014, 116);
-            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(210, 23);
-            this.label42.TabIndex = 104;
-            this.label42.Text = "Doanh Thu Theo Tháng";
-            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -769,9 +758,9 @@
             this.label39.Location = new System.Drawing.Point(982, 11);
             this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(284, 32);
+            this.label39.Size = new System.Drawing.Size(270, 32);
             this.label39.TabIndex = 120;
-            this.label39.Text = "Doanh Thu Theo Tháng";
+            this.label39.Text = "Doanh Thu Theo Tuần";
             // 
             // label26
             // 
@@ -1049,12 +1038,23 @@
             this.label6.TabIndex = 92;
             this.label6.Text = "Xem báo cáo chi tiết:";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Cambria", 16F);
+            this.label14.Location = new System.Drawing.Point(979, 123);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(284, 32);
+            this.label14.TabIndex = 121;
+            this.label14.Text = "Doanh Thu Theo Tháng";
+            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1348, 863);
+            this.ClientSize = new System.Drawing.Size(1348, 796);
             this.Controls.Add(this.guna2Panel6);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.btnDelete_Product);
@@ -1164,9 +1164,9 @@
         private System.Windows.Forms.Label label30;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label42;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label14;
     }
 }

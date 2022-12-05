@@ -157,9 +157,9 @@
             this.label30.Location = new System.Drawing.Point(31, 239);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(214, 23);
+            this.label30.Size = new System.Drawing.Size(241, 23);
             this.label30.TabIndex = 95;
-            this.label30.Text = "THÔNG TIN BOOKSHOP";
+            this.label30.Text = "BOOKSHOP INFORMATION";
             // 
             // guna2Panel2
             // 
@@ -334,7 +334,7 @@
             this.guna2Panel13.Controls.Add(this.guna2CircleButton4);
             this.guna2Panel13.Controls.Add(this.label16);
             this.guna2Panel13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.guna2Panel13.Location = new System.Drawing.Point(147, 789);
+            this.guna2Panel13.Location = new System.Drawing.Point(145, 782);
             this.guna2Panel13.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel13.Name = "guna2Panel13";
             this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
@@ -684,7 +684,7 @@
             this.guna2Panel8.Controls.Add(this.guna2CircleButton3);
             this.guna2Panel8.Controls.Add(this.label17);
             this.guna2Panel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.guna2Panel8.Location = new System.Drawing.Point(588, 789);
+            this.guna2Panel8.Location = new System.Drawing.Point(586, 782);
             this.guna2Panel8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
@@ -709,7 +709,7 @@
             this.guna2Panel9.Controls.Add(this.guna2CircleButton5);
             this.guna2Panel9.Controls.Add(this.label18);
             this.guna2Panel9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.guna2Panel9.Location = new System.Drawing.Point(1063, 789);
+            this.guna2Panel9.Location = new System.Drawing.Point(1061, 782);
             this.guna2Panel9.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
