@@ -329,7 +329,6 @@
             this.label8.Size = new System.Drawing.Size(206, 40);
             this.label8.TabIndex = 18;
             this.label8.Text = "BookShop,";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
