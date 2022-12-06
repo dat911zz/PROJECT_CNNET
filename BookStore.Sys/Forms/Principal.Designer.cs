@@ -36,15 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel_top = new Guna.UI2.WinForms.Guna2Panel();
             this.label_val = new System.Windows.Forms.Label();
-            this.guna2PictureBox_val = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnMinimize = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.btnFullWindow = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel_container = new Guna.UI2.WinForms.Guna2Panel();
@@ -61,6 +52,17 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel_top = new Guna.UI2.WinForms.Guna2Panel();
+            this.label_val = new System.Windows.Forms.Label();
+            this.guna2PictureBox_val = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnMinimize = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btnFullWindow = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.guna2Panel_container = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox_val)).BeginInit();
@@ -94,32 +96,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(265, 928);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
-            this.guna2Button8.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
-            this.guna2Button8.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button8.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button8.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.guna2Button8.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
-            this.guna2Button8.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.HoverState.Image")));
-            this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.Image")));
-            this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button8.ImageOffset = new System.Drawing.Point(8, 0);
-            this.guna2Button8.Location = new System.Drawing.Point(0, 377);
-            this.guna2Button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(269, 49);
-            this.guna2Button8.TabIndex = 15;
-            this.guna2Button8.Text = "Báo cáo & Thống kê";
-            this.guna2Button8.TextOffset = new System.Drawing.Point(8, 0);
-            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click_1);
             // 
             // label3
             // 
@@ -160,9 +136,6 @@
             this.guna2Panel_top.Controls.Add(this.guna2PictureBox_val);
             this.guna2Panel_top.Controls.Add(this.guna2CircleButton1);
             this.guna2Panel_top.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel_top.Controls.Add(this.guna2ControlBox3);
-            this.guna2Panel_top.Controls.Add(this.guna2ControlBox2);
-            this.guna2Panel_top.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel_top.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel_top.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel_top.Dock = System.Windows.Forms.DockStyle.Top;
@@ -183,47 +156,6 @@
             this.label_val.Name = "label_val";
             this.label_val.Size = new System.Drawing.Size(0, 25);
             this.label_val.TabIndex = 5;
-            // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.Gray;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1149, 0);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.Size = new System.Drawing.Size(60, 36);
-            this.guna2ControlBox3.TabIndex = 2;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Gray;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1218, 0);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(60, 36);
-            this.guna2ControlBox2.TabIndex = 1;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Gray;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1285, 0);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
-            this.guna2ControlBox1.TabIndex = 0;
             // 
             // guna2DragControl1
             // 
@@ -341,6 +273,8 @@
             this.guna2Button8.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.Image")));
             this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button8.ImageOffset = new System.Drawing.Point(8, 0);
+            this.guna2Button8.Location = new System.Drawing.Point(0, 377);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button8.Location = new System.Drawing.Point(0, 413);
             this.guna2Button8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button8.Name = "guna2Button8";
@@ -351,10 +285,44 @@
             this.guna2Button8.TextOffset = new System.Drawing.Point(8, 0);
             this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click_1);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F);
+            this.label3.Location = new System.Drawing.Point(80, 65);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 21);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "BookShop";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(80, 892);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Mananger";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(80, 870);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 17);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Admin BookStore";
+            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::BookStore.Sys.Properties.Resources.sos;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(25, 865);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -368,6 +336,7 @@
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.Location = new System.Drawing.Point(223, 20);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
@@ -393,6 +362,7 @@
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button7.ImageOffset = new System.Drawing.Point(8, 0);
             this.guna2Button7.Location = new System.Drawing.Point(4, 735);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
@@ -417,6 +387,7 @@
             this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button6.ImageOffset = new System.Drawing.Point(8, 0);
             this.guna2Button6.Location = new System.Drawing.Point(4, 791);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
@@ -441,6 +412,8 @@
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.ImageOffset = new System.Drawing.Point(8, 0);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 282);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button3.Location = new System.Drawing.Point(-4, 259);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
@@ -467,6 +440,8 @@
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.ImageOffset = new System.Drawing.Point(8, 0);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 190);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button2.Location = new System.Drawing.Point(0, 175);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
@@ -494,6 +469,7 @@
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageOffset = new System.Drawing.Point(8, 0);
             this.guna2Button1.Location = new System.Drawing.Point(4, 105);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
@@ -508,6 +484,7 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::BookStore.Sys.Properties.Resources.istockphoto_1349688040_612x6121;
             this.guna2PictureBox1.Location = new System.Drawing.Point(84, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;

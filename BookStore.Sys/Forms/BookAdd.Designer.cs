@@ -917,14 +917,12 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 15);
             this.label7.TabIndex = 83;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Column7
             this.Column7.FillWeight = 99.49239F;
             this.Column7.HeaderText = "Trạng Thái";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // BookAdd
             // 

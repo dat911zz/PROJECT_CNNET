@@ -370,7 +370,5 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button btnDelete_Product;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate_Product;
     }
 }
