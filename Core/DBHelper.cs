@@ -16,7 +16,7 @@ namespace Core
         public string ConnStr { get => connStr; set => connStr = value; }
         public DBHelper()
         {
-            connStr = "Data Source=DESKTOP-GUE0JS7;Initial Catalog=NET_QLSinhVien;Integrated Security=True";
+            connStr = "Data Source=DESKTOP-GUE0JS7;Initial Catalog=BookStore;Integrated Security=True";
         }
         public void FillData(DataSet dataSet, string selectCmd, string tableName)
         {

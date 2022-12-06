@@ -21,13 +21,14 @@ namespace BookStore.Sys.Forms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            guna2ShadowForm1.SetShadowForm(this);
+            //guna2ShadowForm1.SetShadowForm(this);
         }
 
         private void btn_Signin_Click(object sender, EventArgs e)
         {
             Loading _load = new Loading();
-            _load.Show();
+            Form.ActiveForm.Hide();
+            _load.ShowDialog();
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)

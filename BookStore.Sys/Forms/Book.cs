@@ -26,10 +26,29 @@ namespace BookStore
             ds_Book = new DataSet();
             InitializeComponent();
         }
-
-        private void dgvBook_Load(object sender, EventArgs e)
+        private void dgv_Load()
         {
-            
+            //Load data
+            db.LoadDataIntoDgv(dgvBook, ds_Book, "select * from book", "book");
+            //Add header name
+            dgvBook.Columns[0].HeaderText = "Mã sách";
+            dgvBook.Columns[1].HeaderText = "Tên tác giả";
+            dgvBook.Columns[2].HeaderText = "Người đăng";
+            dgvBook.Columns[3].HeaderText = "Thể loại";
+            dgvBook.Columns[4].HeaderText = "Tên sách";
+            dgvBook.Columns[5].HeaderText = "Giá nhập";
+            dgvBook.Columns[6].HeaderText = "Giá bán";
+            dgvBook.Columns[7].HeaderText = "Năm xuất bản";
+            dgvBook.Columns[8].HeaderText = "Ngôn ngữ";
+            dgvBook.Columns[9].HeaderText = "Số lượng tồn";
+            dgvBook.Columns[10].HeaderText = "Mô tả";
+            //Customize col value
+
+        }
+        private void frmBook_Load(object sender, EventArgs e)
+        {
+            dgvBook.MultiSelect = false;
+            dgv_Load();
 
 
             //guna2DataGridView1.Rows.Add(9);

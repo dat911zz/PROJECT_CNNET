@@ -136,7 +136,6 @@
             this.label2.Size = new System.Drawing.Size(127, 23);
             this.label2.TabIndex = 25;
             this.label2.Text = "SÁCH ĐÃ BÁN";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label6
             // 
@@ -148,7 +147,6 @@
             this.label6.Size = new System.Drawing.Size(140, 23);
             this.label6.TabIndex = 24;
             this.label6.Text = "SÁCH ĐÃ NHẬP";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 
@@ -361,7 +359,6 @@
             this.guna2PictureBox1.Size = new System.Drawing.Size(732, 284);
             this.guna2PictureBox1.TabIndex = 8;
             this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2HtmlLabel44
             // 
@@ -374,7 +371,6 @@
             this.guna2HtmlLabel44.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel44.TabIndex = 5;
             this.guna2HtmlLabel44.Text = null;
-            this.guna2HtmlLabel44.Click += new System.EventHandler(this.guna2HtmlLabel44_Click);
             // 
             // label5
             // 

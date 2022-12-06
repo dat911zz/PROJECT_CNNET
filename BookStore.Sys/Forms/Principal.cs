@@ -64,16 +64,6 @@ namespace BookStore.Sys.Forms
             label_val.Text = "Thanh Toán";
             container(new Messages());
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button8_Click(object sender, EventArgs e)
-        {
-
-        }
         private void guna2Panel_top_Paint(object sender, PaintEventArgs e)
         {
 
@@ -99,6 +89,20 @@ namespace BookStore.Sys.Forms
         private void guna2Panel_container_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Principal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Ban có muốn thoát?", "Hệ Thống", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                Application.OpenForms["Login"].Close();
+                e.Cancel = false;
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

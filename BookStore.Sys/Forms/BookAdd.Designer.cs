@@ -536,7 +536,6 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 15);
             this.label7.TabIndex = 83;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label1
             // 
@@ -548,7 +547,6 @@
             this.label1.Size = new System.Drawing.Size(65, 18);
             this.label1.TabIndex = 84;
             this.label1.Text = "ID Sách:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // BookAdd
             // 
