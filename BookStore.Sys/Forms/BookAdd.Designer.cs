@@ -582,27 +582,12 @@
             this.label7.Location = new System.Drawing.Point(306, 152);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-<<<<<<< HEAD
-            this.label7.Size = new System.Drawing.Size(0, 15);
-            this.label7.TabIndex = 83;
-=======
             this.label7.Size = new System.Drawing.Size(85, 18);
             this.label7.TabIndex = 65;
             this.label7.Text = "Trạng Thái:";
->>>>>>> 537609e1dca60accab99bf28c8f7869d6e995bab
             // 
             // label14
             // 
-<<<<<<< HEAD
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(18, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 18);
-            this.label1.TabIndex = 84;
-            this.label1.Text = "ID Sách:";
-=======
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label14.ForeColor = System.Drawing.Color.Black;
@@ -926,18 +911,20 @@
             // 
             // Column6
             // 
-            this.Column6.FillWeight = 99.49239F;
-            this.Column6.HeaderText = "Năm Xuất Bản";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(13, 101);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 15);
+            this.label7.TabIndex = 83;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Column7
-            // 
             this.Column7.FillWeight = 99.49239F;
             this.Column7.HeaderText = "Trạng Thái";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
->>>>>>> 537609e1dca60accab99bf28c8f7869d6e995bab
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // BookAdd
             // 

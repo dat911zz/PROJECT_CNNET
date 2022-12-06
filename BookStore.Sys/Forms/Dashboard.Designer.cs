@@ -452,20 +452,6 @@
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Monthly";
             // 
-<<<<<<< HEAD
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(9, 144);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(732, 284);
-            this.guna2PictureBox1.TabIndex = 8;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-=======
->>>>>>> 537609e1dca60accab99bf28c8f7869d6e995bab
             // guna2HtmlLabel44
             // 
             this.guna2HtmlLabel44.BackColor = System.Drawing.Color.Transparent;
