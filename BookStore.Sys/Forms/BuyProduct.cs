@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace BookStore
 {
-    public partial class CustomerAdd : Form
+    public partial class BuyProduct : Form
     {
-        public CustomerAdd()
+        public BuyProduct()
         {
             InitializeComponent();
         }
@@ -69,7 +69,7 @@ namespace BookStore
 
         private void btnAdd_Product_Click(object sender, EventArgs e)
         {
-            BookAdd _load = new BookAdd();
+             BookAdd _load = new BookAdd();
             _load.Show();
         }
 

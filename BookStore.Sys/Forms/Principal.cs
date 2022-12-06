@@ -83,7 +83,7 @@ namespace BookStore.Sys.Forms
         private void guna2Button8_Click_1(object sender, EventArgs e)
         {
             label_val.Text = "Báo Cáo & Thống Kê";
-            container(new Messages());
+            container(new Report());
         }
 
         private void guna2Panel_container_Paint(object sender, PaintEventArgs e)
@@ -91,6 +91,7 @@ namespace BookStore.Sys.Forms
 
         }
 
+<<<<<<< HEAD
         private void Principal_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Ban có muốn thoát?", "Hệ Thống", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
@@ -103,6 +104,12 @@ namespace BookStore.Sys.Forms
             {
                 e.Cancel = true;
             }
+=======
+        private void guna2Button4_Click_1(object sender, EventArgs e)
+        {
+            label_val.Text = "Mua Hàng";
+            container(new BuyProduct());
+>>>>>>> 537609e1dca60accab99bf28c8f7869d6e995bab
         }
     }
 }
