@@ -911,13 +911,14 @@
             // 
             // Column6
             // 
-            this.Column6.FillWeight = 99.49239F;
-            this.Column6.HeaderText = "Năm Xuất Bản";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(13, 101);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 15);
+            this.label7.TabIndex = 83;
             // 
             // Column7
-            // 
             this.Column7.FillWeight = 99.49239F;
             this.Column7.HeaderText = "Trạng Thái";
             this.Column7.MinimumWidth = 6;

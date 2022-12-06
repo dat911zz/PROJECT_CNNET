@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace Core
 {
-    public class Services
+    public class Service
     {
         private readonly string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
-        private static Services instance;
-        private Services()
+        private static Service instance;
+        private Service()
         {
 
         }
 
         public string RootPath => rootPath;
 
-        public static Services Instance 
+        public static Service Instance 
         { 
-            get => instance ?? new Services(); 
+            get => instance ?? new Service(); 
             private set => instance = value; 
         }
     }
