@@ -116,6 +116,7 @@
             this.txtBox_Password.Size = new System.Drawing.Size(361, 44);
             this.txtBox_Password.TabIndex = 3;
             this.txtBox_Password.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtBox_Password.TextChanged += new System.EventHandler(this.txtBox_Password_Leave);
             this.txtBox_Password.Leave += new System.EventHandler(this.txtBox_Password_Leave);
             // 
             // btn_Signin
@@ -183,7 +184,6 @@
             this.label2.Size = new System.Drawing.Size(125, 24);
             this.label2.TabIndex = 8;
             this.label2.Text = "Welcome To";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -315,7 +315,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(513, 656);
             this.guna2Panel1.TabIndex = 0;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // label8
             // 
@@ -366,7 +365,6 @@
             this.label6.Size = new System.Drawing.Size(99, 19);
             this.label6.TabIndex = 16;
             this.label6.Text = "+84 123456789";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // guna2Panel6
             // 
@@ -439,7 +437,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Đăng Nhập";
             this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

@@ -29,7 +29,7 @@ namespace BookStore
         private void dgv_Load()
         {
             //Load data
-            db.LoadDataIntoDgv(dgvBook, ds_Book, "select * from book", "book");
+            db.LoadDataIntoDgv(dgvBook, ds_Book, "SELECT * FROM BooksView", "BooksView");
             //Add header name
             dgvBook.Columns[0].HeaderText = "Mã sách";
             dgvBook.Columns[1].HeaderText = "Tên tác giả";
@@ -43,87 +43,27 @@ namespace BookStore
             dgvBook.Columns[9].HeaderText = "Số lượng tồn";
             dgvBook.Columns[10].HeaderText = "Mô tả";
             dgvBook.Columns[11].HeaderText = "Ảnh bìa";
-            //Customize col value
+            //Change size of col
+            dgvBook.Columns[0].Width = 30;
+            dgvBook.Columns[11].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
+            DataGridViewImageColumn a = new DataGridViewImageColumn();
+            
+            //= new DataGridViewCellStyle() { NullValue = Bitmap, Alignment = MiddleCenter };
+            //Customize col value
+            for (int i = 0; i < dgvBook.Rows.Count; i++)
+            {
+                //Use when column names known
+                //dgvBook.Rows[i].Cells["Image"].Value.ToString().Trim()
+                DataGridViewImageCell imageCell = new DataGridViewImageCell();
+                imageCell.Value = Image.FromFile(service.RootPath + @"\Contents\Images\HinhAnhSP\000001.jpg");
+                dgvBook.Rows[i].Cells["Image"] = imageCell;
+            }
         }
         private void frmBook_Load(object sender, EventArgs e)
         {
             dgvBook.MultiSelect = false;
             dgv_Load();
-
-
-            //guna2DataGridView1.Rows.Add(9);
-            //guna2DataGridView1.Rows[0].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\1.png");
-            //guna2DataGridView1.Rows[0].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[0].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[0].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[0].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[0].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[0].Cells[7].Value = "Jan 21,2020";
-
-            //guna2DataGridView1.Rows[1].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\5.png");
-            //guna2DataGridView1.Rows[1].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[1].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[1].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[1].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[1].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[1].Cells[7].Value = "Jan 21,2020";
-
-            //guna2DataGridView1.Rows[2].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\3.png");
-            //guna2DataGridView1.Rows[2].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[2].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[2].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[2].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[2].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[2].Cells[7].Value = "Jan 21,2020";
-
-            //guna2DataGridView1.Rows[3].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\4.png");
-            //guna2DataGridView1.Rows[3].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[3].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[3].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[3].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[3].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[3].Cells[7].Value = "Jan 21,2020";
-
-            //guna2DataGridView1.Rows[4].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\5.png");
-            //guna2DataGridView1.Rows[4].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[4].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[4].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[4].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[4].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[4].Cells[7].Value = "Jan 21,2020";
-
-            //guna2DataGridView1.Rows[5].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\6.png");
-            //guna2DataGridView1.Rows[5].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[5].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[5].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[5].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[5].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[5].Cells[7].Value = "Jan 21,2020";
-
-            //guna2DataGridView1.Rows[6].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\5.png");
-            //guna2DataGridView1.Rows[6].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[6].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[6].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[6].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[6].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[6].Cells[7].Value = "Jan 21,2020";
-
-            //guna2DataGridView1.Rows[7].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\1.png");
-            //guna2DataGridView1.Rows[7].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[7].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[7].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[7].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[7].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[7].Cells[7].Value = "Jan 21,2020";
-
-            //guna2DataGridView1.Rows[8].Cells[1].Value = Image.FromFile(service.RootPath + @"\Contents\Images\1.png");
-            //guna2DataGridView1.Rows[8].Cells[2].Value = "Dian Cooper";
-            //guna2DataGridView1.Rows[8].Cells[3].Value = "(239)555-2020";
-            //guna2DataGridView1.Rows[8].Cells[4].Value = "Cilacap";
-            //guna2DataGridView1.Rows[8].Cells[5].Value = "Jan 21,2020 -13:30";
-            //guna2DataGridView1.Rows[8].Cells[6].Value = "Jan 21,2020";
-            //guna2DataGridView1.Rows[8].Cells[7].Value = "Jan 21,2020";
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)

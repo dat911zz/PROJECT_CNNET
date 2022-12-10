@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,49 +22,46 @@ namespace BookStore.Sys.Forms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //guna2ShadowForm1.SetShadowForm(this);
+            guna2ShadowForm1.SetShadowForm(this);
         }
 
         private void btn_Signin_Click(object sender, EventArgs e)
         {
-            Loading _load = new Loading();
-            Form.ActiveForm.Hide();
-            _load.ShowDialog();
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        public void Validator()
-        {
-            label9.Text = "Please enter user name";
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
+            if (!string.IsNullOrEmpty(txtBox_User.Text) && !string.IsNullOrEmpty(txtBox_Password.Text))
+            {
+                if (Service.Instance.CheckAccount(txtBox_User.Text.Trim(), txtBox_Password.Text.Trim()))
+                {
+                    Loading _load = new Loading();
+                    ActiveForm.Hide();
+                    _load.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản đã nhập không hợp lệ!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+            }
+            else
+            {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
 
         }
-
         private void btn_Signup_Click(object sender, EventArgs e)
         {
-            Form.ActiveForm.Hide();
+            ActiveForm.Hide();         
             Register _load = new Register();
-            _load.Show();
+            if (!Service.Instance.CheckFormExist(_load.Name))
+            {
+                _load.Show();
+            }
         }
 
         private void txtBox_User_Leave(object sender, EventArgs e)
         {
-            label9.Hide();
+            errorProvider1.Clear();
             if (txtBox_User.Text.Trim().Length == 0)
             {
-                label9.Show();
-                Validator();
+                errorProvider1.SetError((Control)sender, "Vui lòng điền vào trường này!");
             }
             else {
                 this.errorProvider1.Clear();
@@ -71,11 +69,10 @@ namespace BookStore.Sys.Forms
         }
         private void txtBox_Password_Leave(object sender, EventArgs e)
         {
-            label10.Hide();
+            errorProvider1.Clear();
             if (txtBox_Password.Text.Trim().Length == 0)
             {
-                label10.Show();
-                Validator();
+                errorProvider1.SetError((Control)sender, "Vui lòng điền vào trường này!");
             }
             else
             {

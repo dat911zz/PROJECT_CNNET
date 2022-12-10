@@ -56,7 +56,7 @@ namespace BookStore.Sys.Forms
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             label_val.Text = "Quản Lý Khách Hàng";
-            container(new Customer());
+            container(new frmCustomer());
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
