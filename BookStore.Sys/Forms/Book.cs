@@ -42,6 +42,7 @@ namespace BookStore
             dgvBook.Columns[8].HeaderText = "Ngôn ngữ";
             dgvBook.Columns[9].HeaderText = "Số lượng tồn";
             dgvBook.Columns[10].HeaderText = "Mô tả";
+            dgvBook.Columns[11].HeaderText = "Ảnh bìa";
             //Customize col value
 
         }
