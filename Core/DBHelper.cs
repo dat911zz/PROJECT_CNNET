@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,146 @@ namespace Core
         public DBHelper()
         {
             connStr = "Data Source=DESKTOP-GUE0JS7;Initial Catalog=BookStore;Integrated Security=True";
+        }
+        #region Utilities
+        /// <summary>
+        /// Add params with prefix: @p_{0} ({0} is integer start from 0)
+        /// </summary>
+        /// <param name="cmd"></param>
+        /// <param name="obj"></param>
+        public void AddParameters(ref SqlCommand cmd, object[] obj)
+        {
+            int paramsLenth = obj.Length;
+            for (int i = 0; i < paramsLenth; i++)
+            {
+                cmd.Parameters.AddWithValue("@p_" + i.ToString(), obj[i]);
+            }
+        }
+        public void AddParameters(ref SqlCommand cmd, Dictionary<string, object> mapParams)
+        {
+            foreach (var param in mapParams)
+            {
+                cmd.Parameters.AddWithValue(param.Key, param.Value);
+            }
+        }
+        private void BeginTransact(Action<SqlCommand> action)
+        {
+            SqlConnection conn = new SqlConnection(connStr);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            action(cmd);
+            conn.Close();
+        }
+        public int ExceuteNonQuery(string query, params object[] obj)
+        {
+            int result = 0;
+            BeginTransact(cmd =>
+            {
+                cmd.CommandText = query;
+                if (obj != null)
+                {
+                    AddParameters(ref cmd, obj);
+                }
+                result = cmd.ExecuteNonQuery();
+            });
+            return result;
+        }
+        public int ExceuteNonQuery(string query, Dictionary<string, object> mapParams)
+        {
+            int result = 0;
+            BeginTransact(cmd =>
+            {
+                cmd.CommandText = query;
+                if (mapParams != null)
+                {
+                    AddParameters(ref cmd, mapParams);
+                }
+                result = cmd.ExecuteNonQuery();
+            });
+            return result;
+        }
+        public int ExceuteScalar(string query, params object[] obj)
+        {
+            int result = 0;
+            BeginTransact(cmd =>
+            {
+                cmd.CommandText = query;
+                if (obj != null)
+                {
+                    AddParameters(ref cmd, obj);
+                }
+                result = (int)cmd.ExecuteScalar();
+            });
+            return result;
+        }
+        public int ExceuteScalar(string query, Dictionary<string, object> mapParams)
+        {
+            int result = 0;
+            BeginTransact(cmd =>
+            {
+                cmd.CommandText = query;
+                if (mapParams != null)
+                {
+                    AddParameters(ref cmd, mapParams);
+                }
+                result = (int)cmd.ExecuteScalar();
+            });
+            return result;
+        }
+        public List<T> ExecuteReader<T>(string query, params object[] obj) where T : class, new()//Attribute for avoid normal data type
+        {
+            List<T> list = new List<T>();
+            BeginTransact(cmd =>
+            {
+                cmd.CommandText = query;
+                if (obj != null)
+                {
+                    AddParameters(ref cmd, obj);
+                }
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    T item = new T();
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        PropertyInfo propertyInfo = typeof(T).GetProperty(reader.GetName(i));
+                        if (propertyInfo != null)
+                        {
+                            propertyInfo.SetValue(item, reader.GetValue(i));
+                        }
+                    }
+                    list.Add(item);
+                }
+            });
+            return list;
+        }
+        public List<T> ExecuteReader<T>(string query, Dictionary<string, object> mapParams) where T : class, new()
+        {
+            List<T> list = new List<T>();
+            BeginTransact(cmd =>
+            {
+                cmd.CommandText = query;
+                if (mapParams != null)
+                {
+                    AddParameters(ref cmd, mapParams);
+                }
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    T item = new T();
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        PropertyInfo propertyInfo = typeof(T).GetProperty(reader.GetName(i));
+                        if (propertyInfo != null)
+                        {
+                            propertyInfo.SetValue(item, reader.GetValue(i));
+                        }
+                    }
+                    list.Add(item);
+                }
+            });
+            return list;
         }
         public void FillData(DataSet dataSet, string selectCmd, string tableName)
         {
@@ -49,5 +190,6 @@ namespace Core
             }
 
         }
+        #endregion
     }
 }

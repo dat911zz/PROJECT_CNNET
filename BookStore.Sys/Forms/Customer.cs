@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace BookStore
 {
-    public partial class Customer : Form
+    public partial class frmCustomer : Form
     {
-        public Customer()
+        public frmCustomer()
         {
             InitializeComponent();
         }
 
-        private void Patient_Load(object sender, EventArgs e)
+        private void frmCustomer_Load(object sender, EventArgs e)
         {
             string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
             guna2DataGridView1.Rows.Add(9);

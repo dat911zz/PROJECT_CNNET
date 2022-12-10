@@ -44,7 +44,6 @@
             this.btnUpdate_Product = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete_Product = new Guna.UI2.WinForms.Guna2Button();
             this.dgvBook = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,9 +52,6 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).BeginInit();
             this.SuspendLayout();
@@ -214,7 +210,7 @@
             this.btnUpdate_Product.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnUpdate_Product.HoverState.Parent = this.btnUpdate_Product;
             this.btnUpdate_Product.Location = new System.Drawing.Point(1175, 796);
-            this.btnUpdate_Product.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate_Product.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate_Product.Name = "btnUpdate_Product";
             this.btnUpdate_Product.ShadowDecoration.Parent = this.btnUpdate_Product;
             this.btnUpdate_Product.Size = new System.Drawing.Size(112, 37);
@@ -236,7 +232,7 @@
             this.btnDelete_Product.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnDelete_Product.HoverState.Parent = this.btnDelete_Product;
             this.btnDelete_Product.Location = new System.Drawing.Point(1055, 796);
-            this.btnDelete_Product.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete_Product.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete_Product.Name = "btnDelete_Product";
             this.btnDelete_Product.ShadowDecoration.Parent = this.btnDelete_Product;
             this.btnDelete_Product.Size = new System.Drawing.Size(112, 37);
@@ -244,7 +240,7 @@
             this.btnDelete_Product.Text = "Delete";
             this.btnDelete_Product.Click += new System.EventHandler(this.btnDelete_Product_Click);
             // 
-            // guna2DataGridView1
+            // dgvBook
             // 
             this.dgvBook.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -315,6 +311,54 @@
             this.dgvBook.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.dgvBook.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
+            // Column1
+            // 
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
+            // 
             // frmBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -322,12 +366,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1348, 863);
             this.Controls.Add(this.dgvBook);
-            this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.btnDelete_Product);
             this.Controls.Add(this.btnUpdate_Product);
-            this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -354,7 +394,6 @@
         private Guna.UI2.WinForms.Guna2Button btnUpdate_Product;
         private Guna.UI2.WinForms.Guna2Button btnDelete_Product;
         private Guna.UI2.WinForms.Guna2DataGridView dgvBook;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewImageColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -363,8 +402,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
