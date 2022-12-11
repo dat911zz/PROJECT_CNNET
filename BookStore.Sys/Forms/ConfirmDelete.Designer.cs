@@ -68,7 +68,7 @@
             this.btn_Cancel.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btn_Cancel.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.btn_Cancel.HoverState.Parent = this.btn_Cancel;
-            this.btn_Cancel.Location = new System.Drawing.Point(64, 242);
+            this.btn_Cancel.Location = new System.Drawing.Point(61, 297);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.ShadowDecoration.Parent = this.btn_Cancel;
             this.btn_Cancel.Size = new System.Drawing.Size(106, 33);
@@ -83,7 +83,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label4.Location = new System.Drawing.Point(197, 71);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 20);
+            this.label4.Size = new System.Drawing.Size(0, 25);
             this.label4.TabIndex = 27;
             // 
             // label2
@@ -93,7 +93,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(108, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 20);
+            this.label2.Size = new System.Drawing.Size(0, 25);
             this.label2.TabIndex = 25;
             // 
             // btn_Accept
@@ -111,7 +111,7 @@
             this.btn_Accept.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btn_Accept.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.btn_Accept.HoverState.Parent = this.btn_Accept;
-            this.btn_Accept.Location = new System.Drawing.Point(201, 243);
+            this.btn_Accept.Location = new System.Drawing.Point(236, 297);
             this.btn_Accept.Name = "btn_Accept";
             this.btn_Accept.ShadowDecoration.Parent = this.btn_Accept;
             this.btn_Accept.Size = new System.Drawing.Size(106, 33);
@@ -126,16 +126,16 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.label3.Location = new System.Drawing.Point(10, 459);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.Size = new System.Drawing.Size(93, 21);
             this.label3.TabIndex = 33;
             this.label3.Text = "Book-Shop";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(74, 179);
+            this.label1.Location = new System.Drawing.Point(83, 214);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 23);
             this.label1.TabIndex = 36;
@@ -183,7 +183,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(123, 249);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(168, 32);
+            this.label8.Size = new System.Drawing.Size(206, 40);
             this.label8.TabIndex = 19;
             this.label8.Text = "BookShop,";
             // 
@@ -194,7 +194,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label7.Location = new System.Drawing.Point(95, 510);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 13);
+            this.label7.Size = new System.Drawing.Size(99, 19);
             this.label7.TabIndex = 17;
             this.label7.Text = "+84 123456789";
             // 
@@ -217,7 +217,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label6.Location = new System.Drawing.Point(10, 510);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 13);
+            this.label6.Size = new System.Drawing.Size(99, 19);
             this.label6.TabIndex = 16;
             this.label6.Text = "+84 123456789";
             // 
@@ -260,7 +260,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(48, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 40);
+            this.label5.Size = new System.Drawing.Size(0, 51);
             this.label5.TabIndex = 13;
             // 
             // guna2Panel3
@@ -288,9 +288,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 13.2F, System.Drawing.FontStyle.Italic);
             this.label9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label9.Location = new System.Drawing.Point(152, 120);
+            this.label9.Location = new System.Drawing.Point(143, 118);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 19);
+            this.label9.Size = new System.Drawing.Size(109, 24);
             this.label9.TabIndex = 44;
             this.label9.Text = "Book Shop";
             // 
@@ -312,7 +312,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_Accept);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ConfirmDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";

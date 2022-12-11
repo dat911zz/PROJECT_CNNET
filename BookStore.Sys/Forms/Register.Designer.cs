@@ -49,6 +49,7 @@
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -84,7 +85,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label4.Location = new System.Drawing.Point(182, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 19);
+            this.label4.Size = new System.Drawing.Size(109, 24);
             this.label4.TabIndex = 27;
             this.label4.Text = "Book Shop";
             // 
@@ -95,7 +96,7 @@
             this.label2.ForeColor = System.Drawing.Color.Gray;
             this.label2.Location = new System.Drawing.Point(39, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 19);
+            this.label2.Size = new System.Drawing.Size(178, 24);
             this.label2.TabIndex = 25;
             this.label2.Text = "Chào mừng đến với";
             // 
@@ -138,7 +139,7 @@
             this.txtBox_Password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_Password.HoverState.Parent = this.txtBox_Password;
             this.txtBox_Password.Location = new System.Drawing.Point(52, 214);
-            this.txtBox_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_Password.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_Password.Name = "txtBox_Password";
             this.txtBox_Password.PasswordChar = '\0';
             this.txtBox_Password.PlaceholderText = "Password";
@@ -164,7 +165,7 @@
             this.txtBox_User.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_User.HoverState.Parent = this.txtBox_User;
             this.txtBox_User.Location = new System.Drawing.Point(52, 159);
-            this.txtBox_User.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_User.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_User.Name = "txtBox_User";
             this.txtBox_User.PasswordChar = '\0';
             this.txtBox_User.PlaceholderText = "User Name";
@@ -211,7 +212,7 @@
             this.txtBox_ConfirmPassWord.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_ConfirmPassWord.HoverState.Parent = this.txtBox_ConfirmPassWord;
             this.txtBox_ConfirmPassWord.Location = new System.Drawing.Point(52, 269);
-            this.txtBox_ConfirmPassWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_ConfirmPassWord.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_ConfirmPassWord.Name = "txtBox_ConfirmPassWord";
             this.txtBox_ConfirmPassWord.PasswordChar = '\0';
             this.txtBox_ConfirmPassWord.PlaceholderText = "Confirm Password";
@@ -237,7 +238,7 @@
             this.txtBox_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_Email.HoverState.Parent = this.txtBox_Email;
             this.txtBox_Email.Location = new System.Drawing.Point(52, 321);
-            this.txtBox_Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_Email.Name = "txtBox_Email";
             this.txtBox_Email.PasswordChar = '\0';
             this.txtBox_Email.PlaceholderText = "Email";
@@ -254,7 +255,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.label3.Location = new System.Drawing.Point(10, 455);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.Size = new System.Drawing.Size(93, 21);
             this.label3.TabIndex = 33;
             this.label3.Text = "Book-Shop";
             // 
@@ -287,7 +288,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(116, 239);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(168, 32);
+            this.label8.Size = new System.Drawing.Size(206, 40);
             this.label8.TabIndex = 19;
             this.label8.Text = "BookShop,";
             // 
@@ -298,7 +299,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label7.Location = new System.Drawing.Point(270, 485);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 13);
+            this.label7.Size = new System.Drawing.Size(99, 19);
             this.label7.TabIndex = 17;
             this.label7.Text = "+84 123456789";
             // 
@@ -353,7 +354,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(48, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 40);
+            this.label5.Size = new System.Drawing.Size(0, 51);
             this.label5.TabIndex = 13;
             // 
             // guna2PictureBox1
@@ -367,12 +368,25 @@
             this.guna2PictureBox1.TabIndex = 19;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FillColor = System.Drawing.Color.Transparent;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.IconColor = System.Drawing.Color.Gray;
+            this.btnClose.Location = new System.Drawing.Point(344, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(45, 29);
+            this.btnClose.TabIndex = 34;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(766, 484);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBox_Email);
             this.Controls.Add(this.txtBox_ConfirmPassWord);
@@ -387,7 +401,7 @@
             this.Controls.Add(this.txtBox_Password);
             this.Controls.Add(this.btn_Signin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Ký";
@@ -423,5 +437,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtBox_Email;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2ControlBox btnClose;
     }
 }

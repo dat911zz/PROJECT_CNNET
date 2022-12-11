@@ -56,6 +56,7 @@
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -78,7 +79,7 @@
             this.txtBox_User.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_User.HoverState.Parent = this.txtBox_User;
             this.txtBox_User.Location = new System.Drawing.Point(40, 152);
-            this.txtBox_User.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_User.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_User.Name = "txtBox_User";
             this.txtBox_User.PasswordChar = '\0';
             this.txtBox_User.PlaceholderText = "User";
@@ -106,7 +107,7 @@
             this.txtBox_Password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_Password.HoverState.Parent = this.txtBox_Password;
             this.txtBox_Password.Location = new System.Drawing.Point(40, 221);
-            this.txtBox_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_Password.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_Password.Name = "txtBox_Password";
             this.txtBox_Password.PasswordChar = '\0';
             this.txtBox_Password.PlaceholderText = "Password";
@@ -165,7 +166,7 @@
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(71, 288);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(91, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "Remember Me";
             // 
@@ -176,7 +177,7 @@
             this.label2.ForeColor = System.Drawing.Color.Gray;
             this.label2.Location = new System.Drawing.Point(49, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 19);
+            this.label2.Size = new System.Drawing.Size(178, 24);
             this.label2.TabIndex = 8;
             this.label2.Text = "Chào mừng đến với";
             // 
@@ -187,7 +188,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.label3.Location = new System.Drawing.Point(12, 447);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.Size = new System.Drawing.Size(93, 21);
             this.label3.TabIndex = 9;
             this.label3.Text = "Book-Shop";
             // 
@@ -223,7 +224,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label4.Location = new System.Drawing.Point(192, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 19);
+            this.label4.Size = new System.Drawing.Size(109, 24);
             this.label4.TabIndex = 13;
             this.label4.Text = "Book Shop";
             // 
@@ -261,7 +262,7 @@
             this.label9.Location = new System.Drawing.Point(57, 194);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 13);
+            this.label9.Size = new System.Drawing.Size(0, 15);
             this.label9.TabIndex = 15;
             // 
             // label10
@@ -271,7 +272,7 @@
             this.label10.Location = new System.Drawing.Point(57, 261);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.Size = new System.Drawing.Size(0, 15);
             this.label10.TabIndex = 16;
             // 
             // guna2PictureBox1
@@ -313,7 +314,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(111, 245);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(168, 32);
+            this.label8.Size = new System.Drawing.Size(206, 40);
             this.label8.TabIndex = 18;
             this.label8.Text = "BookShop,";
             // 
@@ -324,7 +325,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label7.Location = new System.Drawing.Point(270, 485);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 13);
+            this.label7.Size = new System.Drawing.Size(99, 19);
             this.label7.TabIndex = 17;
             this.label7.Text = "+84 123456789";
             // 
@@ -379,8 +380,20 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(48, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 40);
+            this.label5.Size = new System.Drawing.Size(0, 51);
             this.label5.TabIndex = 13;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FillColor = System.Drawing.Color.Transparent;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.IconColor = System.Drawing.Color.Gray;
+            this.btnClose.Location = new System.Drawing.Point(344, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(45, 29);
+            this.btnClose.TabIndex = 19;
             // 
             // Login
             // 
@@ -388,6 +401,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(766, 484);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_Signup);
@@ -447,6 +461,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Guna.UI2.WinForms.Guna2ControlBox btnClose;
     }
 }
 
