@@ -28,23 +28,31 @@ namespace BookStore.Sys.Forms
 
         private void btn_Signin_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtBox_User.Text) && !string.IsNullOrEmpty(txtBox_Password.Text))
+            try
             {
-                if (Service.Instance.CheckAccount(txtBox_User.Text.Trim(), txtBox_Password.Text.Trim()))
+                if (!string.IsNullOrEmpty(txtBox_User.Text) && !string.IsNullOrEmpty(txtBox_Password.Text))
                 {
-                    Loading _load = new Loading();
-                    ActiveForm.Hide();
-                    _load.ShowDialog();
+                    if (Service.Instance.CheckAccount(txtBox_User.Text.Trim(), txtBox_Password.Text.Trim()))
+                    {
+                        Loading _load = new Loading();
+                        ActiveForm.Hide();
+                        _load.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản đã nhập không hợp lệ!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Tài khoản đã nhập không hợp lệ!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
-            else
+            catch (Exception)
             {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("Đã xảy ra lỗi, vui lòng kiểm tra lại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
+
 
         }
         private void btn_Signup_Click(object sender, EventArgs e)

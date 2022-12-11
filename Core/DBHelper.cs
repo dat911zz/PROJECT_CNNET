@@ -17,7 +17,8 @@ namespace Core
         public string ConnStr { get => connStr; set => connStr = value; }
         public DBHelper()
         {
-            connStr = "Data Source=DESKTOP-GUE0JS7;Initial Catalog=BookStore;Integrated Security=True";
+            connStr = "Data Source=sql5080.site4now.net;Initial Catalog=db_a9156e_n8bookstore;Persist Security Info=True;User ID=db_a9156e_n8bookstore_admin;Password=ez4XqR6@QrhhzCu";
+            //ez4XqR6@QrhhzCu
         }
         #region Utilities
         /// <summary>
