@@ -18,6 +18,7 @@ namespace BookStore.Sys.Forms
         public Login()
         {
             InitializeComponent();
+            txtBox_Password.PasswordChar = '•';
         }
 
         private void Form1_Load(object sender, EventArgs e)
