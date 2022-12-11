@@ -56,7 +56,7 @@ namespace BookStore
                 //Use when column names known
                 //dgvBook.Rows[i].Cells["Image"].Value.ToString().Trim()
                 DataGridViewImageCell imageCell = new DataGridViewImageCell();
-                imageCell.Value = Image.FromFile(service.RootPath + @"\Contents\Images\HinhAnhSP\000001.jpg");
+                imageCell.Value = Image.FromFile(service.RootPath + @"\Contents\Images\img-book\clean-code.png");
                 dgvBook.Rows[i].Cells["Image"] = imageCell;
             }
         }
