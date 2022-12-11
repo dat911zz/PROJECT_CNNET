@@ -15,6 +15,8 @@ namespace BookStore.Sys.Forms
         public Register()
         {
             InitializeComponent();
+            txtBox_Password.PasswordChar = '•';
+            txtBox_ConfirmPassWord.PasswordChar = '•';
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
