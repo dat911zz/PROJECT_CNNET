@@ -31,6 +31,15 @@ namespace BookStore
             string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
             db.FillData(ds_Cus, "Select * from Customer", "Customer");
             dgvCus.DataSource = ds_Cus.Tables["Customer"];
+            //Add header name
+            dgvCus.Columns[0].HeaderText = "ID";
+            dgvCus.Columns[1].HeaderText = "Loại Khách Hàng";
+            dgvCus.Columns[2].HeaderText = "Tên Khách Hàng";
+            dgvCus.Columns[3].HeaderText = "Giới Tính";
+            dgvCus.Columns[4].HeaderText = "Ngày Sinh";
+            dgvCus.Columns[5].HeaderText = "Địa Chỉ";
+            dgvCus.Columns[6].HeaderText = "Email";
+            dgvCus.Columns[7].HeaderText = "Số Điện Thoại";
         }
 
         private void dgvCus_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -52,6 +61,29 @@ namespace BookStore
         private void cbBox_SearchCustomer_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpdate_Product_Click(object sender, EventArgs e)
+        {
+            Form.ActiveForm.Hide();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            ConfirmDelete _load = new ConfirmDelete();
+            _load.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            CustomerAdd _load = new CustomerAdd();
+            _load.Show();
+        }
+
+        private void btnDelete_Product_Click(object sender, EventArgs e)
+        {
+            CustomerAdd _load = new CustomerAdd();
+            _load.Show();
         }
     }
 }

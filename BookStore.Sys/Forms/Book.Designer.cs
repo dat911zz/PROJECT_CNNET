@@ -37,8 +37,6 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.btnFilter_Product = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd_Product = new Guna.UI2.WinForms.Guna2Button();
-            this.cbBox_Search = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUpdate_Product = new Guna.UI2.WinForms.Guna2Button();
@@ -61,8 +59,6 @@
             this.guna2Panel1.Controls.Add(this.guna2Button3);
             this.guna2Panel1.Controls.Add(this.btnFilter_Product);
             this.guna2Panel1.Controls.Add(this.btnAdd_Product);
-            this.guna2Panel1.Controls.Add(this.cbBox_Search);
-            this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Silver;
@@ -70,10 +66,9 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1348, 48);
+            this.guna2Panel1.Size = new System.Drawing.Size(1011, 61);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2Button3
@@ -88,11 +83,10 @@
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageSize = new System.Drawing.Size(14, 14);
-            this.guna2Button3.Location = new System.Drawing.Point(959, 21);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button3.Location = new System.Drawing.Point(719, 17);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(48, 34);
+            this.guna2Button3.Size = new System.Drawing.Size(36, 28);
             this.guna2Button3.TabIndex = 6;
             // 
             // btnFilter_Product
@@ -109,11 +103,10 @@
             this.btnFilter_Product.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnFilter_Product.ImageOffset = new System.Drawing.Point(3, 0);
             this.btnFilter_Product.ImageSize = new System.Drawing.Size(12, 12);
-            this.btnFilter_Product.Location = new System.Drawing.Point(1015, 21);
-            this.btnFilter_Product.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFilter_Product.Location = new System.Drawing.Point(761, 17);
             this.btnFilter_Product.Name = "btnFilter_Product";
             this.btnFilter_Product.ShadowDecoration.Parent = this.btnFilter_Product;
-            this.btnFilter_Product.Size = new System.Drawing.Size(132, 34);
+            this.btnFilter_Product.Size = new System.Drawing.Size(99, 28);
             this.btnFilter_Product.TabIndex = 5;
             this.btnFilter_Product.Text = "Filter";
             // 
@@ -127,59 +120,19 @@
             this.btnAdd_Product.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.btnAdd_Product.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAdd_Product.HoverState.Parent = this.btnAdd_Product;
-            this.btnAdd_Product.Location = new System.Drawing.Point(1152, 10);
-            this.btnAdd_Product.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd_Product.Location = new System.Drawing.Point(866, 17);
             this.btnAdd_Product.Name = "btnAdd_Product";
             this.btnAdd_Product.ShadowDecoration.Parent = this.btnAdd_Product;
-            this.btnAdd_Product.Size = new System.Drawing.Size(132, 34);
+            this.btnAdd_Product.Size = new System.Drawing.Size(99, 28);
             this.btnAdd_Product.TabIndex = 4;
             this.btnAdd_Product.Text = "Thêm Sản Phẩm";
             this.btnAdd_Product.Click += new System.EventHandler(this.btnAdd_Product_Click);
-            // 
-            // cbBox_Search
-            // 
-            this.cbBox_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.cbBox_Search.BorderRadius = 5;
-            this.cbBox_Search.DisplayMember = "fgdg";
-            this.cbBox_Search.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbBox_Search.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbBox_Search.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.cbBox_Search.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbBox_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbBox_Search.FocusedState.Parent = this.cbBox_Search;
-            this.cbBox_Search.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.cbBox_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbBox_Search.HoverState.Parent = this.cbBox_Search;
-            this.cbBox_Search.ItemHeight = 30;
-            this.cbBox_Search.Items.AddRange(new object[] {
-            "Last appointment"});
-            this.cbBox_Search.ItemsAppearance.Parent = this.cbBox_Search;
-            this.cbBox_Search.Location = new System.Drawing.Point(510, 6);
-            this.cbBox_Search.Margin = new System.Windows.Forms.Padding(4);
-            this.cbBox_Search.Name = "cbBox_Search";
-            this.cbBox_Search.ShadowDecoration.Parent = this.cbBox_Search;
-            this.cbBox_Search.Size = new System.Drawing.Size(208, 36);
-            this.cbBox_Search.StartIndex = 0;
-            this.cbBox_Search.TabIndex = 3;
-            this.cbBox_Search.TextOffset = new System.Drawing.Point(2, 0);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F);
-            this.label3.Location = new System.Drawing.Point(422, 17);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tìm kiếm:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F);
-            this.label2.Location = new System.Drawing.Point(13, 17);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(10, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 21);
             this.label2.TabIndex = 1;
@@ -190,8 +143,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(172, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(129, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 42);
             this.label1.TabIndex = 0;
@@ -209,11 +161,10 @@
             this.btnUpdate_Product.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnUpdate_Product.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnUpdate_Product.HoverState.Parent = this.btnUpdate_Product;
-            this.btnUpdate_Product.Location = new System.Drawing.Point(1175, 796);
-            this.btnUpdate_Product.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate_Product.Location = new System.Drawing.Point(881, 647);
             this.btnUpdate_Product.Name = "btnUpdate_Product";
             this.btnUpdate_Product.ShadowDecoration.Parent = this.btnUpdate_Product;
-            this.btnUpdate_Product.Size = new System.Drawing.Size(112, 37);
+            this.btnUpdate_Product.Size = new System.Drawing.Size(84, 30);
             this.btnUpdate_Product.TabIndex = 1;
             this.btnUpdate_Product.Text = "Edit";
             this.btnUpdate_Product.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -231,11 +182,10 @@
             this.btnDelete_Product.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnDelete_Product.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnDelete_Product.HoverState.Parent = this.btnDelete_Product;
-            this.btnDelete_Product.Location = new System.Drawing.Point(1055, 796);
-            this.btnDelete_Product.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete_Product.Location = new System.Drawing.Point(776, 647);
             this.btnDelete_Product.Name = "btnDelete_Product";
             this.btnDelete_Product.ShadowDecoration.Parent = this.btnDelete_Product;
-            this.btnDelete_Product.Size = new System.Drawing.Size(112, 37);
+            this.btnDelete_Product.Size = new System.Drawing.Size(84, 30);
             this.btnDelete_Product.TabIndex = 2;
             this.btnDelete_Product.Text = "Delete";
             this.btnDelete_Product.Click += new System.EventHandler(this.btnDelete_Product_Click);
@@ -269,8 +219,7 @@
             this.dgvBook.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBook.EnableHeadersVisualStyles = false;
             this.dgvBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.dgvBook.Location = new System.Drawing.Point(16, 82);
-            this.dgvBook.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvBook.Location = new System.Drawing.Point(12, 67);
             this.dgvBook.Name = "dgvBook";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -286,7 +235,7 @@
             this.dgvBook.RowTemplate.Height = 40;
             this.dgvBook.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dgvBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBook.Size = new System.Drawing.Size(1316, 706);
+            this.dgvBook.Size = new System.Drawing.Size(987, 574);
             this.dgvBook.TabIndex = 3;
             this.dgvBook.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dgvBook.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -361,16 +310,15 @@
             // 
             // frmBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1348, 863);
+            this.ClientSize = new System.Drawing.Size(1011, 701);
             this.Controls.Add(this.dgvBook);
             this.Controls.Add(this.btnDelete_Product);
             this.Controls.Add(this.btnUpdate_Product);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBook";
             this.Text = "Sách";
             this.Load += new System.EventHandler(this.frmBook_Load);
@@ -387,8 +335,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button btnFilter_Product;
         private Guna.UI2.WinForms.Guna2Button btnAdd_Product;
-        private Guna.UI2.WinForms.Guna2ComboBox cbBox_Search;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnUpdate_Product;

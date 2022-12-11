@@ -26,6 +26,7 @@ namespace BookStore.Sys.Forms
 
         private void btn_Signup_Click(object sender, EventArgs e)
         {
+            ActiveForm.Hide();
             Login _load = new Login();
             _load.Show();
         }
