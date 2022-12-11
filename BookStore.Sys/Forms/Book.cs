@@ -68,7 +68,7 @@ namespace BookStore
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            BookUpdate _load = new BookUpdate();
+            BookAdd _load = new BookAdd();
             _load.Show();
         }
 
@@ -83,6 +83,5 @@ namespace BookStore
             ConfirmDelete _load = new ConfirmDelete();
             _load.Show();
         }
-
     }
 }

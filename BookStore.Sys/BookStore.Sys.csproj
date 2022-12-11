@@ -78,23 +78,11 @@
     <Compile Include="Forms\BookAdd.Designer.cs">
       <DependentUpon>BookAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CustomerUpdate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CustomerUpdate.Designer.cs">
-      <DependentUpon>CustomerUpdate.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\ConfirmDelete.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ConfirmDelete.Designer.cs">
       <DependentUpon>ConfirmDelete.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\BookUpdate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BookUpdate.Designer.cs">
-      <DependentUpon>BookUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Customer.cs">
       <SubType>Form</SubType>
@@ -119,12 +107,6 @@
     </Compile>
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Messages.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Messages.Designer.cs">
-      <DependentUpon>Messages.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Book.cs">
       <SubType>Form</SubType>
@@ -158,14 +140,8 @@
     <EmbeddedResource Include="Forms\BookAdd.resx">
       <DependentUpon>BookAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CustomerUpdate.resx">
-      <DependentUpon>CustomerUpdate.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConfirmDelete.resx">
       <DependentUpon>ConfirmDelete.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BookUpdate.resx">
-      <DependentUpon>BookUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
@@ -178,9 +154,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Messages.resx">
-      <DependentUpon>Messages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Book.resx">
       <DependentUpon>Book.cs</DependentUpon>

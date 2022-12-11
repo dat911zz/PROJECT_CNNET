@@ -325,9 +325,9 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label7.Location = new System.Drawing.Point(270, 485);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 19);
+            this.label7.Size = new System.Drawing.Size(101, 19);
             this.label7.TabIndex = 17;
-            this.label7.Text = "+84 123456789";
+            this.label7.Text = "+84 795693948";
             // 
             // guna2PictureBox4
             // 

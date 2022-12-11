@@ -68,7 +68,7 @@
             this.btn_Cancel.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btn_Cancel.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.btn_Cancel.HoverState.Parent = this.btn_Cancel;
-            this.btn_Cancel.Location = new System.Drawing.Point(61, 297);
+            this.btn_Cancel.Location = new System.Drawing.Point(211, 301);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.ShadowDecoration.Parent = this.btn_Cancel;
             this.btn_Cancel.Size = new System.Drawing.Size(106, 33);
@@ -111,7 +111,7 @@
             this.btn_Accept.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btn_Accept.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(48)))), ((int)(((byte)(100)))));
             this.btn_Accept.HoverState.Parent = this.btn_Accept;
-            this.btn_Accept.Location = new System.Drawing.Point(236, 297);
+            this.btn_Accept.Location = new System.Drawing.Point(74, 301);
             this.btn_Accept.Name = "btn_Accept";
             this.btn_Accept.ShadowDecoration.Parent = this.btn_Accept;
             this.btn_Accept.Size = new System.Drawing.Size(106, 33);
@@ -181,7 +181,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(123, 249);
+            this.label8.Location = new System.Drawing.Point(95, 249);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(206, 40);
             this.label8.TabIndex = 19;
