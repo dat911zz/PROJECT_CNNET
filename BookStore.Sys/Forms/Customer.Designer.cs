@@ -34,23 +34,23 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPrint_Customer = new Guna.UI2.WinForms.Guna2Button();
             this.btnFilter_Customer = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd_Customer = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvCus = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete_Product = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdate_Product = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDelete_Customer = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSave_Customer = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEdit_Customer = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_AddCustomer = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClose_Customer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCus)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2Button3);
+            this.guna2Panel1.Controls.Add(this.btnPrint_Customer);
             this.guna2Panel1.Controls.Add(this.btnFilter_Customer);
             this.guna2Panel1.Controls.Add(this.btnAdd_Customer);
             this.guna2Panel1.Controls.Add(this.label2);
@@ -59,28 +59,30 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1011, 61);
+            this.guna2Panel1.Size = new System.Drawing.Size(1348, 75);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // guna2Button3
+            // btnPrint_Customer
             // 
-            this.guna2Button3.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button3.BorderThickness = 1;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageSize = new System.Drawing.Size(14, 14);
-            this.guna2Button3.Location = new System.Drawing.Point(719, 17);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(36, 28);
-            this.guna2Button3.TabIndex = 6;
+            this.btnPrint_Customer.BorderColor = System.Drawing.Color.Gray;
+            this.btnPrint_Customer.BorderThickness = 1;
+            this.btnPrint_Customer.CheckedState.Parent = this.btnPrint_Customer;
+            this.btnPrint_Customer.CustomImages.Parent = this.btnPrint_Customer;
+            this.btnPrint_Customer.FillColor = System.Drawing.Color.Transparent;
+            this.btnPrint_Customer.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.btnPrint_Customer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnPrint_Customer.HoverState.Parent = this.btnPrint_Customer;
+            this.btnPrint_Customer.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint_Customer.Image")));
+            this.btnPrint_Customer.ImageSize = new System.Drawing.Size(14, 14);
+            this.btnPrint_Customer.Location = new System.Drawing.Point(959, 21);
+            this.btnPrint_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrint_Customer.Name = "btnPrint_Customer";
+            this.btnPrint_Customer.ShadowDecoration.Parent = this.btnPrint_Customer;
+            this.btnPrint_Customer.Size = new System.Drawing.Size(48, 34);
+            this.btnPrint_Customer.TabIndex = 6;
             // 
             // btnFilter_Customer
             // 
@@ -96,10 +98,11 @@
             this.btnFilter_Customer.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnFilter_Customer.ImageOffset = new System.Drawing.Point(3, 0);
             this.btnFilter_Customer.ImageSize = new System.Drawing.Size(12, 12);
-            this.btnFilter_Customer.Location = new System.Drawing.Point(761, 17);
+            this.btnFilter_Customer.Location = new System.Drawing.Point(1015, 21);
+            this.btnFilter_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFilter_Customer.Name = "btnFilter_Customer";
             this.btnFilter_Customer.ShadowDecoration.Parent = this.btnFilter_Customer;
-            this.btnFilter_Customer.Size = new System.Drawing.Size(99, 28);
+            this.btnFilter_Customer.Size = new System.Drawing.Size(132, 34);
             this.btnFilter_Customer.TabIndex = 5;
             this.btnFilter_Customer.Text = "Filter";
             // 
@@ -113,10 +116,11 @@
             this.btnAdd_Customer.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.btnAdd_Customer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAdd_Customer.HoverState.Parent = this.btnAdd_Customer;
-            this.btnAdd_Customer.Location = new System.Drawing.Point(866, 17);
+            this.btnAdd_Customer.Location = new System.Drawing.Point(1155, 21);
+            this.btnAdd_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd_Customer.Name = "btnAdd_Customer";
             this.btnAdd_Customer.ShadowDecoration.Parent = this.btnAdd_Customer;
-            this.btnAdd_Customer.Size = new System.Drawing.Size(99, 28);
+            this.btnAdd_Customer.Size = new System.Drawing.Size(132, 34);
             this.btnAdd_Customer.TabIndex = 4;
             this.btnAdd_Customer.Text = "Thêm Khách Hàng";
             this.btnAdd_Customer.Click += new System.EventHandler(this.btnAdd_Customer_Click);
@@ -125,7 +129,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F);
-            this.label2.Location = new System.Drawing.Point(12, 23);
+            this.label2.Location = new System.Drawing.Point(16, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 21);
             this.label2.TabIndex = 1;
@@ -160,7 +165,8 @@
             this.dgvCus.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCus.EnableHeadersVisualStyles = false;
             this.dgvCus.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.dgvCus.Location = new System.Drawing.Point(12, 81);
+            this.dgvCus.Location = new System.Drawing.Point(16, 100);
+            this.dgvCus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvCus.Name = "dgvCus";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -176,7 +182,7 @@
             this.dgvCus.RowTemplate.Height = 40;
             this.dgvCus.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dgvCus.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCus.Size = new System.Drawing.Size(987, 541);
+            this.dgvCus.Size = new System.Drawing.Size(1316, 666);
             this.dgvCus.TabIndex = 3;
             this.dgvCus.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dgvCus.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -202,124 +208,130 @@
             this.dgvCus.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvCus.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCus_CellContentClick);
             // 
-            // guna2Button4
+            // btnDelete_Customer
             // 
-            this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button4.BorderRadius = 5;
-            this.guna2Button4.BorderThickness = 1;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(547, 602);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(84, 30);
-            this.guna2Button4.TabIndex = 58;
-            this.guna2Button4.Text = "Xóa";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.btnDelete_Customer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnDelete_Customer.BorderRadius = 5;
+            this.btnDelete_Customer.BorderThickness = 1;
+            this.btnDelete_Customer.CheckedState.Parent = this.btnDelete_Customer;
+            this.btnDelete_Customer.CustomImages.Parent = this.btnDelete_Customer;
+            this.btnDelete_Customer.FillColor = System.Drawing.Color.Transparent;
+            this.btnDelete_Customer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDelete_Customer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnDelete_Customer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnDelete_Customer.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDelete_Customer.HoverState.Parent = this.btnDelete_Customer;
+            this.btnDelete_Customer.Location = new System.Drawing.Point(729, 741);
+            this.btnDelete_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete_Customer.Name = "btnDelete_Customer";
+            this.btnDelete_Customer.ShadowDecoration.Parent = this.btnDelete_Customer;
+            this.btnDelete_Customer.Size = new System.Drawing.Size(112, 37);
+            this.btnDelete_Customer.TabIndex = 58;
+            this.btnDelete_Customer.Text = "Xóa";
+            this.btnDelete_Customer.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2Button1
+            // btnSave_Customer
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(727, 602);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(84, 30);
-            this.guna2Button1.TabIndex = 57;
-            this.guna2Button1.Text = "Lưu";
+            this.btnSave_Customer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSave_Customer.BorderRadius = 5;
+            this.btnSave_Customer.BorderThickness = 1;
+            this.btnSave_Customer.CheckedState.Parent = this.btnSave_Customer;
+            this.btnSave_Customer.CustomImages.Parent = this.btnSave_Customer;
+            this.btnSave_Customer.FillColor = System.Drawing.Color.Transparent;
+            this.btnSave_Customer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSave_Customer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSave_Customer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSave_Customer.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSave_Customer.HoverState.Parent = this.btnSave_Customer;
+            this.btnSave_Customer.Location = new System.Drawing.Point(969, 741);
+            this.btnSave_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave_Customer.Name = "btnSave_Customer";
+            this.btnSave_Customer.ShadowDecoration.Parent = this.btnSave_Customer;
+            this.btnSave_Customer.Size = new System.Drawing.Size(112, 37);
+            this.btnSave_Customer.TabIndex = 57;
+            this.btnSave_Customer.Text = "Lưu";
             // 
-            // guna2Button2
+            // btnEdit_Customer
             // 
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button2.BorderRadius = 5;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(637, 602);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(84, 30);
-            this.guna2Button2.TabIndex = 56;
-            this.guna2Button2.Text = "Chỉnh Sửa";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnEdit_Customer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnEdit_Customer.BorderRadius = 5;
+            this.btnEdit_Customer.BorderThickness = 1;
+            this.btnEdit_Customer.CheckedState.Parent = this.btnEdit_Customer;
+            this.btnEdit_Customer.CustomImages.Parent = this.btnEdit_Customer;
+            this.btnEdit_Customer.FillColor = System.Drawing.Color.Transparent;
+            this.btnEdit_Customer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEdit_Customer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnEdit_Customer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnEdit_Customer.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnEdit_Customer.HoverState.Parent = this.btnEdit_Customer;
+            this.btnEdit_Customer.Location = new System.Drawing.Point(849, 741);
+            this.btnEdit_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit_Customer.Name = "btnEdit_Customer";
+            this.btnEdit_Customer.ShadowDecoration.Parent = this.btnEdit_Customer;
+            this.btnEdit_Customer.Size = new System.Drawing.Size(112, 37);
+            this.btnEdit_Customer.TabIndex = 56;
+            this.btnEdit_Customer.Text = "Chỉnh Sửa";
+            this.btnEdit_Customer.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // btnDelete_Product
+            // btn_AddCustomer
             // 
-            this.btnDelete_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnDelete_Product.BorderRadius = 5;
-            this.btnDelete_Product.BorderThickness = 1;
-            this.btnDelete_Product.CheckedState.Parent = this.btnDelete_Product;
-            this.btnDelete_Product.CustomImages.Parent = this.btnDelete_Product;
-            this.btnDelete_Product.FillColor = System.Drawing.Color.Transparent;
-            this.btnDelete_Product.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDelete_Product.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnDelete_Product.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnDelete_Product.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnDelete_Product.HoverState.Parent = this.btnDelete_Product;
-            this.btnDelete_Product.Location = new System.Drawing.Point(457, 602);
-            this.btnDelete_Product.Name = "btnDelete_Product";
-            this.btnDelete_Product.ShadowDecoration.Parent = this.btnDelete_Product;
-            this.btnDelete_Product.Size = new System.Drawing.Size(84, 30);
-            this.btnDelete_Product.TabIndex = 55;
-            this.btnDelete_Product.Text = "Thêm";
-            this.btnDelete_Product.Click += new System.EventHandler(this.btnDelete_Product_Click);
+            this.btn_AddCustomer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_AddCustomer.BorderRadius = 5;
+            this.btn_AddCustomer.BorderThickness = 1;
+            this.btn_AddCustomer.CheckedState.Parent = this.btn_AddCustomer;
+            this.btn_AddCustomer.CustomImages.Parent = this.btn_AddCustomer;
+            this.btn_AddCustomer.FillColor = System.Drawing.Color.Transparent;
+            this.btn_AddCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_AddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_AddCustomer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_AddCustomer.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_AddCustomer.HoverState.Parent = this.btn_AddCustomer;
+            this.btn_AddCustomer.Location = new System.Drawing.Point(609, 741);
+            this.btn_AddCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_AddCustomer.Name = "btn_AddCustomer";
+            this.btn_AddCustomer.ShadowDecoration.Parent = this.btn_AddCustomer;
+            this.btn_AddCustomer.Size = new System.Drawing.Size(112, 37);
+            this.btn_AddCustomer.TabIndex = 55;
+            this.btn_AddCustomer.Text = "Thêm";
+            this.btn_AddCustomer.Click += new System.EventHandler(this.btnDelete_Product_Click);
             // 
-            // btnUpdate_Product
+            // btnClose_Customer
             // 
-            this.btnUpdate_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnUpdate_Product.BorderRadius = 5;
-            this.btnUpdate_Product.BorderThickness = 1;
-            this.btnUpdate_Product.CheckedState.Parent = this.btnUpdate_Product;
-            this.btnUpdate_Product.CustomImages.Parent = this.btnUpdate_Product;
-            this.btnUpdate_Product.FillColor = System.Drawing.Color.Transparent;
-            this.btnUpdate_Product.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUpdate_Product.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnUpdate_Product.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnUpdate_Product.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate_Product.HoverState.Parent = this.btnUpdate_Product;
-            this.btnUpdate_Product.Location = new System.Drawing.Point(817, 602);
-            this.btnUpdate_Product.Name = "btnUpdate_Product";
-            this.btnUpdate_Product.ShadowDecoration.Parent = this.btnUpdate_Product;
-            this.btnUpdate_Product.Size = new System.Drawing.Size(84, 30);
-            this.btnUpdate_Product.TabIndex = 54;
-            this.btnUpdate_Product.Text = "Thoát";
-            this.btnUpdate_Product.Click += new System.EventHandler(this.btnUpdate_Product_Click);
+            this.btnClose_Customer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnClose_Customer.BorderRadius = 5;
+            this.btnClose_Customer.BorderThickness = 1;
+            this.btnClose_Customer.CheckedState.Parent = this.btnClose_Customer;
+            this.btnClose_Customer.CustomImages.Parent = this.btnClose_Customer;
+            this.btnClose_Customer.FillColor = System.Drawing.Color.Transparent;
+            this.btnClose_Customer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose_Customer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnClose_Customer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnClose_Customer.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnClose_Customer.HoverState.Parent = this.btnClose_Customer;
+            this.btnClose_Customer.Location = new System.Drawing.Point(1089, 741);
+            this.btnClose_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose_Customer.Name = "btnClose_Customer";
+            this.btnClose_Customer.ShadowDecoration.Parent = this.btnClose_Customer;
+            this.btnClose_Customer.Size = new System.Drawing.Size(112, 37);
+            this.btnClose_Customer.TabIndex = 54;
+            this.btnClose_Customer.Text = "Thoát";
+            this.btnClose_Customer.Click += new System.EventHandler(this.btnUpdate_Product_Click);
             // 
             // frmCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1011, 701);
-            this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.btnDelete_Product);
-            this.Controls.Add(this.btnUpdate_Product);
+            this.ClientSize = new System.Drawing.Size(1348, 863);
+            this.Controls.Add(this.btnDelete_Customer);
+            this.Controls.Add(this.btnSave_Customer);
+            this.Controls.Add(this.btnEdit_Customer);
+            this.Controls.Add(this.btn_AddCustomer);
+            this.Controls.Add(this.btnClose_Customer);
             this.Controls.Add(this.dgvCus);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCustomer";
             this.Text = "Khách Hàng";
             this.Load += new System.EventHandler(this.frmCustomer_Load);
@@ -333,15 +345,15 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnPrint_Customer;
         private Guna.UI2.WinForms.Guna2Button btnFilter_Customer;
         private Guna.UI2.WinForms.Guna2Button btnAdd_Customer;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2DataGridView dgvCus;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button btnDelete_Product;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate_Product;
+        private Guna.UI2.WinForms.Guna2Button btnDelete_Customer;
+        private Guna.UI2.WinForms.Guna2Button btnSave_Customer;
+        private Guna.UI2.WinForms.Guna2Button btnEdit_Customer;
+        private Guna.UI2.WinForms.Guna2Button btn_AddCustomer;
+        private Guna.UI2.WinForms.Guna2Button btnClose_Customer;
     }
 }
