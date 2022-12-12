@@ -43,8 +43,7 @@ namespace BookStore
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            BookUpdate _load = new BookUpdate();
-            _load.Show();
+            Form.ActiveForm.Hide();
         }
 
         private void btnAdd_Product_Click(object sender, EventArgs e)
@@ -55,8 +54,7 @@ namespace BookStore
 
         private void btnDelete_Product_Click(object sender, EventArgs e)
         {
-            ConfirmDelete _load = new ConfirmDelete();
-            _load.Show();
+
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -80,6 +78,22 @@ namespace BookStore
         }
 
         private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click_1(object sender, EventArgs e)
+        {
+            ConfirmDelete _load = new ConfirmDelete();
+            _load.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
 
         }

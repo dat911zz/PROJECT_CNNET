@@ -14,6 +14,8 @@ namespace BookStore
 {
     public partial class CustomerAdd : Form
     {
+        int movX, movY;
+        bool isMoving;
         public CustomerAdd()
         {
             InitializeComponent();
@@ -63,8 +65,7 @@ namespace BookStore
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            BookUpdate _load = new BookUpdate();
-            _load.Show();
+            Form.ActiveForm.Hide();
         }
 
         private void btnAdd_Product_Click(object sender, EventArgs e)
@@ -102,6 +103,42 @@ namespace BookStore
         private void label15_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CustomerAdd_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMoving)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void CustomerAdd_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMoving = false;
+        }
+
+        private void CustomerAdd_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMoving = true;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void CustomerAdd_MouseHover(object sender, EventArgs e)
+        {
+            isMoving = true;
+        }
+
+        private void guna2Button4_Click_2(object sender, EventArgs e)
+        {
+            ConfirmDelete _load = new ConfirmDelete();
+            _load.Show();
         }
     }
 }

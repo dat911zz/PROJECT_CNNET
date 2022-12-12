@@ -62,7 +62,6 @@ namespace BookStore.Sys.Forms
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             label_val.Text = "Thanh Toán";
-            container(new Messages());
         }
         private void guna2Panel_top_Paint(object sender, PaintEventArgs e)
         {
