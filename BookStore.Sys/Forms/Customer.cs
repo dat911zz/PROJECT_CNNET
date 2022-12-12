@@ -1,4 +1,5 @@
 ﻿using BookStore.Sys.Forms;
+using Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,11 @@ namespace BookStore
 
         private void frmCustomer_Load(object sender, EventArgs e)
         {
+            if (!Service.Instance.IsConnectedToInternet())
+            {
+                MessageBox.Show("Đã mất kết nối đến máy chủ, vui lòng kiểm tra đường truyền!", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
             db.FillData(ds_Cus, "Select * from Customer", "Customer");
             dgvCus.DataSource = ds_Cus.Tables["Customer"];

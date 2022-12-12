@@ -874,7 +874,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BuyProduct";
             this.Text = "Patient";
-            this.Load += new System.EventHandler(this.Patient_Load);
+            this.Load += new System.EventHandler(this.Order_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
