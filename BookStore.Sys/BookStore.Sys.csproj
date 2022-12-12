@@ -211,7 +211,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="SQL_DB\BooKStore.bacpac" />
+    <None Include="SQL\BooKStore.bacpac" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -255,6 +255,7 @@
     <Content Include="Resources\book-design-sketch-name.png" />
     <Content Include="Resources\chat %281%29.png" />
     <Content Include="Resources\dashboard %2812%29.png" />
+    <Content Include="SQL\BookStoreQuery.sql" />
     <None Include="Resources\Ecommerce-Shopping-Bag-icon.png" />
     <Content Include="Resources\istockphoto-1349688040-612x612.jpg" />
     <Content Include="Resources\istockphoto-1349688040-612x6121.jpg" />
@@ -268,6 +269,9 @@
       <Project>{73ef3248-904c-472b-82f5-9a56bd4d4b01}</Project>
       <Name>Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

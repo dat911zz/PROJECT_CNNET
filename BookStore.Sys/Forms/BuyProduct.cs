@@ -14,46 +14,20 @@ namespace BookStore
 {
     public partial class BuyProduct : Form
     {
+        Core.DBHelper db;
+        DataSet ds_Order;
+        DataColumn[] key = new DataColumn[1];
         public BuyProduct()
         {
+            db = new Core.DBHelper();
+            ds_Order = new DataSet();
             InitializeComponent();
         }
 
         private void Patient_Load(object sender, EventArgs e)
         {
             string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
-            guna2DataGridView1.Rows.Add(9);
-            guna2DataGridView1.Rows[0].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\1.png");
-            guna2DataGridView1.Rows[0].Cells[2].Value = "Dian Cooper";
-            guna2DataGridView1.Rows[0].Cells[3].Value = "(239)555-2020";
-            guna2DataGridView1.Rows[0].Cells[4].Value = "Cilacap";
-            guna2DataGridView1.Rows[0].Cells[5].Value = "Jan 21,2020 -13:30";
-            guna2DataGridView1.Rows[0].Cells[6].Value = "Jan 21,2020";
-            guna2DataGridView1.Rows[0].Cells[7].Value = "Jan 21,2020";
-
-            guna2DataGridView1.Rows[1].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\5.png");
-            guna2DataGridView1.Rows[1].Cells[2].Value = "Dian Cooper";
-            guna2DataGridView1.Rows[1].Cells[3].Value = "(239)555-2020";
-            guna2DataGridView1.Rows[1].Cells[4].Value = "Cilacap";
-            guna2DataGridView1.Rows[1].Cells[5].Value = "Jan 21,2020 -13:30";
-            guna2DataGridView1.Rows[1].Cells[6].Value = "Jan 21,2020";
-            guna2DataGridView1.Rows[1].Cells[7].Value = "Jan 21,2020";
-
-            guna2DataGridView1.Rows[2].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\5.png");
-            guna2DataGridView1.Rows[2].Cells[2].Value = "Dian Cooper";
-            guna2DataGridView1.Rows[2].Cells[3].Value = "(239)555-2020";
-            guna2DataGridView1.Rows[2].Cells[4].Value = "Cilacap";
-            guna2DataGridView1.Rows[2].Cells[5].Value = "Jan 21,2020 -13:30";
-            guna2DataGridView1.Rows[2].Cells[6].Value = "Jan 21,2020";
-            guna2DataGridView1.Rows[2].Cells[7].Value = "Jan 21,2020";
-
-            guna2DataGridView1.Rows[3].Cells[1].Value = Image.FromFile(rootPath + @"\Contents\Images\5.png");
-            guna2DataGridView1.Rows[3].Cells[2].Value = "Dian Cooper";
-            guna2DataGridView1.Rows[3].Cells[3].Value = "(239)555-2020";
-            guna2DataGridView1.Rows[3].Cells[4].Value = "Cilacap";
-            guna2DataGridView1.Rows[3].Cells[5].Value = "Jan 21,2020 -13:30";
-            guna2DataGridView1.Rows[3].Cells[6].Value = "Jan 21,2020";
-            guna2DataGridView1.Rows[3].Cells[7].Value = "Jan 21,2020";
+           
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

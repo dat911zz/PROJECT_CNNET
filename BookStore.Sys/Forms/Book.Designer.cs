@@ -216,7 +216,7 @@
             this.btnUpdate_Product.Size = new System.Drawing.Size(112, 37);
             this.btnUpdate_Product.TabIndex = 1;
             this.btnUpdate_Product.Text = "Edit";
-            this.btnUpdate_Product.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.btnUpdate_Product.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete_Product
             // 

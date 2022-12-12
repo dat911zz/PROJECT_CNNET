@@ -191,6 +191,15 @@ namespace Core
             }
 
         }
+        public void SetPrimaryKey(ref DataTable dt, params object[] mapKeys)
+        {
+            DataColumn[] keys = new DataColumn[mapKeys.Length];
+            for (int i = 0; i < mapKeys.Length; i++)
+            {
+                keys[i] = dt.Columns[mapKeys[i].ToString()];
+            }
+            dt.PrimaryKey = keys;
+        }
         #endregion
     }
 }

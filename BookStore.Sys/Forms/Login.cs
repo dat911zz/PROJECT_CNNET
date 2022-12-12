@@ -28,6 +28,12 @@ namespace BookStore.Sys.Forms
 
         private void btn_Signin_Click(object sender, EventArgs e)
         {
+            if (!Service.Instance.IsConnectedToInternet())
+            {
+                MessageBox.Show("Đã mất kết nối đến máy chủ, vui lòng kiểm tra đường truyền!", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
             try
             {
                 if (!string.IsNullOrEmpty(txtBox_User.Text) && !string.IsNullOrEmpty(txtBox_Password.Text))
@@ -40,17 +46,17 @@ namespace BookStore.Sys.Forms
                     }
                     else
                     {
-                        MessageBox.Show("Tài khoản đã nhập không hợp lệ!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        MessageBox.Show("Tài khoản đã nhập không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Đã xảy ra lỗi, vui lòng kiểm tra lại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("Đã xảy ra lỗi, vui lòng kiểm tra lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
 
 
