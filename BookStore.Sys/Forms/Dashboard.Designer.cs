@@ -774,7 +774,7 @@
             this.guna2Panel8.Controls.Add(this.btn_BookSolvedTime);
             this.guna2Panel8.Controls.Add(this.label17);
             this.guna2Panel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.guna2Panel8.Location = new System.Drawing.Point(586, 782);
+            this.guna2Panel8.Location = new System.Drawing.Point(586, 762);
             this.guna2Panel8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
@@ -818,7 +818,7 @@
             this.guna2Panel9.Controls.Add(this.btn_MoneySolvedTime);
             this.guna2Panel9.Controls.Add(this.label18);
             this.guna2Panel9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.guna2Panel9.Location = new System.Drawing.Point(1061, 782);
+            this.guna2Panel9.Location = new System.Drawing.Point(1061, 762);
             this.guna2Panel9.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
@@ -843,6 +843,7 @@
             this.btn_MoneySolvedTime.ShadowDecoration.Parent = this.btn_MoneySolvedTime;
             this.btn_MoneySolvedTime.Size = new System.Drawing.Size(27, 25);
             this.btn_MoneySolvedTime.TabIndex = 13;
+            this.btn_MoneySolvedTime.Click += new System.EventHandler(this.btn_MoneySolvedTime_Click);
             // 
             // label18
             // 
