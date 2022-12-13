@@ -16,5 +16,11 @@ namespace BookStore.Sys.Forms
         {
             InitializeComponent();
         }
+
+        private void btn_MoneySolvedTime_Click(object sender, EventArgs e)
+        {
+            RpDoanhThuTuan rpweek = new RpDoanhThuTuan();
+            rpweek.Show();
+        }
     }
 }

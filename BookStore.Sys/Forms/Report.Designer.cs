@@ -104,7 +104,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1348, 79);
@@ -124,7 +124,7 @@
             this.btn_PrintReport.Image = ((System.Drawing.Image)(resources.GetObject("btn_PrintReport.Image")));
             this.btn_PrintReport.ImageSize = new System.Drawing.Size(14, 14);
             this.btn_PrintReport.Location = new System.Drawing.Point(1167, 12);
-            this.btn_PrintReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_PrintReport.Margin = new System.Windows.Forms.Padding(4);
             this.btn_PrintReport.Name = "btn_PrintReport";
             this.btn_PrintReport.ShadowDecoration.Parent = this.btn_PrintReport;
             this.btn_PrintReport.Size = new System.Drawing.Size(68, 54);
@@ -156,7 +156,7 @@
             this.btnDelete_Product.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnDelete_Product.HoverState.Parent = this.btnDelete_Product;
             this.btnDelete_Product.Location = new System.Drawing.Point(1097, 738);
-            this.btnDelete_Product.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete_Product.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete_Product.Name = "btnDelete_Product";
             this.btnDelete_Product.ShadowDecoration.Parent = this.btnDelete_Product;
             this.btnDelete_Product.Size = new System.Drawing.Size(112, 37);
@@ -172,7 +172,7 @@
             this.guna2Panel5.Controls.Add(this.label24);
             this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel5.Location = new System.Drawing.Point(197, 124);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(336, 62);
@@ -288,7 +288,7 @@
             this.guna2Panel4.Controls.Add(this.label19);
             this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel4.Location = new System.Drawing.Point(197, 50);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(336, 62);
@@ -335,7 +335,7 @@
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F);
             this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.Gray;
             this.guna2HtmlLabel11.Location = new System.Drawing.Point(988, 144);
-            this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel11.TabIndex = 98;
@@ -362,7 +362,7 @@
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 114);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1348, 274);
@@ -376,7 +376,7 @@
             this.guna2Panel8.Controls.Add(this.label6);
             this.guna2Panel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel8.Location = new System.Drawing.Point(263, 206);
-            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
             this.guna2Panel8.Size = new System.Drawing.Size(228, 39);
@@ -394,7 +394,7 @@
             this.btn_BookMost.ImageOffset = new System.Drawing.Point(1, 0);
             this.btn_BookMost.ImageSize = new System.Drawing.Size(10, 10);
             this.btn_BookMost.Location = new System.Drawing.Point(197, 7);
-            this.btn_BookMost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BookMost.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BookMost.Name = "btn_BookMost";
             this.btn_BookMost.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_BookMost.ShadowDecoration.Parent = this.btn_BookMost;
@@ -421,7 +421,7 @@
             this.guna2Panel16.Controls.Add(this.label13);
             this.guna2Panel16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel16.Location = new System.Drawing.Point(987, 62);
-            this.guna2Panel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel16.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel16.Name = "guna2Panel16";
             this.guna2Panel16.ShadowDecoration.Parent = this.guna2Panel16;
             this.guna2Panel16.Size = new System.Drawing.Size(225, 39);
@@ -439,12 +439,13 @@
             this.btn_MoneyOfWeek.ImageOffset = new System.Drawing.Point(1, 0);
             this.btn_MoneyOfWeek.ImageSize = new System.Drawing.Size(10, 10);
             this.btn_MoneyOfWeek.Location = new System.Drawing.Point(192, 7);
-            this.btn_MoneyOfWeek.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_MoneyOfWeek.Margin = new System.Windows.Forms.Padding(4);
             this.btn_MoneyOfWeek.Name = "btn_MoneyOfWeek";
             this.btn_MoneyOfWeek.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_MoneyOfWeek.ShadowDecoration.Parent = this.btn_MoneyOfWeek;
             this.btn_MoneyOfWeek.Size = new System.Drawing.Size(27, 25);
             this.btn_MoneyOfWeek.TabIndex = 13;
+            this.btn_MoneyOfWeek.Click += new System.EventHandler(this.btn_MoneyOfWeek_Click);
             // 
             // label13
             // 
@@ -465,7 +466,7 @@
             this.guna2Panel15.Controls.Add(this.label12);
             this.guna2Panel15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel15.Location = new System.Drawing.Point(613, 62);
-            this.guna2Panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel15.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel15.Name = "guna2Panel15";
             this.guna2Panel15.ShadowDecoration.Parent = this.guna2Panel15;
             this.guna2Panel15.Size = new System.Drawing.Size(225, 39);
@@ -483,7 +484,7 @@
             this.btn_BookOfWeek.ImageOffset = new System.Drawing.Point(1, 0);
             this.btn_BookOfWeek.ImageSize = new System.Drawing.Size(10, 10);
             this.btn_BookOfWeek.Location = new System.Drawing.Point(195, 7);
-            this.btn_BookOfWeek.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BookOfWeek.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BookOfWeek.Name = "btn_BookOfWeek";
             this.btn_BookOfWeek.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_BookOfWeek.ShadowDecoration.Parent = this.btn_BookOfWeek;
@@ -509,7 +510,7 @@
             this.guna2Panel7.Controls.Add(this.label1);
             this.guna2Panel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel7.Location = new System.Drawing.Point(985, 180);
-            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
             this.guna2Panel7.Size = new System.Drawing.Size(225, 39);
@@ -527,7 +528,7 @@
             this.btn_MoneyOfMonth.ImageOffset = new System.Drawing.Point(1, 0);
             this.btn_MoneyOfMonth.ImageSize = new System.Drawing.Size(10, 10);
             this.btn_MoneyOfMonth.Location = new System.Drawing.Point(193, 7);
-            this.btn_MoneyOfMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_MoneyOfMonth.Margin = new System.Windows.Forms.Padding(4);
             this.btn_MoneyOfMonth.Name = "btn_MoneyOfMonth";
             this.btn_MoneyOfMonth.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_MoneyOfMonth.ShadowDecoration.Parent = this.btn_MoneyOfMonth;
@@ -553,7 +554,7 @@
             this.guna2Panel3.Controls.Add(this.label28);
             this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel3.Location = new System.Drawing.Point(613, 180);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(225, 39);
@@ -571,7 +572,7 @@
             this.btn_BookOfMonth.ImageOffset = new System.Drawing.Point(1, 0);
             this.btn_BookOfMonth.ImageSize = new System.Drawing.Size(10, 10);
             this.btn_BookOfMonth.Location = new System.Drawing.Point(195, 11);
-            this.btn_BookOfMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BookOfMonth.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BookOfMonth.Name = "btn_BookOfMonth";
             this.btn_BookOfMonth.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_BookOfMonth.ShadowDecoration.Parent = this.btn_BookOfMonth;
@@ -614,7 +615,7 @@
             this.guna2Panel6.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2Panel6.Location = new System.Drawing.Point(0, 431);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             this.guna2Panel6.Size = new System.Drawing.Size(1348, 274);
@@ -628,7 +629,7 @@
             this.guna2Panel13.Controls.Add(this.label29);
             this.guna2Panel13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel13.Location = new System.Drawing.Point(953, 63);
-            this.guna2Panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel13.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel13.Name = "guna2Panel13";
             this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
             this.guna2Panel13.Size = new System.Drawing.Size(221, 39);
@@ -646,7 +647,7 @@
             this.btn_EmployeeShop.ImageOffset = new System.Drawing.Point(1, 0);
             this.btn_EmployeeShop.ImageSize = new System.Drawing.Size(10, 10);
             this.btn_EmployeeShop.Location = new System.Drawing.Point(191, 7);
-            this.btn_EmployeeShop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_EmployeeShop.Margin = new System.Windows.Forms.Padding(4);
             this.btn_EmployeeShop.Name = "btn_EmployeeShop";
             this.btn_EmployeeShop.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_EmployeeShop.ShadowDecoration.Parent = this.btn_EmployeeShop;
@@ -694,7 +695,7 @@
             this.guna2Panel9.Controls.Add(this.label16);
             this.guna2Panel9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel9.Location = new System.Drawing.Point(197, 66);
-            this.guna2Panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel9.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
             this.guna2Panel9.Size = new System.Drawing.Size(224, 39);
@@ -712,7 +713,7 @@
             this.btn_BookInShop.ImageOffset = new System.Drawing.Point(1, 0);
             this.btn_BookInShop.ImageSize = new System.Drawing.Size(10, 10);
             this.btn_BookInShop.Location = new System.Drawing.Point(193, 7);
-            this.btn_BookInShop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BookInShop.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BookInShop.Name = "btn_BookInShop";
             this.btn_BookInShop.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_BookInShop.ShadowDecoration.Parent = this.btn_BookInShop;
@@ -738,7 +739,7 @@
             this.guna2Panel11.Controls.Add(this.label18);
             this.guna2Panel11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.guna2Panel11.Location = new System.Drawing.Point(506, 67);
-            this.guna2Panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel11.Name = "guna2Panel11";
             this.guna2Panel11.ShadowDecoration.Parent = this.guna2Panel11;
             this.guna2Panel11.Size = new System.Drawing.Size(221, 39);
@@ -756,7 +757,7 @@
             this.btn_CustomerInShop.ImageOffset = new System.Drawing.Point(1, 0);
             this.btn_CustomerInShop.ImageSize = new System.Drawing.Size(10, 10);
             this.btn_CustomerInShop.Location = new System.Drawing.Point(191, 7);
-            this.btn_CustomerInShop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CustomerInShop.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CustomerInShop.Name = "btn_CustomerInShop";
             this.btn_CustomerInShop.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_CustomerInShop.ShadowDecoration.Parent = this.btn_CustomerInShop;
@@ -819,7 +820,7 @@
             this.Controls.Add(this.btnDelete_Product);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Report";
             this.Text = "Patient";
             this.Load += new System.EventHandler(this.Patient_Load);
