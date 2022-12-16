@@ -15,7 +15,7 @@ namespace BookStore.Sys.Forms
         public RpDoanhThuTuan()
         {
             InitializeComponent();
-            MoneyOfWeek rpt = new MoneyOfWeek();
+            Reports.MoneyOfWeek rpt = new Reports.MoneyOfWeek();
             crystalReportViewer1.ReportSource = rpt;
             rpt.SetDatabaseLogon("db_a9156e_n8bookstore_admin", "ez4XqR6@QrhhzCu", "sql5080.site4now.net", "n8bookstore");
             crystalReportViewer1.DisplayStatusBar = false;

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BookStore.Sys {
+namespace BookStore.Sys.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace BookStore.Sys {
         
         public override string FullResourceName {
             get {
-                return "BookStore.Sys.MoneyOfWeek.rpt";
+                return "BookStore.Sys.Reports.MoneyOfWeek.rpt";
             }
             set {
                 // Do nothing
