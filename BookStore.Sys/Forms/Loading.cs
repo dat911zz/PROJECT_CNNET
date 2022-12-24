@@ -30,8 +30,8 @@ namespace BookStore.Sys.Forms
             }
             else
             { 
-            guna2CircleProgressBar1.Value += 1;
-            label_val.Text = (Convert.ToInt32(label_val.Text) + 1).ToString();
+            guna2CircleProgressBar1.Value += 4;
+            label_val.Text = (Convert.ToInt32(label_val.Text) + 4).ToString();
               }
         }
 

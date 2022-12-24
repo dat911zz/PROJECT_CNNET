@@ -81,7 +81,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(265, 928);
@@ -99,13 +99,13 @@
             this.btn_BuyProduct.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.btn_BuyProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_BuyProduct.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_BuyProduct.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.HoverState.Image")));
+            this.btn_BuyProduct.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btn_BuyProduct.HoverState.Image")));
             this.btn_BuyProduct.HoverState.Parent = this.btn_BuyProduct;
             this.btn_BuyProduct.Image = global::BookStore.Sys.Properties.Resources.Ecommerce_Shopping_Bag_icon;
             this.btn_BuyProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_BuyProduct.ImageOffset = new System.Drawing.Point(8, 0);
             this.btn_BuyProduct.Location = new System.Drawing.Point(0, 338);
-            this.btn_BuyProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BuyProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BuyProduct.Name = "btn_BuyProduct";
             this.btn_BuyProduct.ShadowDecoration.Parent = this.btn_BuyProduct;
             this.btn_BuyProduct.Size = new System.Drawing.Size(269, 49);
@@ -125,13 +125,13 @@
             this.btn_Report.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.btn_Report.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_Report.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Report.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.HoverState.Image")));
+            this.btn_Report.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btn_Report.HoverState.Image")));
             this.btn_Report.HoverState.Parent = this.btn_Report;
             this.btn_Report.Image = ((System.Drawing.Image)(resources.GetObject("btn_Report.Image")));
             this.btn_Report.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Report.ImageOffset = new System.Drawing.Point(8, 0);
             this.btn_Report.Location = new System.Drawing.Point(0, 414);
-            this.btn_Report.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Report.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Report.Name = "btn_Report";
             this.btn_Report.ShadowDecoration.Parent = this.btn_Report;
             this.btn_Report.Size = new System.Drawing.Size(269, 49);
@@ -177,7 +177,7 @@
             // 
             this.guna2CirclePictureBox1.Image = global::BookStore.Sys.Properties.Resources.sos;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(21, 827);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -190,7 +190,7 @@
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.Location = new System.Drawing.Point(223, 20);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(24, 30);
@@ -209,13 +209,13 @@
             this.btn_Support.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.btn_Support.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_Support.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Support.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.HoverState.Image")));
+            this.btn_Support.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btn_Support.HoverState.Image")));
             this.btn_Support.HoverState.Parent = this.btn_Support;
             this.btn_Support.Image = ((System.Drawing.Image)(resources.GetObject("btn_Support.Image")));
             this.btn_Support.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Support.ImageOffset = new System.Drawing.Point(8, 0);
             this.btn_Support.Location = new System.Drawing.Point(0, 697);
-            this.btn_Support.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Support.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Support.Name = "btn_Support";
             this.btn_Support.ShadowDecoration.Parent = this.btn_Support;
             this.btn_Support.Size = new System.Drawing.Size(261, 49);
@@ -233,13 +233,13 @@
             this.btn_Settings.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.btn_Settings.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_Settings.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Settings.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.HoverState.Image")));
+            this.btn_Settings.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btn_Settings.HoverState.Image")));
             this.btn_Settings.HoverState.Parent = this.btn_Settings;
             this.btn_Settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_Settings.Image")));
             this.btn_Settings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Settings.ImageOffset = new System.Drawing.Point(8, 0);
             this.btn_Settings.Location = new System.Drawing.Point(0, 753);
-            this.btn_Settings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Settings.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Settings.Name = "btn_Settings";
             this.btn_Settings.ShadowDecoration.Parent = this.btn_Settings;
             this.btn_Settings.Size = new System.Drawing.Size(265, 49);
@@ -258,13 +258,13 @@
             this.btn_Customer.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.btn_Customer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_Customer.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Customer.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.HoverState.Image")));
+            this.btn_Customer.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btn_Customer.HoverState.Image")));
             this.btn_Customer.HoverState.Parent = this.btn_Customer;
             this.btn_Customer.Image = ((System.Drawing.Image)(resources.GetObject("btn_Customer.Image")));
             this.btn_Customer.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Customer.ImageOffset = new System.Drawing.Point(8, 0);
             this.btn_Customer.Location = new System.Drawing.Point(-4, 258);
-            this.btn_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Customer.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Customer.Name = "btn_Customer";
             this.btn_Customer.ShadowDecoration.Parent = this.btn_Customer;
             this.btn_Customer.Size = new System.Drawing.Size(269, 49);
@@ -284,13 +284,13 @@
             this.btn_Product.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.btn_Product.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_Product.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Product.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.HoverState.Image")));
+            this.btn_Product.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btn_Product.HoverState.Image")));
             this.btn_Product.HoverState.Parent = this.btn_Product;
             this.btn_Product.Image = ((System.Drawing.Image)(resources.GetObject("btn_Product.Image")));
             this.btn_Product.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Product.ImageOffset = new System.Drawing.Point(8, 0);
             this.btn_Product.Location = new System.Drawing.Point(0, 175);
-            this.btn_Product.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Product.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Product.Name = "btn_Product";
             this.btn_Product.ShadowDecoration.Parent = this.btn_Product;
             this.btn_Product.Size = new System.Drawing.Size(269, 49);
@@ -310,13 +310,13 @@
             this.btn_General.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.btn_General.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_General.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_General.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.HoverState.Image")));
+            this.btn_General.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btn_General.HoverState.Image")));
             this.btn_General.HoverState.Parent = this.btn_General;
             this.btn_General.Image = ((System.Drawing.Image)(resources.GetObject("btn_General.Image")));
             this.btn_General.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_General.ImageOffset = new System.Drawing.Point(8, 0);
             this.btn_General.Location = new System.Drawing.Point(4, 105);
-            this.btn_General.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_General.Margin = new System.Windows.Forms.Padding(4);
             this.btn_General.Name = "btn_General";
             this.btn_General.ShadowDecoration.Parent = this.btn_General;
             this.btn_General.Size = new System.Drawing.Size(273, 49);
@@ -330,7 +330,7 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::BookStore.Sys.Properties.Resources.istockphoto_1349688040_612x6121;
             this.guna2PictureBox1.Location = new System.Drawing.Point(84, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(87, 69);
@@ -350,7 +350,7 @@
             this.guna2Panel_top.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel_top.Location = new System.Drawing.Point(265, 0);
-            this.guna2Panel_top.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel_top.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel_top.Name = "guna2Panel_top";
             this.guna2Panel_top.ShadowDecoration.Parent = this.guna2Panel_top;
             this.guna2Panel_top.Size = new System.Drawing.Size(1346, 65);
@@ -370,7 +370,7 @@
             // guna2PictureBox_val
             // 
             this.guna2PictureBox_val.Location = new System.Drawing.Point(32, 11);
-            this.guna2PictureBox_val.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox_val.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox_val.Name = "guna2PictureBox_val";
             this.guna2PictureBox_val.ShadowDecoration.Parent = this.guna2PictureBox_val;
             this.guna2PictureBox_val.Size = new System.Drawing.Size(59, 37);
@@ -380,6 +380,7 @@
             // 
             // guna2TextBox1
             // 
+            this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox1.AutoRoundedCorners = true;
             this.guna2TextBox1.BorderRadius = 20;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -396,8 +397,8 @@
             this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
             this.guna2TextBox1.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox1.IconLeftSize = new System.Drawing.Size(15, 15);
-            this.guna2TextBox1.Location = new System.Drawing.Point(721, 11);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox1.Location = new System.Drawing.Point(840, 7);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Search";
@@ -415,7 +416,7 @@
             this.btnMinimize.HoverState.Parent = this.btnMinimize;
             this.btnMinimize.IconColor = System.Drawing.Color.Gray;
             this.btnMinimize.Location = new System.Drawing.Point(1149, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.ShadowDecoration.Parent = this.btnMinimize;
             this.btnMinimize.Size = new System.Drawing.Size(60, 36);
@@ -429,7 +430,7 @@
             this.btnFullWindow.HoverState.Parent = this.btnFullWindow;
             this.btnFullWindow.IconColor = System.Drawing.Color.Gray;
             this.btnFullWindow.Location = new System.Drawing.Point(1218, 0);
-            this.btnFullWindow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFullWindow.Margin = new System.Windows.Forms.Padding(4);
             this.btnFullWindow.Name = "btnFullWindow";
             this.btnFullWindow.ShadowDecoration.Parent = this.btnFullWindow;
             this.btnFullWindow.Size = new System.Drawing.Size(60, 36);
@@ -442,7 +443,7 @@
             this.btnClose.HoverState.Parent = this.btnClose;
             this.btnClose.IconColor = System.Drawing.Color.Gray;
             this.btnClose.Location = new System.Drawing.Point(1285, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
             this.btnClose.Size = new System.Drawing.Size(60, 36);
@@ -457,7 +458,7 @@
             // 
             this.guna2Panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel_container.Location = new System.Drawing.Point(265, 65);
-            this.guna2Panel_container.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel_container.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel_container.Name = "guna2Panel_container";
             this.guna2Panel_container.ShadowDecoration.Parent = this.guna2Panel_container;
             this.guna2Panel_container.Size = new System.Drawing.Size(1346, 863);
@@ -474,7 +475,7 @@
             this.Controls.Add(this.guna2Panel_top);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";

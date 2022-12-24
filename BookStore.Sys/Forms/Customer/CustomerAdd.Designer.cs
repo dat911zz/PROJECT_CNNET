@@ -38,14 +38,6 @@
             this.btnClose_Customer = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd_Customer = new Guna.UI2.WinForms.Guna2Button();
             this.dtgv_CustomerAdd = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave_Customer = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit_Customer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -59,6 +51,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -72,7 +65,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnDelete_Customer = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_CustomerAdd)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -86,7 +78,7 @@
             this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1348, 57);
@@ -129,7 +121,7 @@
             this.btnClose_Customer.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnClose_Customer.HoverState.Parent = this.btnClose_Customer;
             this.btnClose_Customer.Location = new System.Drawing.Point(1171, 695);
-            this.btnClose_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose_Customer.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose_Customer.Name = "btnClose_Customer";
             this.btnClose_Customer.ShadowDecoration.Parent = this.btnClose_Customer;
             this.btnClose_Customer.Size = new System.Drawing.Size(112, 37);
@@ -151,7 +143,7 @@
             this.btnAdd_Customer.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAdd_Customer.HoverState.Parent = this.btnAdd_Customer;
             this.btnAdd_Customer.Location = new System.Drawing.Point(691, 695);
-            this.btnAdd_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd_Customer.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd_Customer.Name = "btnAdd_Customer";
             this.btnAdd_Customer.ShadowDecoration.Parent = this.btnAdd_Customer;
             this.btnAdd_Customer.Size = new System.Drawing.Size(112, 37);
@@ -178,15 +170,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgv_CustomerAdd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgv_CustomerAdd.ColumnHeadersHeight = 40;
-            this.dtgv_CustomerAdd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column8,
-            this.Column5,
-            this.Column6,
-            this.Column7});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -198,7 +181,7 @@
             this.dtgv_CustomerAdd.EnableHeadersVisualStyles = false;
             this.dtgv_CustomerAdd.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.dtgv_CustomerAdd.Location = new System.Drawing.Point(13, 332);
-            this.dtgv_CustomerAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgv_CustomerAdd.Margin = new System.Windows.Forms.Padding(4);
             this.dtgv_CustomerAdd.Name = "dtgv_CustomerAdd";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -240,67 +223,6 @@
             this.dtgv_CustomerAdd.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dtgv_CustomerAdd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column1.FillWeight = 40.60914F;
-            this.Column1.HeaderText = "";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 10;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column2.FillWeight = 162.4365F;
-            this.Column2.HeaderText = "";
-            this.Column2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 40;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 99.49239F;
-            this.Column3.HeaderText = "ID Khách Hàng";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 99.49239F;
-            this.Column4.HeaderText = "Họ Và Tên";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column8
-            // 
-            this.Column8.FillWeight = 99.49239F;
-            this.Column8.HeaderText = "Địa Chỉ";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 99.49239F;
-            this.Column5.HeaderText = "Số Điện Thoại";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.FillWeight = 99.49239F;
-            this.Column6.HeaderText = "Nhiệm Vụ";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.FillWeight = 99.49239F;
-            this.Column7.HeaderText = "Thứ Hạng";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            // 
             // btnSave_Customer
             // 
             this.btnSave_Customer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -315,7 +237,7 @@
             this.btnSave_Customer.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnSave_Customer.HoverState.Parent = this.btnSave_Customer;
             this.btnSave_Customer.Location = new System.Drawing.Point(1051, 695);
-            this.btnSave_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave_Customer.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave_Customer.Name = "btnSave_Customer";
             this.btnSave_Customer.ShadowDecoration.Parent = this.btnSave_Customer;
             this.btnSave_Customer.Size = new System.Drawing.Size(112, 37);
@@ -336,7 +258,7 @@
             this.btnEdit_Customer.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnEdit_Customer.HoverState.Parent = this.btnEdit_Customer;
             this.btnEdit_Customer.Location = new System.Drawing.Point(931, 695);
-            this.btnEdit_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit_Customer.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit_Customer.Name = "btnEdit_Customer";
             this.btnEdit_Customer.ShadowDecoration.Parent = this.btnEdit_Customer;
             this.btnEdit_Customer.Size = new System.Drawing.Size(112, 37);
@@ -372,7 +294,7 @@
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 65);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1348, 250);
@@ -418,7 +340,7 @@
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Location = new System.Drawing.Point(414, 26);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "Địa Chỉ..";
@@ -444,7 +366,7 @@
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
             this.guna2TextBox5.Location = new System.Drawing.Point(414, 75);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderText = "Email..";
@@ -517,7 +439,7 @@
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
             this.guna2TextBox7.Location = new System.Drawing.Point(135, 80);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
             this.guna2TextBox7.PlaceholderText = "Ngày Sinh..";
@@ -543,7 +465,7 @@
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
             this.guna2TextBox8.Location = new System.Drawing.Point(1049, 80);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
             this.guna2TextBox8.PlaceholderText = "Số Điện Thoại..";
@@ -552,6 +474,32 @@
             this.guna2TextBox8.Size = new System.Drawing.Size(184, 39);
             this.guna2TextBox8.TabIndex = 53;
             this.guna2TextBox8.TextOffset = new System.Drawing.Point(8, 0);
+            // 
+            // guna2TextBox9
+            // 
+            this.guna2TextBox9.AutoRoundedCorners = true;
+            this.guna2TextBox9.BorderRadius = 18;
+            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox9.DefaultText = "";
+            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox9.DisabledState.Parent = this.guna2TextBox9;
+            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox9.FocusedState.Parent = this.guna2TextBox9;
+            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
+            this.guna2TextBox9.Location = new System.Drawing.Point(135, 129);
+            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(5);
+            this.guna2TextBox9.Name = "guna2TextBox9";
+            this.guna2TextBox9.PasswordChar = '\0';
+            this.guna2TextBox9.PlaceholderText = "Thứ Hạng..";
+            this.guna2TextBox9.SelectedText = "";
+            this.guna2TextBox9.ShadowDecoration.Parent = this.guna2TextBox9;
+            this.guna2TextBox9.Size = new System.Drawing.Size(189, 39);
+            this.guna2TextBox9.TabIndex = 54;
+            this.guna2TextBox9.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // label21
             // 
@@ -592,7 +540,7 @@
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(723, 26);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Họ Và Tên..";
@@ -601,7 +549,6 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(189, 39);
             this.guna2TextBox1.TabIndex = 48;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(8, 0);
-            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // label12
             // 
@@ -666,7 +613,7 @@
             this.txtBox_IdCus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_IdCus.HoverState.Parent = this.txtBox_IdCus;
             this.txtBox_IdCus.Location = new System.Drawing.Point(135, 26);
-            this.txtBox_IdCus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtBox_IdCus.Margin = new System.Windows.Forms.Padding(5);
             this.txtBox_IdCus.Name = "txtBox_IdCus";
             this.txtBox_IdCus.PasswordChar = '\0';
             this.txtBox_IdCus.PlaceholderText = "Id..";
@@ -692,7 +639,7 @@
             this.txtBox_IdCusto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_IdCusto.HoverState.Parent = this.txtBox_IdCusto;
             this.txtBox_IdCusto.Location = new System.Drawing.Point(1049, 26);
-            this.txtBox_IdCusto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtBox_IdCusto.Margin = new System.Windows.Forms.Padding(5);
             this.txtBox_IdCusto.Name = "txtBox_IdCusto";
             this.txtBox_IdCusto.PasswordChar = '\0';
             this.txtBox_IdCusto.PlaceholderText = "Giới Tính..";
@@ -718,7 +665,7 @@
             this.txtBox_NameCus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBox_NameCus.HoverState.Parent = this.txtBox_NameCus;
             this.txtBox_NameCus.Location = new System.Drawing.Point(723, 80);
-            this.txtBox_NameCus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtBox_NameCus.Margin = new System.Windows.Forms.Padding(5);
             this.txtBox_NameCus.Name = "txtBox_NameCus";
             this.txtBox_NameCus.PasswordChar = '\0';
             this.txtBox_NameCus.PlaceholderText = "Loại Khách Hàng..";
@@ -765,39 +712,13 @@
             this.btnDelete_Customer.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnDelete_Customer.HoverState.Parent = this.btnDelete_Customer;
             this.btnDelete_Customer.Location = new System.Drawing.Point(811, 695);
-            this.btnDelete_Customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete_Customer.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete_Customer.Name = "btnDelete_Customer";
             this.btnDelete_Customer.ShadowDecoration.Parent = this.btnDelete_Customer;
             this.btnDelete_Customer.Size = new System.Drawing.Size(112, 37);
             this.btnDelete_Customer.TabIndex = 53;
             this.btnDelete_Customer.Text = "Xóa";
             this.btnDelete_Customer.Click += new System.EventHandler(this.guna2Button4_Click_2);
-            // 
-            // guna2TextBox9
-            // 
-            this.guna2TextBox9.AutoRoundedCorners = true;
-            this.guna2TextBox9.BorderRadius = 18;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.FocusedState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Location = new System.Drawing.Point(135, 129);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PasswordChar = '\0';
-            this.guna2TextBox9.PlaceholderText = "Thứ Hạng..";
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.ShadowDecoration.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Size = new System.Drawing.Size(189, 39);
-            this.guna2TextBox9.TabIndex = 54;
-            this.guna2TextBox9.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // CustomerAdd
             // 
@@ -814,11 +735,11 @@
             this.Controls.Add(this.btnClose_Customer);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CustomerAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Patient";
-            this.Load += new System.EventHandler(this.Patient_Load);
+            this.Text = "Thêm Khách Hàng";
+            this.Load += new System.EventHandler(this.CustomerAdd_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CustomerAdd_MouseDown);
             this.MouseHover += new System.EventHandler(this.CustomerAdd_MouseHover);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CustomerAdd_MouseMove);
@@ -866,14 +787,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewImageColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
     }
 }

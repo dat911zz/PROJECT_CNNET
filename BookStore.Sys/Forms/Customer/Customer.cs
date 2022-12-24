@@ -15,13 +15,13 @@ namespace BookStore
 {
     public partial class frmCustomer : Form
     {
-        Core.Service service;
+        Service service;
         Core.DBHelper db;
         DataSet ds_Cus;
         DataColumn[] key = new DataColumn[1];
         public frmCustomer()
         {
-            service = Core.Service.Instance;
+            service = Service.Instance;
             db = new Core.DBHelper();
             ds_Cus = new DataSet();
             InitializeComponent();

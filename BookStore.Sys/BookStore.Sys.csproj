@@ -60,29 +60,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\BuyProduct.cs">
+    <Compile Include="Containers\ServicesContainer.cs" />
+    <Compile Include="Forms\Book\frmCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BuyProduct.Designer.cs">
+    <Compile Include="Forms\Book\frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Book\frmPulisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Book\frmPulisher.Designer.cs">
+      <DependentUpon>frmPulisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Invoice\BuyProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Invoice\BuyProduct.Designer.cs">
       <DependentUpon>BuyProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Report.cs">
+    <Compile Include="Forms\Report\Report.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Report.Designer.cs">
+    <Compile Include="Forms\Report\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CustomerAdd.cs">
+    <Compile Include="Forms\Customer\CustomerAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CustomerAdd.Designer.cs">
+    <Compile Include="Forms\Customer\CustomerAdd.Designer.cs">
       <DependentUpon>CustomerAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BookAdd.cs">
+    <Compile Include="Forms\Book\frmAuthor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BookAdd.Designer.cs">
-      <DependentUpon>BookAdd.cs</DependentUpon>
+    <Compile Include="Forms\Book\frmAuthor.Designer.cs">
+      <DependentUpon>frmAuthor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ConfirmDelete.cs">
       <SubType>Form</SubType>
@@ -90,10 +103,10 @@
     <Compile Include="Forms\ConfirmDelete.Designer.cs">
       <DependentUpon>ConfirmDelete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Customer.cs">
+    <Compile Include="Forms\Customer\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Customer.Designer.cs">
+    <Compile Include="Forms\Customer\Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Dashboard.cs">
@@ -114,11 +127,11 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Book.cs">
+    <Compile Include="Forms\Book\frmBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Book.Designer.cs">
-      <DependentUpon>Book.cs</DependentUpon>
+    <Compile Include="Forms\Book\frmBook.Designer.cs">
+      <DependentUpon>frmBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Principal.cs">
       <SubType>Form</SubType>
@@ -132,10 +145,10 @@
     <Compile Include="Forms\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RpDoanhThuTuan.cs">
+    <Compile Include="Forms\Report\RpDoanhThuTuan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RpDoanhThuTuan.Designer.cs">
+    <Compile Include="Forms\Report\RpDoanhThuTuan.Designer.cs">
       <DependentUpon>RpDoanhThuTuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -146,22 +159,28 @@
       <DependentUpon>MoneyOfWeek.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="Forms\BuyProduct.resx">
+    <EmbeddedResource Include="Forms\Book\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Book\frmPulisher.resx">
+      <DependentUpon>frmPulisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Invoice\BuyProduct.resx">
       <DependentUpon>BuyProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Report.resx">
+    <EmbeddedResource Include="Forms\Report\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CustomerAdd.resx">
+    <EmbeddedResource Include="Forms\Customer\CustomerAdd.resx">
       <DependentUpon>CustomerAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BookAdd.resx">
-      <DependentUpon>BookAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Book\frmAuthor.resx">
+      <DependentUpon>frmAuthor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConfirmDelete.resx">
       <DependentUpon>ConfirmDelete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Customer.resx">
+    <EmbeddedResource Include="Forms\Customer\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dashboard.resx">
@@ -173,8 +192,8 @@
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Book.resx">
-      <DependentUpon>Book.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Book\frmBook.resx">
+      <DependentUpon>frmBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -182,11 +201,11 @@
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RpDoanhThuTuan.resx">
+    <EmbeddedResource Include="Forms\Report\RpDoanhThuTuan.resx">
       <DependentUpon>RpDoanhThuTuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
