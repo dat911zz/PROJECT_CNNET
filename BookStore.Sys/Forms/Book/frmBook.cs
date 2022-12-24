@@ -41,6 +41,10 @@ namespace BookStore.Sys.Forms.Book
             //Thay đổi kích thước cột
             dgvBook.Columns[0].Width = 30;
             dgvBook.Columns[11].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            //Load combobox
+            sys.Db.LoadDataIntoCbo(cboAuthor, sys.Ds, "Author", "Name", "Id");
+            sys.Db.LoadDataIntoCbo(cboCategory, sys.Ds, "BookCategory", "Name", "Id");
+            sys.Db.LoadDataIntoCbo(cboPublisher, sys.Ds, "Publisher", "Name", "Id");
         }
         private void frmBook_Load(object sender, EventArgs e)
         {
@@ -114,19 +118,24 @@ namespace BookStore.Sys.Forms.Book
         {
             foreach (Control item in panelInput.Controls)
             {
-                if (!item.Name.Equals("txtDescription"))
+                if (!item.Name.Equals("txtDescription") && item.GetType() != typeof(Label))
                 {
-                    if (item.GetType() != typeof(Label))
+                    if (item.GetType() == typeof(TextBox))
                     {
                         //Phải convert qua Guna mới đổi text dc
                         Guna.UI2.WinForms.Guna2TextBox txt = (Guna.UI2.WinForms.Guna2TextBox)item;
                         txt.Text = "";
                     }
-                }
-                else
-                {
-                    RichTextBox txt = (RichTextBox)item;
-                    txt.Text = "";
+                    if (item.GetType() == typeof(ComboBox))
+                    {
+                        Guna.UI2.WinForms.Guna2ComboBox txt = (Guna.UI2.WinForms.Guna2ComboBox)item;
+                        txt.Text = "";
+                    }
+                    if (item.GetType() == typeof(RichTextBox))
+                    {
+                        RichTextBox txt = (RichTextBox)item;
+                        txt.Text = "";
+                    }
                 }
             }
             dgvBook.Refresh();
@@ -151,9 +160,9 @@ namespace BookStore.Sys.Forms.Book
             ClearAllBinding();
             txtID.DataBindings.Add("Text", sys.Ds.Tables[0], "Id");
             txtName.DataBindings.Add("Text", sys.Ds.Tables[0], "Name");
-            txtAuthor.DataBindings.Add("Text", sys.Ds.Tables[0], "Author");
-            txtPublisher.DataBindings.Add("Text", sys.Ds.Tables[0], "Publisher");
-            txtCategory.DataBindings.Add("Text", sys.Ds.Tables[0], "Category");
+            cboAuthor.DataBindings.Add("Text", sys.Ds.Tables[0], "Author");
+            cboPublisher.DataBindings.Add("Text", sys.Ds.Tables[0], "Publisher");
+            cboCategory.DataBindings.Add("Text", sys.Ds.Tables[0], "Category");
             txtImportPrice.DataBindings.Add("Text", sys.Ds.Tables[0], "ImportPrice");
             txtPrice.DataBindings.Add("Text", sys.Ds.Tables[0], "Price");
             txtYearOfPublish.DataBindings.Add("Text", sys.Ds.Tables[0], "PublishYear");

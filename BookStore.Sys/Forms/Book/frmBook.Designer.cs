@@ -70,14 +70,11 @@
             this.txtLang = new Guna.UI2.WinForms.Guna2TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtPublisher = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCategory = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAuthor = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.picBox_ImageProduct = new System.Windows.Forms.PictureBox();
@@ -87,6 +84,9 @@
             this.btnEdit_Book = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd_Book = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cboPublisher = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cboCategory = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cboAuthor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).BeginInit();
             this.panelInput.SuspendLayout();
@@ -353,6 +353,9 @@
             // 
             this.panelInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelInput.Controls.Add(this.cboCategory);
+            this.panelInput.Controls.Add(this.cboPublisher);
+            this.panelInput.Controls.Add(this.cboAuthor);
             this.panelInput.Controls.Add(this.txtDescription);
             this.panelInput.Controls.Add(this.label13);
             this.panelInput.Controls.Add(this.txtImg);
@@ -372,14 +375,11 @@
             this.panelInput.Controls.Add(this.txtLang);
             this.panelInput.Controls.Add(this.label21);
             this.panelInput.Controls.Add(this.label10);
-            this.panelInput.Controls.Add(this.txtPublisher);
             this.panelInput.Controls.Add(this.label12);
             this.panelInput.Controls.Add(this.label11);
             this.panelInput.Controls.Add(this.label9);
             this.panelInput.Controls.Add(this.label4);
             this.panelInput.Controls.Add(this.txtID);
-            this.panelInput.Controls.Add(this.txtCategory);
-            this.panelInput.Controls.Add(this.txtAuthor);
             this.panelInput.Controls.Add(this.label5);
             this.panelInput.Controls.Add(this.label6);
             this.panelInput.CustomBorderColor = System.Drawing.Color.Silver;
@@ -713,32 +713,6 @@
             this.label10.TabIndex = 49;
             this.label10.Text = "Nhà Xuất Bản:";
             // 
-            // txtPublisher
-            // 
-            this.txtPublisher.AutoRoundedCorners = true;
-            this.txtPublisher.BorderRadius = 18;
-            this.txtPublisher.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPublisher.DefaultText = "";
-            this.txtPublisher.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPublisher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPublisher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPublisher.DisabledState.Parent = this.txtPublisher;
-            this.txtPublisher.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPublisher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPublisher.FocusedState.Parent = this.txtPublisher;
-            this.txtPublisher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPublisher.HoverState.Parent = this.txtPublisher;
-            this.txtPublisher.Location = new System.Drawing.Point(734, 29);
-            this.txtPublisher.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPublisher.Name = "txtPublisher";
-            this.txtPublisher.PasswordChar = '\0';
-            this.txtPublisher.PlaceholderText = "NXB..";
-            this.txtPublisher.SelectedText = "";
-            this.txtPublisher.ShadowDecoration.Parent = this.txtPublisher;
-            this.txtPublisher.Size = new System.Drawing.Size(189, 39);
-            this.txtPublisher.TabIndex = 48;
-            this.txtPublisher.TextOffset = new System.Drawing.Point(8, 0);
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -811,58 +785,6 @@
             this.txtID.Size = new System.Drawing.Size(189, 39);
             this.txtID.TabIndex = 41;
             this.txtID.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // txtCategory
-            // 
-            this.txtCategory.AutoRoundedCorners = true;
-            this.txtCategory.BorderRadius = 18;
-            this.txtCategory.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategory.DefaultText = "";
-            this.txtCategory.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCategory.DisabledState.Parent = this.txtCategory;
-            this.txtCategory.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCategory.FocusedState.Parent = this.txtCategory;
-            this.txtCategory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCategory.HoverState.Parent = this.txtCategory;
-            this.txtCategory.Location = new System.Drawing.Point(734, 138);
-            this.txtCategory.Margin = new System.Windows.Forms.Padding(5);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.PasswordChar = '\0';
-            this.txtCategory.PlaceholderText = "Danh Mục Sách..";
-            this.txtCategory.SelectedText = "";
-            this.txtCategory.ShadowDecoration.Parent = this.txtCategory;
-            this.txtCategory.Size = new System.Drawing.Size(189, 39);
-            this.txtCategory.TabIndex = 39;
-            this.txtCategory.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // txtAuthor
-            // 
-            this.txtAuthor.AutoRoundedCorners = true;
-            this.txtAuthor.BorderRadius = 18;
-            this.txtAuthor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAuthor.DefaultText = "";
-            this.txtAuthor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAuthor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAuthor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAuthor.DisabledState.Parent = this.txtAuthor;
-            this.txtAuthor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAuthor.FocusedState.Parent = this.txtAuthor;
-            this.txtAuthor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAuthor.HoverState.Parent = this.txtAuthor;
-            this.txtAuthor.Location = new System.Drawing.Point(406, 29);
-            this.txtAuthor.Margin = new System.Windows.Forms.Padding(5);
-            this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.PasswordChar = '\0';
-            this.txtAuthor.PlaceholderText = "Họ Và Tên..";
-            this.txtAuthor.SelectedText = "";
-            this.txtAuthor.ShadowDecoration.Parent = this.txtAuthor;
-            this.txtAuthor.Size = new System.Drawing.Size(189, 39);
-            this.txtAuthor.TabIndex = 40;
-            this.txtAuthor.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // label5
             // 
@@ -1024,6 +946,67 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1308, 417);
             this.flowLayoutPanel1.TabIndex = 61;
             // 
+            // cboPublisher
+            // 
+            this.cboPublisher.BackColor = System.Drawing.Color.Transparent;
+            this.cboPublisher.BorderRadius = 18;
+            this.cboPublisher.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPublisher.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboPublisher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboPublisher.FocusedState.Parent = this.cboPublisher;
+            this.cboPublisher.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboPublisher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboPublisher.HoverState.Parent = this.cboPublisher;
+            this.cboPublisher.ItemHeight = 30;
+            this.cboPublisher.ItemsAppearance.Parent = this.cboPublisher;
+            this.cboPublisher.Location = new System.Drawing.Point(734, 32);
+            this.cboPublisher.Name = "cboPublisher";
+            this.cboPublisher.ShadowDecoration.Parent = this.cboPublisher;
+            this.cboPublisher.Size = new System.Drawing.Size(189, 36);
+            this.cboPublisher.TabIndex = 72;
+            // 
+            // cboCategory
+            // 
+            this.cboCategory.BackColor = System.Drawing.Color.Transparent;
+            this.cboCategory.BorderRadius = 18;
+            this.cboCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboCategory.FocusedState.Parent = this.cboCategory;
+            this.cboCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboCategory.HoverState.Parent = this.cboCategory;
+            this.cboCategory.ItemHeight = 30;
+            this.cboCategory.ItemsAppearance.Parent = this.cboCategory;
+            this.cboCategory.Location = new System.Drawing.Point(734, 138);
+            this.cboCategory.Name = "cboCategory";
+            this.cboCategory.ShadowDecoration.Parent = this.cboCategory;
+            this.cboCategory.Size = new System.Drawing.Size(189, 36);
+            this.cboCategory.TabIndex = 73;
+            // 
+            // cboAuthor
+            // 
+            this.cboAuthor.BackColor = System.Drawing.Color.Transparent;
+            this.cboAuthor.BorderRadius = 18;
+            this.cboAuthor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboAuthor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAuthor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboAuthor.FocusedState.Parent = this.cboAuthor;
+            this.cboAuthor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboAuthor.HoverState.Parent = this.cboAuthor;
+            this.cboAuthor.ItemHeight = 30;
+            this.cboAuthor.ItemsAppearance.Parent = this.cboAuthor;
+            this.cboAuthor.Location = new System.Drawing.Point(406, 32);
+            this.cboAuthor.Name = "cboAuthor";
+            this.cboAuthor.ShadowDecoration.Parent = this.cboAuthor;
+            this.cboAuthor.Size = new System.Drawing.Size(189, 36);
+            this.cboAuthor.TabIndex = 10;
+            this.cboAuthor.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
             // frmBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1089,14 +1072,11 @@
         private Guna.UI2.WinForms.Guna2TextBox txtLang;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox txtPublisher;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtID;
-        private Guna.UI2.WinForms.Guna2TextBox txtCategory;
-        private Guna.UI2.WinForms.Guna2TextBox txtAuthor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox picBox_ImageProduct;
@@ -1110,5 +1090,8 @@
         private System.Windows.Forms.Label lblBookCount;
         private Guna.UI2.WinForms.Guna2Button btnPublisher;
         private Guna.UI2.WinForms.Guna2Button btnCategory;
+        private Guna.UI2.WinForms.Guna2ComboBox cboCategory;
+        private Guna.UI2.WinForms.Guna2ComboBox cboPublisher;
+        private Guna.UI2.WinForms.Guna2ComboBox cboAuthor;
     }
 }
