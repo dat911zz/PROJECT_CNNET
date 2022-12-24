@@ -17,6 +17,7 @@ namespace Core
         public string ConnStr { get => connStr; set => connStr = value; }
         public DBHelper()
         {
+            //connStr = "Data Source=DESKTOP-GUE0JS7;Initial Catalog=BookStore;Integrated Security=True";
             connStr = "Data Source=sql5080.site4now.net;Initial Catalog=db_a9156e_n8bookstore;Persist Security Info=True;User ID=db_a9156e_n8bookstore_admin;Password=ez4XqR6@QrhhzCu";
             //ez4XqR6@QrhhzCu
         }
@@ -165,20 +166,23 @@ namespace Core
             SqlDataAdapter adapter = new SqlDataAdapter(selectCmd, connStr);
             adapter.Fill(dataSet, tableName);
         }
-        public void LoadDataIntoCbo(ComboBox cbo, DataSet dataSet, string selectCmd, string tableName, string display, string value)
+        public void LoadDataIntoCbo(ComboBox cbo, DataSet dataSet, string tableName, string display, string value)
         {
+            string selectCmd = "Select * from " + tableName;
             FillData(dataSet, selectCmd, tableName);
             cbo.DataSource = dataSet.Tables[tableName];
             cbo.DisplayMember = display;
             cbo.ValueMember = value;
         }
-        public void LoadDataIntoDgv(DataGridView dgv, DataSet dataSet, string selectCmd, string tableName)
+        public void LoadDataIntoDgv(DataGridView dgv, DataSet dataSet, string tableName)
         {
+            string selectCmd = "Select * from " + tableName;
             FillData(dataSet, selectCmd, tableName);
             dgv.DataSource = dataSet.Tables[tableName];
         }
-        public int Update(DataSet ds, string selectCmd, string tableName)
+        public int Update(DataSet ds, string tableName)
         {
+            string selectCmd = "Select * from " + tableName;
             try
             {
                 SqlDataAdapter adapter = new SqlDataAdapter(selectCmd, connStr);

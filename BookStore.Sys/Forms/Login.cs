@@ -41,8 +41,8 @@ namespace BookStore.Sys.Forms
                     if (Service.Instance.CheckAccount(txtBox_User.Text.Trim(), txtBox_Password.Text.Trim()))
                     {
                         Loading _load = new Loading();
-                        ActiveForm.Hide();
                         _load.ShowDialog();
+                        Application.OpenForms["Login"].Hide();
                     }
                     else
                     {

@@ -1,4 +1,5 @@
 ﻿using BookStore.Sys.Forms;
+using BookStore.Sys.Forms.Book;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,7 +35,7 @@ namespace BookStore
 
         private void btnAdd_Product_Click(object sender, EventArgs e)
         {
-             BookAdd _load = new BookAdd();
+             frmAuthor _load = new frmAuthor();
             _load.Show();
         }
 
