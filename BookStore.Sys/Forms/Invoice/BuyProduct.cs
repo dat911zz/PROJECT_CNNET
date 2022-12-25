@@ -53,6 +53,7 @@ namespace BookStore
                 return;
             }
             //Load data
+            sys.Ds.Reset();
             //Thêm tên cho các cột
             sys.Db.LoadDataIntoDgv(dtgv_BuyProduct, sys.Ds, "OrderDetail");
             //Thêm primary key
@@ -427,7 +428,19 @@ namespace BookStore
 
         private void btnEdit_Product_Click(object sender, EventArgs e)
         {
-
+            isAdd = false;
+            isEdit = true;
+            //Mở khóa các textbox (trừ mã sách)
+            ManageInput(true, false);
+            txtBox_IdCus.Enabled = false;
+            cbx_OrderID.Enabled = false;
+            dtgv_BuyProduct.AllowUserToAddRows = false;
+            dtgv_BuyProduct.ReadOnly = false;
+            //Khóa tất cả các trường trong dgv trừ trường mới dc thêm
+            for (int i = 0; i < dtgv_BuyProduct.Rows.Count - 1; i++)
+            {
+                dtgv_BuyProduct.Rows[i].Cells[0].ReadOnly = true;
+            }
         }
 
         private void cbx_OrderID_SelectedIndexChanged(object sender, EventArgs e)
@@ -469,6 +482,40 @@ namespace BookStore
                 }
             }
             return true;
+        }
+
+        private void btnDelete_Product_Click(object sender, EventArgs e)
+        {
+            cbx_OrderID.Enabled = true;
+            if (cbx_OrderID.Enabled)
+            {
+                if (MessageBox.Show("Bạn có muốn xóa?", "Hệ thống", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    sys.Db.ExceuteNonQuery("exec sp_xoadonhang " + cbx_OrderID.SelectedValue.ToString());
+                    btnDelete_Product.Enabled = true;
+                    MessageBox.Show("Xóa thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    sys.Db.Update(sys.Ds, "OrderInfo");
+                    dgv_Load();
+                }
+            } 
+        }
+
+        private void btn_DeleteOrderDetail_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn xóa?", "Hệ thống", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                sys.Db.ExceuteNonQuery("exec sp_xoadonhang " + cbx_OrderID.SelectedValue.ToString());
+                btnDelete_Product.Enabled = true;
+                MessageBox.Show("Xóa thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                sys.Db.Update(sys.Ds, "OrderDetail");
+                dgv_Load(); 
+            }
+        }
+
+        private void btn_PrintBill_Click(object sender, EventArgs e)
+        {
+            Sys.Forms.Report.BillForm rpweek = new Sys.Forms.Report.BillForm();
+            rpweek.Show();
         }
 
         private bool IsFullFillOrderDetail()

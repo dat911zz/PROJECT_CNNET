@@ -69,5 +69,10 @@ namespace BookStore
             RpDoanhThuTuan rpweek = new RpDoanhThuTuan();
             rpweek.Show();
         }
+
+        private void btn_MoneyOfMonth_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

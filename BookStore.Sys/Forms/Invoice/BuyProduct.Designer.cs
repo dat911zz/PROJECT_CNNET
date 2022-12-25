@@ -44,6 +44,7 @@
             this.btnAdd_Product = new Guna.UI2.WinForms.Guna2Button();
             this.dtgv_BuyProduct = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Panel_Order = new Guna.UI2.WinForms.Guna2Panel();
+            this.cbx_IdCus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_DateBuy = new Guna.UI.WinForms.GunaDateTimePicker();
             this.cbx_Employee = new Guna.UI2.WinForms.Guna2ComboBox();
             this.rad_KHVL = new System.Windows.Forms.RadioButton();
@@ -68,9 +69,9 @@
             this.txt_Quantity = new Guna.UI2.WinForms.Guna2TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.cbx_IdCus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btn_PrintBill = new Guna.UI2.WinForms.Guna2Button();
             this.btn_SaveOrderDetail = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_DeleteOrderDetail = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_BuyProduct)).BeginInit();
             this.Panel_Order.SuspendLayout();
@@ -146,6 +147,7 @@
             this.btnDelete_Product.Size = new System.Drawing.Size(84, 30);
             this.btnDelete_Product.TabIndex = 53;
             this.btnDelete_Product.Text = "Xóa";
+            this.btnDelete_Product.Click += new System.EventHandler(this.btnDelete_Product_Click);
             // 
             // label1
             // 
@@ -335,6 +337,28 @@
             this.Panel_Order.ShadowDecoration.Parent = this.Panel_Order;
             this.Panel_Order.Size = new System.Drawing.Size(1011, 124);
             this.Panel_Order.TabIndex = 7;
+            // 
+            // cbx_IdCus
+            // 
+            this.cbx_IdCus.BackColor = System.Drawing.Color.Transparent;
+            this.cbx_IdCus.BorderRadius = 18;
+            this.cbx_IdCus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbx_IdCus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_IdCus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_IdCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_IdCus.FocusedState.Parent = this.cbx_IdCus;
+            this.cbx_IdCus.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbx_IdCus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbx_IdCus.HoverState.Parent = this.cbx_IdCus;
+            this.cbx_IdCus.ItemHeight = 30;
+            this.cbx_IdCus.ItemsAppearance.Parent = this.cbx_IdCus;
+            this.cbx_IdCus.Location = new System.Drawing.Point(112, 66);
+            this.cbx_IdCus.Margin = new System.Windows.Forms.Padding(2);
+            this.cbx_IdCus.Name = "cbx_IdCus";
+            this.cbx_IdCus.ShadowDecoration.Parent = this.cbx_IdCus;
+            this.cbx_IdCus.Size = new System.Drawing.Size(143, 36);
+            this.cbx_IdCus.TabIndex = 73;
+            this.cbx_IdCus.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
             // txt_DateBuy
             // 
@@ -710,47 +734,26 @@
             this.label21.Size = new System.Drawing.Size(0, 36);
             this.label21.TabIndex = 0;
             // 
-            // guna2Button2
+            // btn_PrintBill
             // 
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button2.BorderRadius = 5;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageSize = new System.Drawing.Size(14, 14);
-            this.guna2Button2.Location = new System.Drawing.Point(18, 464);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(162, 43);
-            this.guna2Button2.TabIndex = 54;
-            this.guna2Button2.Text = "     In Hóa Đơn";
-            // 
-            // cbx_IdCus
-            // 
-            this.cbx_IdCus.BackColor = System.Drawing.Color.Transparent;
-            this.cbx_IdCus.BorderRadius = 18;
-            this.cbx_IdCus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbx_IdCus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_IdCus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_IdCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_IdCus.FocusedState.Parent = this.cbx_IdCus;
-            this.cbx_IdCus.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbx_IdCus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbx_IdCus.HoverState.Parent = this.cbx_IdCus;
-            this.cbx_IdCus.ItemHeight = 30;
-            this.cbx_IdCus.ItemsAppearance.Parent = this.cbx_IdCus;
-            this.cbx_IdCus.Location = new System.Drawing.Point(112, 66);
-            this.cbx_IdCus.Margin = new System.Windows.Forms.Padding(2);
-            this.cbx_IdCus.Name = "cbx_IdCus";
-            this.cbx_IdCus.ShadowDecoration.Parent = this.cbx_IdCus;
-            this.cbx_IdCus.Size = new System.Drawing.Size(143, 36);
-            this.cbx_IdCus.TabIndex = 73;
-            this.cbx_IdCus.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btn_PrintBill.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_PrintBill.BorderRadius = 5;
+            this.btn_PrintBill.BorderThickness = 1;
+            this.btn_PrintBill.CheckedState.Parent = this.btn_PrintBill;
+            this.btn_PrintBill.CustomImages.Parent = this.btn_PrintBill;
+            this.btn_PrintBill.FillColor = System.Drawing.Color.Transparent;
+            this.btn_PrintBill.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_PrintBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_PrintBill.HoverState.Parent = this.btn_PrintBill;
+            this.btn_PrintBill.Image = ((System.Drawing.Image)(resources.GetObject("btn_PrintBill.Image")));
+            this.btn_PrintBill.ImageSize = new System.Drawing.Size(14, 14);
+            this.btn_PrintBill.Location = new System.Drawing.Point(18, 515);
+            this.btn_PrintBill.Name = "btn_PrintBill";
+            this.btn_PrintBill.ShadowDecoration.Parent = this.btn_PrintBill;
+            this.btn_PrintBill.Size = new System.Drawing.Size(162, 43);
+            this.btn_PrintBill.TabIndex = 54;
+            this.btn_PrintBill.Text = "     In Hóa Đơn";
+            this.btn_PrintBill.Click += new System.EventHandler(this.btn_PrintBill_Click);
             // 
             // btn_SaveOrderDetail
             // 
@@ -773,14 +776,36 @@
             this.btn_SaveOrderDetail.Text = "Lưu Chi Tiết Đơn Hàng";
             this.btn_SaveOrderDetail.Click += new System.EventHandler(this.btn_SaveOrderDetail_Click);
             // 
+            // btn_DeleteOrderDetail
+            // 
+            this.btn_DeleteOrderDetail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_DeleteOrderDetail.BorderRadius = 5;
+            this.btn_DeleteOrderDetail.BorderThickness = 1;
+            this.btn_DeleteOrderDetail.CheckedState.Parent = this.btn_DeleteOrderDetail;
+            this.btn_DeleteOrderDetail.CustomImages.Parent = this.btn_DeleteOrderDetail;
+            this.btn_DeleteOrderDetail.FillColor = System.Drawing.Color.Transparent;
+            this.btn_DeleteOrderDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_DeleteOrderDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_DeleteOrderDetail.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_DeleteOrderDetail.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_DeleteOrderDetail.HoverState.Parent = this.btn_DeleteOrderDetail;
+            this.btn_DeleteOrderDetail.Location = new System.Drawing.Point(18, 462);
+            this.btn_DeleteOrderDetail.Name = "btn_DeleteOrderDetail";
+            this.btn_DeleteOrderDetail.ShadowDecoration.Parent = this.btn_DeleteOrderDetail;
+            this.btn_DeleteOrderDetail.Size = new System.Drawing.Size(162, 47);
+            this.btn_DeleteOrderDetail.TabIndex = 56;
+            this.btn_DeleteOrderDetail.Text = "Xóa Chi Tiết Đơn Hàng";
+            this.btn_DeleteOrderDetail.Click += new System.EventHandler(this.btn_DeleteOrderDetail_Click);
+            // 
             // BuyProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1011, 639);
+            this.Controls.Add(this.btn_DeleteOrderDetail);
             this.Controls.Add(this.btn_SaveOrderDetail);
-            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.btn_PrintBill);
             this.Controls.Add(this.Panel_OrderDetail);
             this.Controls.Add(this.Panel_Order);
             this.Controls.Add(this.dtgv_BuyProduct);
@@ -833,7 +858,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cboBookID;
         private Guna.UI2.WinForms.Guna2ComboBox cbx_Employee;
         private Guna.UI2.WinForms.Guna2ComboBox cbx_OrderID;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btn_PrintBill;
         private Guna.UI2.WinForms.Guna2Button btn_AddOrd;
         private Guna.UI.WinForms.GunaDateTimePicker txt_DateBuy;
         private System.Windows.Forms.Label label12;
@@ -841,5 +866,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_Price;
         private Guna.UI2.WinForms.Guna2ComboBox cbx_IdCus;
         private Guna.UI2.WinForms.Guna2Button btn_SaveOrderDetail;
+        private Guna.UI2.WinForms.Guna2Button btn_DeleteOrderDetail;
     }
 }
