@@ -28,40 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuyProduct));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_AddOrd = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnDelete_Product = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave_Product = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose_Product = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdd_Product = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit_Product = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAdd_Product = new Guna.UI2.WinForms.Guna2Button();
             this.dtgv_BuyProduct = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Panel_Order = new Guna.UI2.WinForms.Guna2Panel();
+            this.txt_DateBuy = new Guna.UI.WinForms.GunaDateTimePicker();
             this.cbx_Employee = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.txt_Idcus = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rad_KHVL = new System.Windows.Forms.RadioButton();
+            this.rad_KH = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBox_IdCus = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBox_DateBuy = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.Panel_OrderDetail = new Guna.UI2.WinForms.Guna2Panel();
             this.cbx_OrderID = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cboBookID = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.txt_Discount = new Guna.UI2.WinForms.Guna2TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -71,7 +69,8 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_AddOrd = new Guna.UI2.WinForms.Guna2Button();
+            this.cbx_IdCus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btn_SaveOrderDetail = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_BuyProduct)).BeginInit();
             this.Panel_Order.SuspendLayout();
@@ -96,6 +95,27 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1011, 46);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // btn_AddOrd
+            // 
+            this.btn_AddOrd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_AddOrd.BorderRadius = 5;
+            this.btn_AddOrd.BorderThickness = 1;
+            this.btn_AddOrd.CheckedState.Parent = this.btn_AddOrd;
+            this.btn_AddOrd.CustomImages.Parent = this.btn_AddOrd;
+            this.btn_AddOrd.FillColor = System.Drawing.Color.Transparent;
+            this.btn_AddOrd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_AddOrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_AddOrd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_AddOrd.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_AddOrd.HoverState.Parent = this.btn_AddOrd;
+            this.btn_AddOrd.Location = new System.Drawing.Point(521, 7);
+            this.btn_AddOrd.Name = "btn_AddOrd";
+            this.btn_AddOrd.ShadowDecoration.Parent = this.btn_AddOrd;
+            this.btn_AddOrd.Size = new System.Drawing.Size(84, 30);
+            this.btn_AddOrd.TabIndex = 54;
+            this.btn_AddOrd.Text = "Thêm";
+            this.btn_AddOrd.Click += new System.EventHandler(this.btn_AddOrd_Click);
             // 
             // label2
             // 
@@ -179,27 +199,6 @@
             this.btnClose_Product.Text = "Thoát";
             this.btnClose_Product.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // btnAdd_Product
-            // 
-            this.btnAdd_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAdd_Product.BorderRadius = 5;
-            this.btnAdd_Product.BorderThickness = 1;
-            this.btnAdd_Product.CheckedState.Parent = this.btnAdd_Product;
-            this.btnAdd_Product.CustomImages.Parent = this.btnAdd_Product;
-            this.btnAdd_Product.FillColor = System.Drawing.Color.Transparent;
-            this.btnAdd_Product.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAdd_Product.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAdd_Product.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAdd_Product.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAdd_Product.HoverState.Parent = this.btnAdd_Product;
-            this.btnAdd_Product.Location = new System.Drawing.Point(18, 398);
-            this.btnAdd_Product.Name = "btnAdd_Product";
-            this.btnAdd_Product.ShadowDecoration.Parent = this.btnAdd_Product;
-            this.btnAdd_Product.Size = new System.Drawing.Size(162, 47);
-            this.btnAdd_Product.TabIndex = 2;
-            this.btnAdd_Product.Text = "Thêm Chi Tiết Đơn Hàng";
-            this.btnAdd_Product.Click += new System.EventHandler(this.btnAdd_Product_Click);
-            // 
             // btnEdit_Product
             // 
             this.btnEdit_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -221,45 +220,66 @@
             this.btnEdit_Product.Text = "Chỉnh Sửa";
             this.btnEdit_Product.Click += new System.EventHandler(this.btnEdit_Product_Click);
             // 
+            // btnAdd_Product
+            // 
+            this.btnAdd_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAdd_Product.BorderRadius = 5;
+            this.btnAdd_Product.BorderThickness = 1;
+            this.btnAdd_Product.CheckedState.Parent = this.btnAdd_Product;
+            this.btnAdd_Product.CustomImages.Parent = this.btnAdd_Product;
+            this.btnAdd_Product.FillColor = System.Drawing.Color.Transparent;
+            this.btnAdd_Product.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAdd_Product.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAdd_Product.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAdd_Product.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAdd_Product.HoverState.Parent = this.btnAdd_Product;
+            this.btnAdd_Product.Location = new System.Drawing.Point(18, 354);
+            this.btnAdd_Product.Name = "btnAdd_Product";
+            this.btnAdd_Product.ShadowDecoration.Parent = this.btnAdd_Product;
+            this.btnAdd_Product.Size = new System.Drawing.Size(162, 47);
+            this.btnAdd_Product.TabIndex = 2;
+            this.btnAdd_Product.Text = "Thêm Chi Tiết Đơn Hàng";
+            this.btnAdd_Product.Click += new System.EventHandler(this.btnAdd_Product_Click);
+            // 
             // dtgv_BuyProduct
             // 
             this.dtgv_BuyProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            this.dtgv_BuyProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgv_BuyProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgv_BuyProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_BuyProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.dtgv_BuyProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_BuyProduct.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_BuyProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_BuyProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_BuyProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgv_BuyProduct.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_BuyProduct.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_BuyProduct.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv_BuyProduct.EnableHeadersVisualStyles = false;
             this.dtgv_BuyProduct.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.dtgv_BuyProduct.Location = new System.Drawing.Point(215, 291);
             this.dtgv_BuyProduct.Name = "dtgv_BuyProduct";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_BuyProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_BuyProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgv_BuyProduct.RowHeadersVisible = false;
             this.dtgv_BuyProduct.RowHeadersWidth = 51;
             this.dtgv_BuyProduct.RowTemplate.DividerHeight = 5;
@@ -295,16 +315,16 @@
             // 
             // Panel_Order
             // 
+            this.Panel_Order.Controls.Add(this.cbx_IdCus);
+            this.Panel_Order.Controls.Add(this.txt_DateBuy);
             this.Panel_Order.Controls.Add(this.cbx_Employee);
-            this.Panel_Order.Controls.Add(this.radioButton2);
-            this.Panel_Order.Controls.Add(this.radioButton1);
-            this.Panel_Order.Controls.Add(this.txt_Idcus);
+            this.Panel_Order.Controls.Add(this.rad_KHVL);
+            this.Panel_Order.Controls.Add(this.rad_KH);
             this.Panel_Order.Controls.Add(this.label10);
             this.Panel_Order.Controls.Add(this.label11);
             this.Panel_Order.Controls.Add(this.label9);
             this.Panel_Order.Controls.Add(this.label4);
             this.Panel_Order.Controls.Add(this.txtBox_IdCus);
-            this.Panel_Order.Controls.Add(this.txtBox_DateBuy);
             this.Panel_Order.Controls.Add(this.label5);
             this.Panel_Order.Controls.Add(this.label6);
             this.Panel_Order.CustomBorderColor = System.Drawing.Color.Silver;
@@ -315,6 +335,31 @@
             this.Panel_Order.ShadowDecoration.Parent = this.Panel_Order;
             this.Panel_Order.Size = new System.Drawing.Size(1011, 124);
             this.Panel_Order.TabIndex = 7;
+            // 
+            // txt_DateBuy
+            // 
+            this.txt_DateBuy.BaseColor = System.Drawing.Color.White;
+            this.txt_DateBuy.BorderColor = System.Drawing.Color.Silver;
+            this.txt_DateBuy.BorderSize = 1;
+            this.txt_DateBuy.CustomFormat = null;
+            this.txt_DateBuy.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.txt_DateBuy.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_DateBuy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_DateBuy.ForeColor = System.Drawing.Color.Black;
+            this.txt_DateBuy.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_DateBuy.Location = new System.Drawing.Point(565, 26);
+            this.txt_DateBuy.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_DateBuy.MaxDate = new System.DateTime(2022, 12, 25, 23, 59, 59, 0);
+            this.txt_DateBuy.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txt_DateBuy.Name = "txt_DateBuy";
+            this.txt_DateBuy.OnHoverBaseColor = System.Drawing.Color.White;
+            this.txt_DateBuy.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_DateBuy.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_DateBuy.OnPressedColor = System.Drawing.Color.Black;
+            this.txt_DateBuy.Size = new System.Drawing.Size(142, 24);
+            this.txt_DateBuy.TabIndex = 72;
+            this.txt_DateBuy.Text = "12/24/2022";
+            this.txt_DateBuy.Value = new System.DateTime(2022, 12, 24, 15, 58, 4, 975);
             // 
             // cbx_Employee
             // 
@@ -338,59 +383,33 @@
             this.cbx_Employee.TabIndex = 52;
             this.cbx_Employee.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
-            // radioButton2
+            // rad_KHVL
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.Black;
-            this.radioButton2.Location = new System.Drawing.Point(433, 84);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(108, 18);
-            this.radioButton2.TabIndex = 51;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Khách Vãng Lai";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rad_KHVL.AutoSize = true;
+            this.rad_KHVL.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad_KHVL.ForeColor = System.Drawing.Color.Black;
+            this.rad_KHVL.Location = new System.Drawing.Point(433, 84);
+            this.rad_KHVL.Margin = new System.Windows.Forms.Padding(2);
+            this.rad_KHVL.Name = "rad_KHVL";
+            this.rad_KHVL.Size = new System.Drawing.Size(108, 18);
+            this.rad_KHVL.TabIndex = 51;
+            this.rad_KHVL.Text = "Khách Vãng Lai";
+            this.rad_KHVL.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rad_KH
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.Black;
-            this.radioButton1.Location = new System.Drawing.Point(312, 84);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(90, 18);
-            this.radioButton1.TabIndex = 50;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Khách Hàng";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // txt_Idcus
-            // 
-            this.txt_Idcus.AutoRoundedCorners = true;
-            this.txt_Idcus.BorderRadius = 15;
-            this.txt_Idcus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Idcus.DefaultText = "";
-            this.txt_Idcus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Idcus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Idcus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Idcus.DisabledState.Parent = this.txt_Idcus;
-            this.txt_Idcus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Idcus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Idcus.FocusedState.Parent = this.txt_Idcus;
-            this.txt_Idcus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Idcus.HoverState.Parent = this.txt_Idcus;
-            this.txt_Idcus.Location = new System.Drawing.Point(130, 73);
-            this.txt_Idcus.Name = "txt_Idcus";
-            this.txt_Idcus.PasswordChar = '\0';
-            this.txt_Idcus.PlaceholderText = "Id Khách Hàng..";
-            this.txt_Idcus.SelectedText = "";
-            this.txt_Idcus.ShadowDecoration.Parent = this.txt_Idcus;
-            this.txt_Idcus.Size = new System.Drawing.Size(136, 32);
-            this.txt_Idcus.TabIndex = 48;
-            this.txt_Idcus.TextOffset = new System.Drawing.Point(8, 0);
-            this.txt_Idcus.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            this.rad_KH.AutoSize = true;
+            this.rad_KH.Checked = true;
+            this.rad_KH.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad_KH.ForeColor = System.Drawing.Color.Black;
+            this.rad_KH.Location = new System.Drawing.Point(312, 84);
+            this.rad_KH.Margin = new System.Windows.Forms.Padding(2);
+            this.rad_KH.Name = "rad_KH";
+            this.rad_KH.Size = new System.Drawing.Size(90, 18);
+            this.rad_KH.TabIndex = 50;
+            this.rad_KH.TabStop = true;
+            this.rad_KH.Text = "Khách Hàng";
+            this.rad_KH.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -463,31 +482,6 @@
             this.txtBox_IdCus.TabIndex = 41;
             this.txtBox_IdCus.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // txtBox_DateBuy
-            // 
-            this.txtBox_DateBuy.AutoRoundedCorners = true;
-            this.txtBox_DateBuy.BorderRadius = 15;
-            this.txtBox_DateBuy.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBox_DateBuy.DefaultText = "";
-            this.txtBox_DateBuy.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBox_DateBuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBox_DateBuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_DateBuy.DisabledState.Parent = this.txtBox_DateBuy;
-            this.txtBox_DateBuy.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBox_DateBuy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_DateBuy.FocusedState.Parent = this.txtBox_DateBuy;
-            this.txtBox_DateBuy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBox_DateBuy.HoverState.Parent = this.txtBox_DateBuy;
-            this.txtBox_DateBuy.Location = new System.Drawing.Point(567, 26);
-            this.txtBox_DateBuy.Name = "txtBox_DateBuy";
-            this.txtBox_DateBuy.PasswordChar = '\0';
-            this.txtBox_DateBuy.PlaceholderText = "Ngày Mua..";
-            this.txtBox_DateBuy.SelectedText = "";
-            this.txtBox_DateBuy.ShadowDecoration.Parent = this.txtBox_DateBuy;
-            this.txtBox_DateBuy.Size = new System.Drawing.Size(157, 32);
-            this.txtBox_DateBuy.TabIndex = 39;
-            this.txtBox_DateBuy.TextOffset = new System.Drawing.Point(8, 0);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -509,24 +503,12 @@
             this.label6.Size = new System.Drawing.Size(0, 36);
             this.label6.TabIndex = 0;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label12.Location = new System.Drawing.Point(833, 53);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 36);
-            this.label12.TabIndex = 45;
-            // 
             // Panel_OrderDetail
             // 
             this.Panel_OrderDetail.Controls.Add(this.cbx_OrderID);
             this.Panel_OrderDetail.Controls.Add(this.cboBookID);
             this.Panel_OrderDetail.Controls.Add(this.label12);
-            this.Panel_OrderDetail.Controls.Add(this.label14);
             this.Panel_OrderDetail.Controls.Add(this.label15);
-            this.Panel_OrderDetail.Controls.Add(this.txt_Discount);
             this.Panel_OrderDetail.Controls.Add(this.label16);
             this.Panel_OrderDetail.Controls.Add(this.label17);
             this.Panel_OrderDetail.Controls.Add(this.label18);
@@ -558,7 +540,7 @@
             this.cbx_OrderID.HoverState.Parent = this.cbx_OrderID;
             this.cbx_OrderID.ItemHeight = 30;
             this.cbx_OrderID.ItemsAppearance.Parent = this.cbx_OrderID;
-            this.cbx_OrderID.Location = new System.Drawing.Point(83, 21);
+            this.cbx_OrderID.Location = new System.Drawing.Point(293, 21);
             this.cbx_OrderID.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_OrderID.Name = "cbx_OrderID";
             this.cbx_OrderID.ShadowDecoration.Parent = this.cbx_OrderID;
@@ -581,7 +563,7 @@
             this.cboBookID.HoverState.Parent = this.cboBookID;
             this.cboBookID.ItemHeight = 30;
             this.cboBookID.ItemsAppearance.Parent = this.cboBookID;
-            this.cboBookID.Location = new System.Drawing.Point(295, 19);
+            this.cboBookID.Location = new System.Drawing.Point(66, 18);
             this.cboBookID.Margin = new System.Windows.Forms.Padding(2);
             this.cboBookID.Name = "cboBookID";
             this.cboBookID.ShadowDecoration.Parent = this.cboBookID;
@@ -589,23 +571,22 @@
             this.cboBookID.TabIndex = 51;
             this.cboBookID.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
-            // label14
+            // label12
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(457, 29);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(57, 14);
-            this.label14.TabIndex = 50;
-            this.label14.Text = "Giảm Giá:";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label12.Location = new System.Drawing.Point(615, 52);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(0, 36);
+            this.label12.TabIndex = 45;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(238, 29);
+            this.label15.Location = new System.Drawing.Point(9, 28);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 14);
@@ -613,37 +594,12 @@
             this.label15.Text = "ID Sách:";
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // txt_Discount
-            // 
-            this.txt_Discount.AutoRoundedCorners = true;
-            this.txt_Discount.BorderRadius = 15;
-            this.txt_Discount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Discount.DefaultText = "";
-            this.txt_Discount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Discount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Discount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Discount.DisabledState.Parent = this.txt_Discount;
-            this.txt_Discount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Discount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Discount.FocusedState.Parent = this.txt_Discount;
-            this.txt_Discount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Discount.HoverState.Parent = this.txt_Discount;
-            this.txt_Discount.Location = new System.Drawing.Point(532, 19);
-            this.txt_Discount.Name = "txt_Discount";
-            this.txt_Discount.PasswordChar = '\0';
-            this.txt_Discount.PlaceholderText = "Giảm giá..";
-            this.txt_Discount.SelectedText = "";
-            this.txt_Discount.ShadowDecoration.Parent = this.txt_Discount;
-            this.txt_Discount.Size = new System.Drawing.Size(142, 32);
-            this.txt_Discount.TabIndex = 46;
-            this.txt_Discount.TextOffset = new System.Drawing.Point(8, 0);
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label16.Location = new System.Drawing.Point(402, 13);
+            this.label16.Location = new System.Drawing.Point(173, 12);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(0, 36);
@@ -654,7 +610,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(15, 69);
+            this.label17.Location = new System.Drawing.Point(683, 27);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(64, 14);
             this.label17.TabIndex = 44;
@@ -665,7 +621,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(680, 29);
+            this.label18.Location = new System.Drawing.Point(462, 28);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(51, 14);
@@ -677,7 +633,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(14, 29);
+            this.label19.Location = new System.Drawing.Point(224, 29);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(58, 14);
             this.label19.TabIndex = 42;
@@ -698,7 +654,7 @@
             this.txt_Price.FocusedState.Parent = this.txt_Price;
             this.txt_Price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Price.HoverState.Parent = this.txt_Price;
-            this.txt_Price.Location = new System.Drawing.Point(735, 19);
+            this.txt_Price.Location = new System.Drawing.Point(517, 18);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.PasswordChar = '\0';
             this.txt_Price.PlaceholderText = "Giá Bán..";
@@ -723,7 +679,7 @@
             this.txt_Quantity.FocusedState.Parent = this.txt_Quantity;
             this.txt_Quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Quantity.HoverState.Parent = this.txt_Quantity;
-            this.txt_Quantity.Location = new System.Drawing.Point(88, 63);
+            this.txt_Quantity.Location = new System.Drawing.Point(756, 21);
             this.txt_Quantity.Name = "txt_Quantity";
             this.txt_Quantity.PasswordChar = '\0';
             this.txt_Quantity.PlaceholderText = "Số Lượng..";
@@ -749,7 +705,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label21.Location = new System.Drawing.Point(134, 1);
+            this.label21.Location = new System.Drawing.Point(344, 1);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(0, 36);
             this.label21.TabIndex = 0;
@@ -767,33 +723,55 @@
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageSize = new System.Drawing.Size(14, 14);
-            this.guna2Button2.Location = new System.Drawing.Point(18, 462);
+            this.guna2Button2.Location = new System.Drawing.Point(18, 464);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(162, 43);
             this.guna2Button2.TabIndex = 54;
             this.guna2Button2.Text = "     In Hóa Đơn";
             // 
-            // btn_AddOrd
+            // cbx_IdCus
             // 
-            this.btn_AddOrd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btn_AddOrd.BorderRadius = 5;
-            this.btn_AddOrd.BorderThickness = 1;
-            this.btn_AddOrd.CheckedState.Parent = this.btn_AddOrd;
-            this.btn_AddOrd.CustomImages.Parent = this.btn_AddOrd;
-            this.btn_AddOrd.FillColor = System.Drawing.Color.Transparent;
-            this.btn_AddOrd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_AddOrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btn_AddOrd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btn_AddOrd.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_AddOrd.HoverState.Parent = this.btn_AddOrd;
-            this.btn_AddOrd.Location = new System.Drawing.Point(521, 7);
-            this.btn_AddOrd.Name = "btn_AddOrd";
-            this.btn_AddOrd.ShadowDecoration.Parent = this.btn_AddOrd;
-            this.btn_AddOrd.Size = new System.Drawing.Size(84, 30);
-            this.btn_AddOrd.TabIndex = 54;
-            this.btn_AddOrd.Text = "Thêm";
-            this.btn_AddOrd.Click += new System.EventHandler(this.btn_AddOrd_Click);
+            this.cbx_IdCus.BackColor = System.Drawing.Color.Transparent;
+            this.cbx_IdCus.BorderRadius = 18;
+            this.cbx_IdCus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbx_IdCus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_IdCus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_IdCus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_IdCus.FocusedState.Parent = this.cbx_IdCus;
+            this.cbx_IdCus.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbx_IdCus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbx_IdCus.HoverState.Parent = this.cbx_IdCus;
+            this.cbx_IdCus.ItemHeight = 30;
+            this.cbx_IdCus.ItemsAppearance.Parent = this.cbx_IdCus;
+            this.cbx_IdCus.Location = new System.Drawing.Point(112, 66);
+            this.cbx_IdCus.Margin = new System.Windows.Forms.Padding(2);
+            this.cbx_IdCus.Name = "cbx_IdCus";
+            this.cbx_IdCus.ShadowDecoration.Parent = this.cbx_IdCus;
+            this.cbx_IdCus.Size = new System.Drawing.Size(143, 36);
+            this.cbx_IdCus.TabIndex = 73;
+            this.cbx_IdCus.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // btn_SaveOrderDetail
+            // 
+            this.btn_SaveOrderDetail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_SaveOrderDetail.BorderRadius = 5;
+            this.btn_SaveOrderDetail.BorderThickness = 1;
+            this.btn_SaveOrderDetail.CheckedState.Parent = this.btn_SaveOrderDetail;
+            this.btn_SaveOrderDetail.CustomImages.Parent = this.btn_SaveOrderDetail;
+            this.btn_SaveOrderDetail.FillColor = System.Drawing.Color.Transparent;
+            this.btn_SaveOrderDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_SaveOrderDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_SaveOrderDetail.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_SaveOrderDetail.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_SaveOrderDetail.HoverState.Parent = this.btn_SaveOrderDetail;
+            this.btn_SaveOrderDetail.Location = new System.Drawing.Point(18, 409);
+            this.btn_SaveOrderDetail.Name = "btn_SaveOrderDetail";
+            this.btn_SaveOrderDetail.ShadowDecoration.Parent = this.btn_SaveOrderDetail;
+            this.btn_SaveOrderDetail.Size = new System.Drawing.Size(162, 47);
+            this.btn_SaveOrderDetail.TabIndex = 55;
+            this.btn_SaveOrderDetail.Text = "Lưu Chi Tiết Đơn Hàng";
+            this.btn_SaveOrderDetail.Click += new System.EventHandler(this.btn_SaveOrderDetail_Click);
             // 
             // BuyProduct
             // 
@@ -801,6 +779,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1011, 639);
+            this.Controls.Add(this.btn_SaveOrderDetail);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.Panel_OrderDetail);
             this.Controls.Add(this.Panel_Order);
@@ -836,32 +815,31 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Idcus;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtBox_IdCus;
-        private Guna.UI2.WinForms.Guna2TextBox txtBox_DateBuy;
         private Guna.UI2.WinForms.Guna2Panel Panel_OrderDetail;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Discount;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Price;
         private Guna.UI2.WinForms.Guna2TextBox txt_Quantity;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private Guna.UI2.WinForms.Guna2Button btnDelete_Product;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rad_KHVL;
+        private System.Windows.Forms.RadioButton rad_KH;
         private Guna.UI2.WinForms.Guna2ComboBox cboBookID;
         private Guna.UI2.WinForms.Guna2ComboBox cbx_Employee;
         private Guna.UI2.WinForms.Guna2ComboBox cbx_OrderID;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btn_AddOrd;
+        private Guna.UI.WinForms.GunaDateTimePicker txt_DateBuy;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label18;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Price;
+        private Guna.UI2.WinForms.Guna2ComboBox cbx_IdCus;
+        private Guna.UI2.WinForms.Guna2Button btn_SaveOrderDetail;
     }
 }

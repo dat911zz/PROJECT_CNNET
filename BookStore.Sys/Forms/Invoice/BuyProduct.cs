@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BookStore.Sys.Containers;
+using System.Globalization;
 
 namespace BookStore
 {
@@ -42,6 +43,7 @@ namespace BookStore
             dgv_Load();
             DataBinding();
             ManageInput(false, true);
+            ManageInputOrderDetail(false, true);
         }
         private void dgv_Load()
         {
@@ -68,13 +70,15 @@ namespace BookStore
             sys.Db.LoadDataIntoCbo(cboBookID, sys.Ds, "Book", "BookName", "BookID");
             sys.Db.LoadDataIntoCbo(cbx_Employee, sys.Ds, "Employee", "FullName", "Id");
             sys.Db.LoadDataIntoCbo(cbx_OrderID, sys.Ds, "OrderDetail", "OrderId", "OrderId");
+            sys.Db.LoadDataIntoCbo(cbx_IdCus, sys.Ds, "OrderInfo", "CustomerId", "CustomerId");
+
         }
         private void DataBinding()
         {
             ClearAllBinding();
             cboBookID.DataBindings.Add("SelectedValue", sys.Ds.Tables["Book"], "BookID");
             cbx_OrderID.DataBindings.Add("SelectedValue", sys.Ds.Tables["OrderInfo"], "Id");
-            txt_Discount.DataBindings.Add("Text", sys.Ds.Tables["CustomerType"], "Discount");
+            cbx_IdCus.DataBindings.Add("SelectedValue", sys.Ds.Tables["OrderInfo"], "CustomerId");
             txt_Price.DataBindings.Add("Text", sys.Ds.Tables["OrderDetail"], "Price");
             txt_Quantity.DataBindings.Add("Text", sys.Ds.Tables["OrderDetail"], "Quantity");
         }
@@ -106,6 +110,11 @@ namespace BookStore
                     }
                 }
             }
+            cbx_IdCus.Enabled = txt_DateBuy.Enabled = cbx_Employee.Enabled = inputEnable;
+            this.Validate();
+        }
+        private void ManageInputOrderDetail(bool inputEnable, bool inputReadOnly)
+        {
             foreach (Control item in Panel_OrderDetail.Controls)
             {
                 if (item.GetType() != typeof(Label))
@@ -127,7 +136,7 @@ namespace BookStore
                     }
                 }
             }
-            cboBookID.Enabled = cbx_OrderID.Enabled = cbx_Employee.Enabled = inputEnable;
+            cboBookID.Enabled = cbx_OrderID.Enabled = inputEnable;
             this.Validate();
         }
         private void TrimAllTextBox()
@@ -249,13 +258,20 @@ namespace BookStore
             btnDelete_Product.Enabled = btnEdit_Product.Enabled = false;
             ClearAllBinding();
             ManageInput(true, false);
-            cbx_OrderID.Enabled = false;
             txtBox_IdCus.Enabled = false;
+            cbx_OrderID.Enabled = false;
+            if (rad_KHVL.Checked)
+            {
+                cbx_IdCus.Enabled = false;
+            }
+            else
+            {
+                cbx_IdCus.Enabled = true;
+            }               
             dtgv_BuyProduct.AllowUserToAddRows = true;
             dtgv_BuyProduct.ReadOnly = false;
             ClearInput();
             Panel_Order.Refresh();
-            Panel_OrderDetail.Refresh();
             //Khóa tất cả các trường trong dgv trừ trường mới dc thêm
             for (int i = 0; i < dtgv_BuyProduct.Rows.Count - 1; i++)
             {
@@ -263,21 +279,18 @@ namespace BookStore
             }
             dtgv_BuyProduct.FirstDisplayedScrollingRowIndex = dtgv_BuyProduct.Rows.Count - 1;
             dtgv_BuyProduct.Rows[dtgv_BuyProduct.Rows.Count - 1].Selected = true;
-            txtBox_IdCus.Focus();
+            cbx_Employee.Focus();
         }
         private void btnAdd_Product_Click(object sender, EventArgs e)
         {
             isAdd = true;
             isEdit = false;
-            btnSave_Product.Enabled = true;
             btnDelete_Product.Enabled = btnEdit_Product.Enabled = false;
             ClearAllBinding();
-            ManageInput(true, false);
-            cbx_OrderID.Enabled = false;
+            ManageInputOrderDetail(true, false);
             dtgv_BuyProduct.AllowUserToAddRows = true;
             dtgv_BuyProduct.ReadOnly = false;
             ClearInput();
-            Panel_Order.Refresh();
             Panel_OrderDetail.Refresh();
             //Khóa tất cả các trường trong dgv trừ trường mới dc thêm
             for (int i = 0; i < dtgv_BuyProduct.Rows.Count - 1; i++)
@@ -286,33 +299,94 @@ namespace BookStore
             }
             dtgv_BuyProduct.FirstDisplayedScrollingRowIndex = dtgv_BuyProduct.Rows.Count - 1;
             dtgv_BuyProduct.Rows[dtgv_BuyProduct.Rows.Count - 1].Selected = true;
-            txtBox_IdCus.Focus();
+            txtBox_IdCus.Enabled = false;
+            btnAdd_Product.Enabled = true;
         }
-
+        private void btn_SaveOrderDetail_Click(object sender, EventArgs e)
+        {
+            ManageInputOrderDetail(false, true);
+            if (isAdd)
+            {
+                DataRow newRow = sys.Ds.Tables["OrderDetail"].NewRow();
+                if (newRow != null)
+                {
+                    //Lấy giá trị các trường input thêm vào newrow
+                    newRow.ItemArray = new object[] {
+                        cboBookID.SelectedValue.ToString(),
+                        cbx_OrderID.SelectedValue.ToString(),
+                        txt_Price.Text.Trim(),
+                        txt_Quantity.Text.Trim()
+                    };
+                    sys.Ds.Tables["OrderDetail"].Rows.Add(newRow);
+                    if (sys.Db.Update(sys.Ds, "OrderDetail") == 0)
+                    {
+                        MessageBox.Show("Thêm thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        btnSave_Product.Enabled = false;
+                        isEdit = isAdd = false;
+                    }
+                    BuyProduct_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                if (isEdit)
+                {
+                    Update("Cập nhật");
+                    btnSave_Product.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
         private void btnSave_Product_Click(object sender, EventArgs e)
         {
             ManageInput(false, true);
             btnAdd_Product.Enabled = true;
-            if (!IsFullFill())
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                btnEdit_Product_Click(sender, e);
-                return;
-            }
             if (isAdd)
             {
                 DataRow newRow = sys.Ds.Tables["OrderInfo"].NewRow();
                 if (newRow != null)
                 {
-                    //Lấy giá trị các trường input thêm vào newrow
-                    newRow.ItemArray = new object[] {
+                    if (rad_KHVL.Checked)
+                    {
+                        newRow.ItemArray = new object[] {
                         0,
                         cbx_Employee.SelectedValue.ToString(),
-                        txtBox_DateBuy.Text.Trim(),
-                        txt_Idcus.Text.Trim(),
-                    };
-                    sys.Ds.Tables["OrderDetail"].Rows.Add(newRow);
-                    Update("Thêm");
+                        23,
+                        txt_DateBuy.Value.ToString("yyyy-MM-dd", new CultureInfo("en-US"))
+                        };
+                    }
+                    else
+                    {
+                        //Lấy giá trị các trường input thêm vào newrow
+                        newRow.ItemArray = new object[] {
+                        0,
+                        cbx_Employee.SelectedValue.ToString(),
+                        cbx_IdCus.SelectedValue.ToString(),
+                        txt_DateBuy.Value.ToString("yyyy-MM-dd", new CultureInfo("en-US"))
+                        };
+                    }
+                    sys.Ds.Tables["OrderInfo"].Rows.Add(newRow);
+                    if (sys.Db.Update(sys.Ds, "OrderInfo") == 0)
+                    {
+                        MessageBox.Show("Thêm thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        btnSave_Product.Enabled = false;
+                        isEdit = isAdd = false;
+                    }
                     BuyProduct_Load(sender, e);
                 }
                 else
@@ -335,7 +409,7 @@ namespace BookStore
         }
         private void Update(string actionName)
         {
-            if (sys.Db.Update(sys.Ds, "OrderDetail") == 0)
+            if (sys.Db.Update(sys.Ds, "OrderInfo") == 0)
             {
                 MessageBox.Show("Thêm thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -376,7 +450,7 @@ namespace BookStore
         }
 
 
-        private bool IsFullFill()
+        private bool IsFullFillOrder()
         {
             foreach (Control item in Panel_Order.Controls)
             {
@@ -394,7 +468,11 @@ namespace BookStore
                     }
                 }
             }
+            return true;
+        }
 
+        private bool IsFullFillOrderDetail()
+        {
             foreach (Control item in Panel_OrderDetail.Controls)
             {
                 if (item.GetType() != typeof(Label))
