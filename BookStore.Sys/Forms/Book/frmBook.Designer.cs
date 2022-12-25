@@ -89,11 +89,13 @@
             this.btnAdd_Book = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).BeginInit();
             this.panelInput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_ImageProduct)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -416,8 +418,6 @@
             this.cboCategory.ShadowDecoration.Parent = this.cboCategory;
             this.cboCategory.Size = new System.Drawing.Size(189, 36);
             this.cboCategory.TabIndex = 73;
-            this.cboCategory.SelectedIndexChanged += new System.EventHandler(this.cboCategory_SelectedIndexChanged);
-            this.cboCategory.Leave += new System.EventHandler(this.txtInputs_Leave);
             this.cboCategory.MouseHover += new System.EventHandler(this.cboAuthor_MouseHover);
             // 
             // cboPublisher
@@ -440,7 +440,6 @@
             this.cboPublisher.ShadowDecoration.Parent = this.cboPublisher;
             this.cboPublisher.Size = new System.Drawing.Size(189, 36);
             this.cboPublisher.TabIndex = 72;
-            this.cboPublisher.Leave += new System.EventHandler(this.txtInputs_Leave);
             this.cboPublisher.MouseHover += new System.EventHandler(this.cboAuthor_MouseHover);
             // 
             // cboAuthor
@@ -465,8 +464,6 @@
             this.cboAuthor.ShadowDecoration.Parent = this.cboAuthor;
             this.cboAuthor.Size = new System.Drawing.Size(189, 36);
             this.cboAuthor.TabIndex = 10;
-            this.cboAuthor.SelectedIndexChanged += new System.EventHandler(this.cboAuthor_SelectedIndexChanged);
-            this.cboAuthor.Leave += new System.EventHandler(this.txtInputs_Leave);
             this.cboAuthor.MouseHover += new System.EventHandler(this.cboAuthor_MouseHover);
             // 
             // txtDescription
@@ -476,7 +473,6 @@
             this.txtDescription.Size = new System.Drawing.Size(268, 206);
             this.txtDescription.TabIndex = 71;
             this.txtDescription.Text = "";
-            this.txtDescription.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // label13
             // 
@@ -578,6 +574,7 @@
             this.txtInventoryNum.Size = new System.Drawing.Size(189, 39);
             this.txtInventoryNum.TabIndex = 64;
             this.txtInventoryNum.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtInventoryNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInventoryNum_KeyPress);
             this.txtInventoryNum.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // label15
@@ -745,7 +742,7 @@
             this.txtYearOfPublish.Size = new System.Drawing.Size(189, 39);
             this.txtYearOfPublish.TabIndex = 53;
             this.txtYearOfPublish.TextOffset = new System.Drawing.Point(8, 0);
-            this.txtYearOfPublish.Leave += new System.EventHandler(this.txtInputs_Leave);
+            this.txtYearOfPublish.Leave += new System.EventHandler(this.txtYearOfPublish_Leave);
             // 
             // txtLang
             // 
@@ -1031,6 +1028,11 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1308, 417);
             this.flowLayoutPanel1.TabIndex = 61;
             // 
+            // errProvider
+            // 
+            this.errProvider.ContainerControl = this;
+            this.errProvider.RightToLeft = true;
+            // 
             // frmBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1057,6 +1059,7 @@
             this.panelInput.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_ImageProduct)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1118,5 +1121,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cboPublisher;
         private Guna.UI2.WinForms.Guna2ComboBox cboAuthor;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ErrorProvider errProvider;
     }
 }
