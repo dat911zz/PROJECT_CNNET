@@ -44,6 +44,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panelInput = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtDateOfBirth = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
@@ -59,7 +60,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dgv = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtDateOfBirth = new Guna.UI.WinForms.GunaDateTimePicker();
             this.guna2Panel1.SuspendLayout();
             this.panelInput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -251,6 +251,30 @@
             this.panelInput.ShadowDecoration.Parent = this.panelInput;
             this.panelInput.Size = new System.Drawing.Size(785, 186);
             this.panelInput.TabIndex = 56;
+            // 
+            // txtDateOfBirth
+            // 
+            this.txtDateOfBirth.BaseColor = System.Drawing.Color.White;
+            this.txtDateOfBirth.BorderColor = System.Drawing.Color.Silver;
+            this.txtDateOfBirth.BorderSize = 1;
+            this.txtDateOfBirth.CustomFormat = null;
+            this.txtDateOfBirth.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.txtDateOfBirth.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDateOfBirth.ForeColor = System.Drawing.Color.Black;
+            this.txtDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDateOfBirth.Location = new System.Drawing.Point(104, 136);
+            this.txtDateOfBirth.MaxDate = new System.DateTime(2022, 12, 25, 23, 59, 59, 0);
+            this.txtDateOfBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtDateOfBirth.Name = "txtDateOfBirth";
+            this.txtDateOfBirth.OnHoverBaseColor = System.Drawing.Color.White;
+            this.txtDateOfBirth.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateOfBirth.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateOfBirth.OnPressedColor = System.Drawing.Color.Black;
+            this.txtDateOfBirth.Size = new System.Drawing.Size(189, 30);
+            this.txtDateOfBirth.TabIndex = 71;
+            this.txtDateOfBirth.Text = "24/12/2022";
+            this.txtDateOfBirth.Value = new System.DateTime(2022, 12, 24, 15, 58, 4, 975);
             // 
             // label7
             // 
@@ -542,30 +566,6 @@
             this.dgv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.dgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
-            // txtDateOfBirth
-            // 
-            this.txtDateOfBirth.BaseColor = System.Drawing.Color.White;
-            this.txtDateOfBirth.BorderColor = System.Drawing.Color.Silver;
-            this.txtDateOfBirth.BorderSize = 1;
-            this.txtDateOfBirth.CustomFormat = null;
-            this.txtDateOfBirth.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.txtDateOfBirth.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDateOfBirth.ForeColor = System.Drawing.Color.Black;
-            this.txtDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDateOfBirth.Location = new System.Drawing.Point(104, 136);
-            this.txtDateOfBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtDateOfBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.OnHoverBaseColor = System.Drawing.Color.White;
-            this.txtDateOfBirth.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.OnPressedColor = System.Drawing.Color.Black;
-            this.txtDateOfBirth.Size = new System.Drawing.Size(189, 30);
-            this.txtDateOfBirth.TabIndex = 71;
-            this.txtDateOfBirth.Text = "24/12/2022";
-            this.txtDateOfBirth.Value = new System.DateTime(2022, 12, 24, 15, 58, 4, 975);
-            // 
             // frmAuthor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -586,9 +586,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tác giả";
             this.Load += new System.EventHandler(this.frmBookAdd_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BookAdd_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BookAdd_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BookAdd_MouseUp);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.panelInput.ResumeLayout(false);
