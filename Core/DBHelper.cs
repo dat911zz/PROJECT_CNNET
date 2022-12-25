@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace Core
 {
@@ -161,23 +162,39 @@ namespace Core
             });
             return list;
         }
-        public void FillData(DataSet dataSet, string selectCmd, string tableName)
+        public void FillData(DataSet dataSet, string tableName)
         {
+            string selectCmd = "Select * from " + tableName;
             SqlDataAdapter adapter = new SqlDataAdapter(selectCmd, connStr);
             adapter.Fill(dataSet, tableName);
         }
         public void LoadDataIntoCbo(ComboBox cbo, DataSet dataSet, string tableName, string display, string value)
         {
             string selectCmd = "Select * from " + tableName;
-            FillData(dataSet, selectCmd, tableName);
+            FillData(dataSet, tableName);
             cbo.DataSource = dataSet.Tables[tableName];
             cbo.DisplayMember = display;
             cbo.ValueMember = value;
         }
+        public void LoadDataIntoCbo(ComboBox cbo, DataSet dataSet, string tableName, string display, string value, string alterValue)
+        {
+            string selectCmd = "Select * from " + tableName;
+            FillData(dataSet, tableName);
+            dataSet.Tables[tableName].Columns[value].ColumnName = alterValue;
+            cbo.DataSource = dataSet.Tables[tableName];
+            cbo.DisplayMember = display;
+            cbo.ValueMember = alterValue;
+        }
         public void LoadDataIntoDgv(DataGridView dgv, DataSet dataSet, string tableName)
         {
             string selectCmd = "Select * from " + tableName;
-            FillData(dataSet, selectCmd, tableName);
+            FillData(dataSet, tableName);
+            dgv.DataSource = dataSet.Tables[tableName];
+        }
+        public void LoadDataIntoDgv(Guna2DataGridView dgv, DataSet dataSet, string tableName)
+        {
+            string selectCmd = "Select * from " + tableName;
+            FillData(dataSet, tableName);
             dgv.DataSource = dataSet.Tables[tableName];
         }
         public int Update(DataSet ds, string tableName)
@@ -187,9 +204,10 @@ namespace Core
             {
                 SqlDataAdapter adapter = new SqlDataAdapter(selectCmd, connStr);
                 SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
-                return adapter.Update(ds, tableName);
+                var rowAffect = adapter.Update(ds, tableName);
+                return rowAffect;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return 0;
             }

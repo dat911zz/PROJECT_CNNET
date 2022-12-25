@@ -31,7 +31,7 @@ namespace BookStore
         private void CustomerAdd_Load(object sender, EventArgs e)
         {
             string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
-            db.FillData(ds_Cus, "Select * from Customer", "Customer");
+            db.FillData(ds_Cus, "Customer");
             dtgv_CustomerAdd.DataSource = ds_Cus.Tables["Customer"];
             //Add header name
             dtgv_CustomerAdd.Columns[0].HeaderText = "ID";
