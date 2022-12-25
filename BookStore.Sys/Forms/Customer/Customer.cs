@@ -35,7 +35,7 @@ namespace BookStore
                 return;
             }
             string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
-            db.FillData(ds_Cus, "Select * from Customer", "Customer");
+            db.FillData(ds_Cus, "Customer");
             dgvCus.DataSource = ds_Cus.Tables["Customer"];
             //Add header name
             dgvCus.Columns[0].HeaderText = "ID";

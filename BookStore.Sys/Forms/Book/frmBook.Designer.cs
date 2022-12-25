@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBook));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPublisher = new Guna.UI2.WinForms.Guna2Button();
             this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
@@ -51,6 +52,9 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelInput = new Guna.UI2.WinForms.Guna2Panel();
+            this.cboCategory = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cboPublisher = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cboAuthor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtImg = new Guna.UI2.WinForms.Guna2TextBox();
@@ -84,9 +88,7 @@
             this.btnEdit_Book = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd_Book = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cboPublisher = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cboCategory = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cboAuthor = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).BeginInit();
             this.panelInput.SuspendLayout();
@@ -230,8 +232,8 @@
             // dgvBook
             // 
             this.dgvBook.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.dgvBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -240,36 +242,36 @@
             this.dgvBook.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvBook.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvBook.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBook.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBook.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBook.EnableHeadersVisualStyles = false;
             this.dgvBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.dgvBook.Location = new System.Drawing.Point(312, 4);
             this.dgvBook.Margin = new System.Windows.Forms.Padding(4);
             this.dgvBook.Name = "dgvBook";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBook.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBook.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvBook.RowHeadersVisible = false;
             this.dgvBook.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvBook.RowTemplate.DividerHeight = 5;
@@ -299,6 +301,7 @@
             this.dgvBook.ThemeStyle.RowsStyle.Height = 40;
             this.dgvBook.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.dgvBook.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvBook.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBook_CellClick);
             this.dgvBook.SelectionChanged += new System.EventHandler(this.dgvBook_SelectionChanged);
             // 
             // Column1
@@ -393,6 +396,79 @@
             this.panelInput.Size = new System.Drawing.Size(1348, 250);
             this.panelInput.TabIndex = 8;
             // 
+            // cboCategory
+            // 
+            this.cboCategory.BackColor = System.Drawing.Color.Transparent;
+            this.cboCategory.BorderRadius = 18;
+            this.cboCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCategory.DropDownWidth = 255;
+            this.cboCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboCategory.FocusedState.Parent = this.cboCategory;
+            this.cboCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboCategory.HoverState.Parent = this.cboCategory;
+            this.cboCategory.ItemHeight = 30;
+            this.cboCategory.ItemsAppearance.Parent = this.cboCategory;
+            this.cboCategory.Location = new System.Drawing.Point(734, 138);
+            this.cboCategory.Name = "cboCategory";
+            this.cboCategory.ShadowDecoration.Parent = this.cboCategory;
+            this.cboCategory.Size = new System.Drawing.Size(189, 36);
+            this.cboCategory.TabIndex = 73;
+            this.cboCategory.SelectedIndexChanged += new System.EventHandler(this.cboCategory_SelectedIndexChanged);
+            this.cboCategory.Leave += new System.EventHandler(this.txtInputs_Leave);
+            this.cboCategory.MouseHover += new System.EventHandler(this.cboAuthor_MouseHover);
+            // 
+            // cboPublisher
+            // 
+            this.cboPublisher.BackColor = System.Drawing.Color.Transparent;
+            this.cboPublisher.BorderRadius = 18;
+            this.cboPublisher.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPublisher.DropDownWidth = 255;
+            this.cboPublisher.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboPublisher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboPublisher.FocusedState.Parent = this.cboPublisher;
+            this.cboPublisher.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboPublisher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboPublisher.HoverState.Parent = this.cboPublisher;
+            this.cboPublisher.ItemHeight = 30;
+            this.cboPublisher.ItemsAppearance.Parent = this.cboPublisher;
+            this.cboPublisher.Location = new System.Drawing.Point(734, 29);
+            this.cboPublisher.Name = "cboPublisher";
+            this.cboPublisher.ShadowDecoration.Parent = this.cboPublisher;
+            this.cboPublisher.Size = new System.Drawing.Size(189, 36);
+            this.cboPublisher.TabIndex = 72;
+            this.cboPublisher.Leave += new System.EventHandler(this.txtInputs_Leave);
+            this.cboPublisher.MouseHover += new System.EventHandler(this.cboAuthor_MouseHover);
+            // 
+            // cboAuthor
+            // 
+            this.cboAuthor.BackColor = System.Drawing.Color.Transparent;
+            this.cboAuthor.BorderRadius = 18;
+            this.cboAuthor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboAuthor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAuthor.DropDownWidth = 255;
+            this.cboAuthor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboAuthor.FocusedState.Parent = this.cboAuthor;
+            this.cboAuthor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboAuthor.HoverState.Parent = this.cboAuthor;
+            this.cboAuthor.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.cboAuthor.ItemHeight = 30;
+            this.cboAuthor.ItemsAppearance.BackColor = System.Drawing.Color.White;
+            this.cboAuthor.ItemsAppearance.Parent = this.cboAuthor;
+            this.cboAuthor.Location = new System.Drawing.Point(406, 29);
+            this.cboAuthor.Name = "cboAuthor";
+            this.cboAuthor.ShadowDecoration.Parent = this.cboAuthor;
+            this.cboAuthor.Size = new System.Drawing.Size(189, 36);
+            this.cboAuthor.TabIndex = 10;
+            this.cboAuthor.SelectedIndexChanged += new System.EventHandler(this.cboAuthor_SelectedIndexChanged);
+            this.cboAuthor.Leave += new System.EventHandler(this.txtInputs_Leave);
+            this.cboAuthor.MouseHover += new System.EventHandler(this.cboAuthor_MouseHover);
+            // 
             // txtDescription
             // 
             this.txtDescription.Location = new System.Drawing.Point(1019, 29);
@@ -400,6 +476,7 @@
             this.txtDescription.Size = new System.Drawing.Size(268, 206);
             this.txtDescription.TabIndex = 71;
             this.txtDescription.Text = "";
+            this.txtDescription.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // label13
             // 
@@ -438,6 +515,7 @@
             this.txtImg.Size = new System.Drawing.Size(506, 39);
             this.txtImg.TabIndex = 69;
             this.txtImg.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtImg.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // label7
             // 
@@ -500,6 +578,7 @@
             this.txtInventoryNum.Size = new System.Drawing.Size(189, 39);
             this.txtInventoryNum.TabIndex = 64;
             this.txtInventoryNum.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtInventoryNum.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // label15
             // 
@@ -538,6 +617,7 @@
             this.txtImportPrice.Size = new System.Drawing.Size(189, 39);
             this.txtImportPrice.TabIndex = 61;
             this.txtImportPrice.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtImportPrice.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // txtPrice
             // 
@@ -564,6 +644,7 @@
             this.txtPrice.Size = new System.Drawing.Size(189, 39);
             this.txtPrice.TabIndex = 60;
             this.txtPrice.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtPrice.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // label16
             // 
@@ -637,6 +718,7 @@
             this.txtName.Size = new System.Drawing.Size(189, 39);
             this.txtName.TabIndex = 55;
             this.txtName.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtName.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // txtYearOfPublish
             // 
@@ -663,6 +745,7 @@
             this.txtYearOfPublish.Size = new System.Drawing.Size(189, 39);
             this.txtYearOfPublish.TabIndex = 53;
             this.txtYearOfPublish.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtYearOfPublish.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // txtLang
             // 
@@ -689,6 +772,7 @@
             this.txtLang.Size = new System.Drawing.Size(189, 39);
             this.txtLang.TabIndex = 54;
             this.txtLang.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtLang.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // label21
             // 
@@ -785,6 +869,7 @@
             this.txtID.Size = new System.Drawing.Size(189, 39);
             this.txtID.TabIndex = 41;
             this.txtID.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtID.Leave += new System.EventHandler(this.txtInputs_Leave);
             // 
             // label5
             // 
@@ -946,67 +1031,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1308, 417);
             this.flowLayoutPanel1.TabIndex = 61;
             // 
-            // cboPublisher
-            // 
-            this.cboPublisher.BackColor = System.Drawing.Color.Transparent;
-            this.cboPublisher.BorderRadius = 18;
-            this.cboPublisher.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPublisher.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboPublisher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboPublisher.FocusedState.Parent = this.cboPublisher;
-            this.cboPublisher.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboPublisher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboPublisher.HoverState.Parent = this.cboPublisher;
-            this.cboPublisher.ItemHeight = 30;
-            this.cboPublisher.ItemsAppearance.Parent = this.cboPublisher;
-            this.cboPublisher.Location = new System.Drawing.Point(734, 32);
-            this.cboPublisher.Name = "cboPublisher";
-            this.cboPublisher.ShadowDecoration.Parent = this.cboPublisher;
-            this.cboPublisher.Size = new System.Drawing.Size(189, 36);
-            this.cboPublisher.TabIndex = 72;
-            // 
-            // cboCategory
-            // 
-            this.cboCategory.BackColor = System.Drawing.Color.Transparent;
-            this.cboCategory.BorderRadius = 18;
-            this.cboCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboCategory.FocusedState.Parent = this.cboCategory;
-            this.cboCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboCategory.HoverState.Parent = this.cboCategory;
-            this.cboCategory.ItemHeight = 30;
-            this.cboCategory.ItemsAppearance.Parent = this.cboCategory;
-            this.cboCategory.Location = new System.Drawing.Point(734, 138);
-            this.cboCategory.Name = "cboCategory";
-            this.cboCategory.ShadowDecoration.Parent = this.cboCategory;
-            this.cboCategory.Size = new System.Drawing.Size(189, 36);
-            this.cboCategory.TabIndex = 73;
-            // 
-            // cboAuthor
-            // 
-            this.cboAuthor.BackColor = System.Drawing.Color.Transparent;
-            this.cboAuthor.BorderRadius = 18;
-            this.cboAuthor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboAuthor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboAuthor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboAuthor.FocusedState.Parent = this.cboAuthor;
-            this.cboAuthor.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboAuthor.HoverState.Parent = this.cboAuthor;
-            this.cboAuthor.ItemHeight = 30;
-            this.cboAuthor.ItemsAppearance.Parent = this.cboAuthor;
-            this.cboAuthor.Location = new System.Drawing.Point(406, 32);
-            this.cboAuthor.Name = "cboAuthor";
-            this.cboAuthor.ShadowDecoration.Parent = this.cboAuthor;
-            this.cboAuthor.Size = new System.Drawing.Size(189, 36);
-            this.cboAuthor.TabIndex = 10;
-            this.cboAuthor.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            // 
             // frmBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1093,5 +1117,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cboCategory;
         private Guna.UI2.WinForms.Guna2ComboBox cboPublisher;
         private Guna.UI2.WinForms.Guna2ComboBox cboAuthor;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
