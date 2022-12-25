@@ -28,8 +28,7 @@ namespace BookStore.Sys.Forms.Book
                 );
             InitializeComponent();
         }
-
-        private void frmBookAdd_Load(object sender, EventArgs e)
+        private void frmAuthor_Load(object sender, EventArgs e)
         {
             if (!Service.Instance.IsConnectedToInternet())
             {
@@ -42,11 +41,12 @@ namespace BookStore.Sys.Forms.Book
             //Load data
             dgv_Load();
             DataBinding();
+            dgv.Refresh();
             //Khóa tất cả input
             ManageInput(false, true);
-
+            btnEdit.Enabled = btnDelete.Enabled = btnSave.Enabled = false;
+            dgv.ReadOnly = true;
         }
-
         private void ClearAllBinding()
         {
             panelInput.Controls.OfType<Control>().ToList().ForEach(x => x.DataBindings.Clear());
@@ -63,7 +63,7 @@ namespace BookStore.Sys.Forms.Book
         private void dgv_Load()
         {
             //Reset dataset
-            sys.Ds.Clear();
+            sys.Ds.Reset();
             //Load data
             sys.Db.LoadDataIntoDgv(dgv, sys.Ds, "Author");
             //Thêm primary key
@@ -73,13 +73,14 @@ namespace BookStore.Sys.Forms.Book
             //Thay đổi kích thước cột
             dgv.Columns[0].Width = 30;
         }
+        #region Các nút chức năng
         private void btnClose_Click(object sender, EventArgs e)
         {
             Form.ActiveForm.Hide();
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            isAdd = true;
             //Mở khóa các textbox (trừ mã sách)
             ClearAllBinding();
             ManageInput(true, false);
@@ -96,8 +97,8 @@ namespace BookStore.Sys.Forms.Book
             dgv.FirstDisplayedScrollingRowIndex = dgv.Rows.Count - 1;
             dgv.Rows[dgv.Rows.Count - 1].Selected = true;
             txtName.Focus();
+            btnSave.Enabled = true;
         }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn xóa?", "Hệ thống", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
@@ -123,7 +124,6 @@ namespace BookStore.Sys.Forms.Book
                 sys.Db.Update(sys.Ds, "Author");
             }
         }
-
         private void btnEdit_Click(object sender, EventArgs e)
         {
             isAdd = false;
@@ -141,9 +141,10 @@ namespace BookStore.Sys.Forms.Book
                 dgv.Rows[i].Cells[0].ReadOnly = true;
             }
         }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
+            TrimAllTextBox();
+            dgv.Refresh();
             ManageInput(false, true);
             btnAdd.Enabled = true;
             if (!IsFullFill())
@@ -154,20 +155,20 @@ namespace BookStore.Sys.Forms.Book
             }
             if (isAdd)
             {
-                DataRow newRow = sys.Ds.Tables["Book"].NewRow();
+                DataRow newRow = sys.Ds.Tables["Author"].NewRow();
                 if (newRow != null)
                 {
                     //Lấy giá trị các trường input thêm vào newrow
                     newRow.ItemArray = new object[] {
                         0,
-                        txtName.ToString(),
+                        txtName.Text,
                         txtDateOfBirth.Value,
                         txtEmail.Text,
                         txtPhone.Text,
                     };
-                    sys.Ds.Tables["Book"].Rows.Add(newRow);
-                    //Update("Thêm");
-                    //frmBook_Load(sender, e);
+                    sys.Ds.Tables["Author"].Rows.Add(newRow);
+                    Update("Thêm", "Author");
+                    frmAuthor_Load(sender, e);
                 }
                 else
                 {
@@ -178,15 +179,19 @@ namespace BookStore.Sys.Forms.Book
             {
                 if (isEdit)
                 {
-                    //Update("Cập nhật");
-                    //btnSave_Book.Enabled = false;
+                    Update("Cập nhật", "Author");
+                    btnSave.Enabled = false;
+                    dgv.ReadOnly = true;//Lưu xong khóa các trường trong dgv
+                    ManageInput(false, true);
                 }
                 else
                 {
                     MessageBox.Show("Cập nhật thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            
         }
+        #endregion
         #region Các phương thức hỗ trợ
         private void TrimAllTextBox()
         {
@@ -287,6 +292,28 @@ namespace BookStore.Sys.Forms.Book
             }
             return true;
         }
+        private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnEdit.Enabled = btnDelete.Enabled = true;
+        }
+        private void dgv_SelectionChanged(object sender, EventArgs e)
+        {
+            TrimAllTextBox();
+        }
+        private void Update(string actionName, string tableName)
+        {
+            if (sys.Db.Update(sys.Ds, tableName) == 0)
+            {
+                MessageBox.Show(actionName + " thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show(actionName + " thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnSave.Enabled = false;
+                isEdit = isAdd = false;
+            }
+        }
+
         #endregion
     }
 }

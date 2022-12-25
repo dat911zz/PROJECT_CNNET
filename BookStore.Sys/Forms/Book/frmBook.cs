@@ -168,8 +168,18 @@ namespace BookStore.Sys.Forms.Book
             btnAdd_Book.Enabled = true;
             if (!IsFullFill())
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                btnEdit_Book_Click(sender, e);
+                MessageBox.Show("Vui lòng nhập đúng và đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (isAdd)
+                {
+                    btnAdd_Book_Click(sender, e);
+                }
+                else
+                {
+                    if (isEdit)
+                    {
+                        btnEdit_Book_Click(sender, e);
+                    }
+                }
                 return;
             }
             if (isAdd)
