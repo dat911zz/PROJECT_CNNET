@@ -168,8 +168,18 @@ namespace BookStore.Sys.Forms.Book
             btnAdd_Book.Enabled = true;
             if (!IsFullFill())
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                btnEdit_Book_Click(sender, e);
+                MessageBox.Show("Vui lòng nhập đúng và đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (isAdd)
+                {
+                    btnAdd_Book_Click(sender, e);
+                }
+                else
+                {
+                    if (isEdit)
+                    {
+                        btnEdit_Book_Click(sender, e);
+                    }
+                }
                 return;
             }
             if (isAdd)
@@ -193,7 +203,7 @@ namespace BookStore.Sys.Forms.Book
                         txtImg.Text
                     };
                     sys.Ds.Tables["Book"].Rows.Add(newRow);
-                    Update("Thêm");
+                    Update("Thêm", "Book");
                     frmBook_Load(sender, e);
                 }
                 else
@@ -205,7 +215,7 @@ namespace BookStore.Sys.Forms.Book
             {
                 if (isEdit)
                 {
-                    Update("Cập nhật");
+                    Update("Cập nhật", "Book");
                     btnSave_Book.Enabled = false;
                 }
                 else
@@ -410,15 +420,15 @@ namespace BookStore.Sys.Forms.Book
         {
             panelInput.Controls.OfType<Control>().ToList().ForEach(x => x.DataBindings.Clear());
         }
-        private void Update(string actionName)
+        private void Update(string actionName, string tableName)
         {
-            if (sys.Db.Update(sys.Ds, "Book") == 0)
+            if (sys.Db.Update(sys.Ds, tableName) == 0)
             {
-                MessageBox.Show("Thêm thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(actionName + " thất bại!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Thêm thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(actionName + " thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btnSave_Book.Enabled = false;
                 isEdit = isAdd = false;
             }

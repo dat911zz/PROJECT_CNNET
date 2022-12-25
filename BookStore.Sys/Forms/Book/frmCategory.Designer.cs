@@ -29,22 +29,16 @@ namespace BookStore.Sys.Forms.Book
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtDateOfBirth = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgv = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dgv = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -53,8 +47,6 @@ namespace BookStore.Sys.Forms.Book
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelInput = new Guna.UI2.WinForms.Guna2Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
@@ -62,54 +54,6 @@ namespace BookStore.Sys.Forms.Book
             this.guna2Panel1.SuspendLayout();
             this.panelInput.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtDateOfBirth
-            // 
-            this.txtDateOfBirth.BaseColor = System.Drawing.Color.White;
-            this.txtDateOfBirth.BorderColor = System.Drawing.Color.Silver;
-            this.txtDateOfBirth.BorderSize = 1;
-            this.txtDateOfBirth.CustomFormat = null;
-            this.txtDateOfBirth.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.txtDateOfBirth.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDateOfBirth.ForeColor = System.Drawing.Color.Black;
-            this.txtDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDateOfBirth.Location = new System.Drawing.Point(104, 136);
-            this.txtDateOfBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtDateOfBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.OnHoverBaseColor = System.Drawing.Color.White;
-            this.txtDateOfBirth.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.OnPressedColor = System.Drawing.Color.Black;
-            this.txtDateOfBirth.Size = new System.Drawing.Size(189, 30);
-            this.txtDateOfBirth.TabIndex = 71;
-            this.txtDateOfBirth.Text = "24/12/2022";
-            this.txtDateOfBirth.Value = new System.DateTime(2022, 12, 24, 15, 58, 4, 975);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(7, 136);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 18);
-            this.label7.TabIndex = 68;
-            this.label7.Text = "Ngày sinh:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(315, 87);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 18);
-            this.label15.TabIndex = 62;
-            this.label15.Text = "SĐT:";
             // 
             // btnDelete
             // 
@@ -132,6 +76,7 @@ namespace BookStore.Sys.Forms.Book
             this.btnDelete.Size = new System.Drawing.Size(112, 37);
             this.btnDelete.TabIndex = 64;
             this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -153,32 +98,7 @@ namespace BookStore.Sys.Forms.Book
             this.btnAdd.Size = new System.Drawing.Size(112, 37);
             this.btnAdd.TabIndex = 61;
             this.btnAdd.Text = "Thêm";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.AutoRoundedCorners = true;
-            this.txtPhone.BorderRadius = 18;
-            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhone.DefaultText = "";
-            this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhone.DisabledState.Parent = this.txtPhone;
-            this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.FocusedState.Parent = this.txtPhone;
-            this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.HoverState.Parent = this.txtPhone;
-            this.txtPhone.Location = new System.Drawing.Point(382, 78);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.PlaceholderText = "SĐT..";
-            this.txtPhone.SelectedText = "";
-            this.txtPhone.ShadowDecoration.Parent = this.txtPhone;
-            this.txtPhone.Size = new System.Drawing.Size(189, 39);
-            this.txtPhone.TabIndex = 61;
-            this.txtPhone.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSave
             // 
@@ -200,6 +120,7 @@ namespace BookStore.Sys.Forms.Book
             this.btnSave.Size = new System.Drawing.Size(112, 37);
             this.btnSave.TabIndex = 63;
             this.btnSave.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
             // 
@@ -221,50 +142,39 @@ namespace BookStore.Sys.Forms.Book
             this.btnClose.Size = new System.Drawing.Size(112, 37);
             this.btnClose.TabIndex = 60;
             this.btnClose.Text = "Thoát";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // label19
+            // txtName
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(7, 87);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(87, 18);
-            this.label19.TabIndex = 56;
-            this.label19.Text = "Tên tác giả:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.AutoRoundedCorners = true;
-            this.txtEmail.BorderRadius = 18;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "";
-            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.DisabledState.Parent = this.txtEmail;
-            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.FocusedState.Parent = this.txtEmail;
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(382, 29);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.PlaceholderText = "Email..";
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
-            this.txtEmail.Size = new System.Drawing.Size(189, 39);
-            this.txtEmail.TabIndex = 40;
-            this.txtEmail.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtName.AutoRoundedCorners = true;
+            this.txtName.BorderRadius = 18;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.DefaultText = "";
+            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.DisabledState.Parent = this.txtName;
+            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.FocusedState.Parent = this.txtName;
+            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.HoverState.Parent = this.txtName;
+            this.txtName.Location = new System.Drawing.Point(455, 29);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PlaceholderText = "Tên danh mục..";
+            this.txtName.SelectedText = "";
+            this.txtName.ShadowDecoration.Parent = this.txtName;
+            this.txtName.Size = new System.Drawing.Size(189, 39);
+            this.txtName.TabIndex = 40;
+            this.txtName.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // dgv
             // 
             this.dgv.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -273,36 +183,36 @@ namespace BookStore.Sys.Forms.Book
             this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgv.EnableHeadersVisualStyles = false;
             this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.dgv.Location = new System.Drawing.Point(2, 260);
             this.dgv.Margin = new System.Windows.Forms.Padding(4);
             this.dgv.Name = "dgv";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgv.RowTemplate.DividerHeight = 5;
@@ -333,43 +243,17 @@ namespace BookStore.Sys.Forms.Book
             this.dgv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.dgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
-            // txtName
-            // 
-            this.txtName.AutoRoundedCorners = true;
-            this.txtName.BorderRadius = 18;
-            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.DefaultText = "";
-            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.DisabledState.Parent = this.txtName;
-            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.FocusedState.Parent = this.txtName;
-            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.HoverState.Parent = this.txtName;
-            this.txtName.Location = new System.Drawing.Point(104, 78);
-            this.txtName.Margin = new System.Windows.Forms.Padding(5);
-            this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '\0';
-            this.txtName.PlaceholderText = "Tên tác giả..";
-            this.txtName.SelectedText = "";
-            this.txtName.ShadowDecoration.Parent = this.txtName;
-            this.txtName.Size = new System.Drawing.Size(189, 39);
-            this.txtName.TabIndex = 55;
-            this.txtName.TextOffset = new System.Drawing.Point(8, 0);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(315, 39);
+            this.label11.Location = new System.Drawing.Point(337, 39);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 18);
+            this.label11.Size = new System.Drawing.Size(109, 18);
             this.label11.TabIndex = 44;
-            this.label11.Text = "Email:";
+            this.label11.Text = "Tên danh mục:";
             // 
             // txtID
             // 
@@ -386,7 +270,7 @@ namespace BookStore.Sys.Forms.Book
             this.txtID.FocusedState.Parent = this.txtID;
             this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtID.HoverState.Parent = this.txtID;
-            this.txtID.Location = new System.Drawing.Point(104, 29);
+            this.txtID.Location = new System.Drawing.Point(119, 29);
             this.txtID.Margin = new System.Windows.Forms.Padding(5);
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
@@ -441,9 +325,9 @@ namespace BookStore.Sys.Forms.Book
             this.label4.Location = new System.Drawing.Point(7, 39);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 18);
+            this.label4.Size = new System.Drawing.Size(103, 18);
             this.label4.TabIndex = 42;
-            this.label4.Text = "Mã tác giả:";
+            this.label4.Text = "Mã danh mục:";
             // 
             // label5
             // 
@@ -460,19 +344,11 @@ namespace BookStore.Sys.Forms.Book
             // 
             this.panelInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelInput.Controls.Add(this.txtDateOfBirth);
-            this.panelInput.Controls.Add(this.label7);
-            this.panelInput.Controls.Add(this.label15);
-            this.panelInput.Controls.Add(this.txtPhone);
-            this.panelInput.Controls.Add(this.label16);
-            this.panelInput.Controls.Add(this.label19);
-            this.panelInput.Controls.Add(this.txtName);
-            this.panelInput.Controls.Add(this.label21);
             this.panelInput.Controls.Add(this.label12);
             this.panelInput.Controls.Add(this.label11);
             this.panelInput.Controls.Add(this.label4);
             this.panelInput.Controls.Add(this.txtID);
-            this.panelInput.Controls.Add(this.txtEmail);
+            this.panelInput.Controls.Add(this.txtName);
             this.panelInput.Controls.Add(this.label5);
             this.panelInput.Controls.Add(this.label6);
             this.panelInput.CustomBorderColor = System.Drawing.Color.Silver;
@@ -483,30 +359,8 @@ namespace BookStore.Sys.Forms.Book
             this.panelInput.Margin = new System.Windows.Forms.Padding(4);
             this.panelInput.Name = "panelInput";
             this.panelInput.ShadowDecoration.Parent = this.panelInput;
-            this.panelInput.Size = new System.Drawing.Size(785, 186);
+            this.panelInput.Size = new System.Drawing.Size(785, 161);
             this.panelInput.TabIndex = 65;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label16.Location = new System.Drawing.Point(560, 57);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 42);
-            this.label16.TabIndex = 59;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label21.Location = new System.Drawing.Point(172, 57);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(0, 42);
-            this.label21.TabIndex = 52;
             // 
             // label12
             // 
@@ -550,6 +404,7 @@ namespace BookStore.Sys.Forms.Book
             this.btnEdit.Size = new System.Drawing.Size(112, 37);
             this.btnEdit.TabIndex = 62;
             this.btnEdit.Text = "Chỉnh Sửa";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // frmCategory
             // 
@@ -579,19 +434,12 @@ namespace BookStore.Sys.Forms.Book
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaDateTimePicker txtDateOfBirth;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2TextBox txtPhone;
         private Guna.UI2.WinForms.Guna2Button btnSave;
         private Guna.UI2.WinForms.Guna2Button btnClose;
-        private System.Windows.Forms.Label label19;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv;
         private Guna.UI2.WinForms.Guna2TextBox txtName;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2TextBox txtID;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -600,8 +448,6 @@ namespace BookStore.Sys.Forms.Book
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel panelInput;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btnEdit;
