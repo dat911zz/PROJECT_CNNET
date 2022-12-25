@@ -61,15 +61,6 @@ namespace BookStore.Sys.Forms
 
 
         }
-        private void btn_Signup_Click(object sender, EventArgs e)
-        {
-            ActiveForm.Hide();         
-            Register _load = new Register();
-            if (!Service.Instance.CheckFormExist(_load.Name))
-            {
-                _load.Show();
-            }
-        }
 
         private void txtBox_User_Leave(object sender, EventArgs e)
         {

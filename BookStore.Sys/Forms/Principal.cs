@@ -1,4 +1,5 @@
-﻿using BookStore.Sys.Forms.Book;
+﻿using BookStore.Sys.Forms.Admin;
+using BookStore.Sys.Forms.Book;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,19 +27,12 @@ namespace BookStore.Sys.Forms
             container(new Dashboard());
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnGeneral_Click(object sender, EventArgs e)
         {
             label_val.Text = "Book Shop";
             guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
             container(new Dashboard());
         }
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            label_val.Text = "Book Shop";
-            guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
-            container(new Dashboard());
-        }
-
         private void container(object _form)
         {
 
@@ -54,41 +48,22 @@ namespace BookStore.Sys.Forms
 
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void btnCustomer_Click(object sender, EventArgs e)
         {
             label_val.Text = "Quản Lý Khách Hàng";
             container(new frmCustomer());
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            label_val.Text = "Thanh Toán";
-        }
-        private void guna2Panel_top_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click_1(object sender, EventArgs e)
+        private void btnProduct_Click(object sender, EventArgs e)
         {
             label_val.Text = "Quản Lý Hàng Hóa";
             container(new frmBook());
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button8_Click_1(object sender, EventArgs e)
+        private void btnReport_Click(object sender, EventArgs e)
         {
             label_val.Text = "Báo Cáo & Thống Kê";
             container(new Report());
-        }
-
-        private void guna2Panel_container_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void Principal_FormClosing(object sender, FormClosingEventArgs e)
@@ -105,10 +80,16 @@ namespace BookStore.Sys.Forms
             }
         }
 
-        private void guna2Button4_Click_1(object sender, EventArgs e)
+        private void btnOrder_Click(object sender, EventArgs e)
         {
             label_val.Text = "Mua Hàng";
             container(new BuyProduct());
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Quản trị hệ thống";
+            container(new frmAdmin());
         }
     }
 }

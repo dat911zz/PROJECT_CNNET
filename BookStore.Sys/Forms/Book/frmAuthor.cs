@@ -111,9 +111,14 @@ namespace BookStore.Sys.Forms.Book
                 {
                     if (rowS["AuthorId"].ToString().Equals(txtID.Text.Trim()))
                     {
-                        MessageBox.Show("Đã tồn tại mã sách tại bảng chi tiết đơn hàng!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Đã tồn tại mã sách tại bảng sách!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
+                }
+                if (string.IsNullOrEmpty(txtID.Text))
+                {
+                    MessageBox.Show("Vui lòng chọn mã tác giả để xóa!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
                 DataRow row = sys.Ds.Tables["Author"].Rows.Find(txtID.Text.Trim());
                 if (row != null)

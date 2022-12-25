@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAdmin = new Guna.UI2.WinForms.Guna2Button();
             this.btn_BuyProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Report = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,6 +66,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.btnAdmin);
             this.guna2Panel1.Controls.Add(this.btn_BuyProduct);
             this.guna2Panel1.Controls.Add(this.btn_Report);
             this.guna2Panel1.Controls.Add(this.label3);
@@ -86,7 +88,32 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(265, 928);
             this.guna2Panel1.TabIndex = 0;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.CheckedState.Parent = this.btnAdmin;
+            this.btnAdmin.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btnAdmin.CustomImages.Parent = this.btnAdmin;
+            this.btnAdmin.FillColor = System.Drawing.Color.Transparent;
+            this.btnAdmin.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.Black;
+            this.btnAdmin.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.btnAdmin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
+            this.btnAdmin.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployee.HoverState.Image")));
+            this.btnAdmin.HoverState.Parent = this.btnAdmin;
+            this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
+            this.btnAdmin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAdmin.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnAdmin.Location = new System.Drawing.Point(2, 470);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.ShadowDecoration.Parent = this.btnAdmin;
+            this.btnAdmin.Size = new System.Drawing.Size(261, 49);
+            this.btnAdmin.TabIndex = 17;
+            this.btnAdmin.Text = "Phân quyền người dùng";
+            this.btnAdmin.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btn_BuyProduct
             // 
@@ -104,15 +131,15 @@
             this.btn_BuyProduct.Image = global::BookStore.Sys.Properties.Resources.Ecommerce_Shopping_Bag_icon;
             this.btn_BuyProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_BuyProduct.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btn_BuyProduct.Location = new System.Drawing.Point(0, 338);
+            this.btn_BuyProduct.Location = new System.Drawing.Point(0, 324);
             this.btn_BuyProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BuyProduct.Name = "btn_BuyProduct";
             this.btn_BuyProduct.ShadowDecoration.Parent = this.btn_BuyProduct;
-            this.btn_BuyProduct.Size = new System.Drawing.Size(269, 49);
+            this.btn_BuyProduct.Size = new System.Drawing.Size(265, 49);
             this.btn_BuyProduct.TabIndex = 16;
             this.btn_BuyProduct.Text = "Mua Hàng";
             this.btn_BuyProduct.TextOffset = new System.Drawing.Point(8, 0);
-            this.btn_BuyProduct.Click += new System.EventHandler(this.guna2Button4_Click_1);
+            this.btn_BuyProduct.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btn_Report
             // 
@@ -130,15 +157,15 @@
             this.btn_Report.Image = ((System.Drawing.Image)(resources.GetObject("btn_Report.Image")));
             this.btn_Report.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Report.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btn_Report.Location = new System.Drawing.Point(0, 414);
+            this.btn_Report.Location = new System.Drawing.Point(2, 397);
             this.btn_Report.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Report.Name = "btn_Report";
             this.btn_Report.ShadowDecoration.Parent = this.btn_Report;
-            this.btn_Report.Size = new System.Drawing.Size(269, 49);
+            this.btn_Report.Size = new System.Drawing.Size(261, 49);
             this.btn_Report.TabIndex = 15;
             this.btn_Report.Text = "Báo cáo & Thống kê";
             this.btn_Report.TextOffset = new System.Drawing.Point(8, 0);
-            this.btn_Report.Click += new System.EventHandler(this.guna2Button8_Click_1);
+            this.btn_Report.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // label3
             // 
@@ -263,15 +290,15 @@
             this.btn_Customer.Image = ((System.Drawing.Image)(resources.GetObject("btn_Customer.Image")));
             this.btn_Customer.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Customer.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btn_Customer.Location = new System.Drawing.Point(-4, 258);
+            this.btn_Customer.Location = new System.Drawing.Point(2, 251);
             this.btn_Customer.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Customer.Name = "btn_Customer";
             this.btn_Customer.ShadowDecoration.Parent = this.btn_Customer;
-            this.btn_Customer.Size = new System.Drawing.Size(269, 49);
+            this.btn_Customer.Size = new System.Drawing.Size(261, 49);
             this.btn_Customer.TabIndex = 3;
             this.btn_Customer.Text = "Khách Hàng";
             this.btn_Customer.TextOffset = new System.Drawing.Point(8, 0);
-            this.btn_Customer.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btn_Customer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // btn_Product
             // 
@@ -289,15 +316,15 @@
             this.btn_Product.Image = ((System.Drawing.Image)(resources.GetObject("btn_Product.Image")));
             this.btn_Product.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Product.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btn_Product.Location = new System.Drawing.Point(0, 175);
+            this.btn_Product.Location = new System.Drawing.Point(2, 178);
             this.btn_Product.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Product.Name = "btn_Product";
             this.btn_Product.ShadowDecoration.Parent = this.btn_Product;
-            this.btn_Product.Size = new System.Drawing.Size(269, 49);
+            this.btn_Product.Size = new System.Drawing.Size(261, 49);
             this.btn_Product.TabIndex = 2;
             this.btn_Product.Text = "Hàng Hóa";
             this.btn_Product.TextOffset = new System.Drawing.Point(8, 0);
-            this.btn_Product.Click += new System.EventHandler(this.guna2Button2_Click_1);
+            this.btn_Product.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btn_General
             // 
@@ -315,15 +342,15 @@
             this.btn_General.Image = ((System.Drawing.Image)(resources.GetObject("btn_General.Image")));
             this.btn_General.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_General.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btn_General.Location = new System.Drawing.Point(4, 105);
+            this.btn_General.Location = new System.Drawing.Point(0, 105);
             this.btn_General.Margin = new System.Windows.Forms.Padding(4);
             this.btn_General.Name = "btn_General";
             this.btn_General.ShadowDecoration.Parent = this.btn_General;
-            this.btn_General.Size = new System.Drawing.Size(273, 49);
+            this.btn_General.Size = new System.Drawing.Size(265, 49);
             this.btn_General.TabIndex = 1;
             this.btn_General.Text = "Tổng Quan";
             this.btn_General.TextOffset = new System.Drawing.Point(8, 0);
-            this.btn_General.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_General.Click += new System.EventHandler(this.btnGeneral_Click);
             // 
             // guna2PictureBox1
             // 
@@ -355,7 +382,6 @@
             this.guna2Panel_top.ShadowDecoration.Parent = this.guna2Panel_top;
             this.guna2Panel_top.Size = new System.Drawing.Size(1346, 65);
             this.guna2Panel_top.TabIndex = 1;
-            this.guna2Panel_top.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel_top_Paint);
             // 
             // label_val
             // 
@@ -463,7 +489,6 @@
             this.guna2Panel_container.ShadowDecoration.Parent = this.guna2Panel_container;
             this.guna2Panel_container.Size = new System.Drawing.Size(1346, 863);
             this.guna2Panel_container.TabIndex = 2;
-            this.guna2Panel_container.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel_container_Paint);
             // 
             // Principal
             // 
@@ -519,5 +544,6 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button btn_Report;
         private Guna.UI2.WinForms.Guna2Button btn_BuyProduct;
+        private Guna.UI2.WinForms.Guna2Button btnAdmin;
     }
 }

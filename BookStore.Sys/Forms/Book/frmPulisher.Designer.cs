@@ -33,8 +33,6 @@ namespace BookStore.Sys.Forms.Book
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtDateOfBirth = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
@@ -58,46 +56,12 @@ namespace BookStore.Sys.Forms.Book
             this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
+            this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.panelInput.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtDateOfBirth
-            // 
-            this.txtDateOfBirth.BaseColor = System.Drawing.Color.White;
-            this.txtDateOfBirth.BorderColor = System.Drawing.Color.Silver;
-            this.txtDateOfBirth.BorderSize = 1;
-            this.txtDateOfBirth.CustomFormat = null;
-            this.txtDateOfBirth.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.txtDateOfBirth.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDateOfBirth.ForeColor = System.Drawing.Color.Black;
-            this.txtDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDateOfBirth.Location = new System.Drawing.Point(104, 136);
-            this.txtDateOfBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtDateOfBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.OnHoverBaseColor = System.Drawing.Color.White;
-            this.txtDateOfBirth.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateOfBirth.OnPressedColor = System.Drawing.Color.Black;
-            this.txtDateOfBirth.Size = new System.Drawing.Size(189, 30);
-            this.txtDateOfBirth.TabIndex = 71;
-            this.txtDateOfBirth.Text = "24/12/2022";
-            this.txtDateOfBirth.Value = new System.DateTime(2022, 12, 24, 15, 58, 4, 975);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(7, 136);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 18);
-            this.label7.TabIndex = 68;
-            this.label7.Text = "Ngày sinh:";
             // 
             // label15
             // 
@@ -132,6 +96,7 @@ namespace BookStore.Sys.Forms.Book
             this.btnDelete.Size = new System.Drawing.Size(112, 37);
             this.btnDelete.TabIndex = 64;
             this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -153,6 +118,7 @@ namespace BookStore.Sys.Forms.Book
             this.btnAdd.Size = new System.Drawing.Size(112, 37);
             this.btnAdd.TabIndex = 61;
             this.btnAdd.Text = "Thêm";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtPhone
             // 
@@ -200,6 +166,7 @@ namespace BookStore.Sys.Forms.Book
             this.btnSave.Size = new System.Drawing.Size(112, 37);
             this.btnSave.TabIndex = 63;
             this.btnSave.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
             // 
@@ -221,6 +188,7 @@ namespace BookStore.Sys.Forms.Book
             this.btnClose.Size = new System.Drawing.Size(112, 37);
             this.btnClose.TabIndex = 60;
             this.btnClose.Text = "Thoát";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label19
             // 
@@ -230,9 +198,9 @@ namespace BookStore.Sys.Forms.Book
             this.label19.Location = new System.Drawing.Point(7, 87);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(87, 18);
+            this.label19.Size = new System.Drawing.Size(72, 18);
             this.label19.TabIndex = 56;
-            this.label19.Text = "Tên tác giả:";
+            this.label19.Text = "Tên NXB:";
             // 
             // txtEmail
             // 
@@ -332,6 +300,8 @@ namespace BookStore.Sys.Forms.Book
             this.dgv.ThemeStyle.RowsStyle.Height = 40;
             this.dgv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.dgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
+            this.dgv.SelectionChanged += new System.EventHandler(this.dgv_SelectionChanged);
             // 
             // txtName
             // 
@@ -441,9 +411,9 @@ namespace BookStore.Sys.Forms.Book
             this.label4.Location = new System.Drawing.Point(7, 39);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 18);
+            this.label4.Size = new System.Drawing.Size(66, 18);
             this.label4.TabIndex = 42;
-            this.label4.Text = "Mã tác giả:";
+            this.label4.Text = "Mã NXB:";
             // 
             // label5
             // 
@@ -452,16 +422,16 @@ namespace BookStore.Sys.Forms.Book
             this.label5.Location = new System.Drawing.Point(4, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 21);
+            this.label5.Size = new System.Drawing.Size(104, 21);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Tác giả";
+            this.label5.Text = "Nhà xuất bản";
             // 
             // panelInput
             // 
             this.panelInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelInput.Controls.Add(this.txtDateOfBirth);
-            this.panelInput.Controls.Add(this.label7);
+            this.panelInput.Controls.Add(this.label3);
+            this.panelInput.Controls.Add(this.txtAddress);
             this.panelInput.Controls.Add(this.label15);
             this.panelInput.Controls.Add(this.txtPhone);
             this.panelInput.Controls.Add(this.label16);
@@ -550,6 +520,45 @@ namespace BookStore.Sys.Forms.Book
             this.btnEdit.Size = new System.Drawing.Size(112, 37);
             this.btnEdit.TabIndex = 62;
             this.btnEdit.Text = "Chỉnh Sửa";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.AutoRoundedCorners = true;
+            this.txtAddress.BorderRadius = 18;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.DefaultText = "";
+            this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAddress.DisabledState.Parent = this.txtAddress;
+            this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAddress.FocusedState.Parent = this.txtAddress;
+            this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAddress.HoverState.Parent = this.txtAddress;
+            this.txtAddress.Location = new System.Drawing.Point(104, 127);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(5);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PasswordChar = '\0';
+            this.txtAddress.PlaceholderText = "Địa chỉ..";
+            this.txtAddress.SelectedText = "";
+            this.txtAddress.ShadowDecoration.Parent = this.txtAddress;
+            this.txtAddress.Size = new System.Drawing.Size(467, 39);
+            this.txtAddress.TabIndex = 63;
+            this.txtAddress.TextOffset = new System.Drawing.Point(8, 0);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(7, 137);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 18);
+            this.label3.TabIndex = 64;
+            this.label3.Text = "Tên NXB:";
             // 
             // frmPulisher
             // 
@@ -580,9 +589,6 @@ namespace BookStore.Sys.Forms.Book
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaDateTimePicker txtDateOfBirth;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
@@ -606,5 +612,7 @@ namespace BookStore.Sys.Forms.Book
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btnEdit;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox txtAddress;
     }
 }
