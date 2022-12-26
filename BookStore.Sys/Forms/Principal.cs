@@ -63,7 +63,7 @@ namespace BookStore.Sys.Forms
         private void btnReport_Click(object sender, EventArgs e)
         {
             label_val.Text = "Báo Cáo & Thống Kê";
-            container(new Report());
+            //container(new Report.Report());
         }
 
         private void Principal_FormClosing(object sender, FormClosingEventArgs e)

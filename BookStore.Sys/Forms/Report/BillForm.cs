@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookStore.Sys.Forms
+namespace BookStore.Sys.Forms.Report
 {
-    public partial class RpDoanhThuTuan : Form
+    public partial class BillForm : Form
     {
-        public RpDoanhThuTuan()
+        public BillForm()
         {
             InitializeComponent();
-            Reports.MoneyOfWeek rpt = new Reports.MoneyOfWeek();
+            Reports.Bill rpt = new Reports.Bill();
             crystalReportViewer1.ReportSource = rpt;
             rpt.SetDatabaseLogon("db_a9156e_n8bookstore_admin", "ez4XqR6@QrhhzCu", "sql5080.site4now.net", "n8bookstore");
             crystalReportViewer1.DisplayStatusBar = false;
@@ -23,7 +23,7 @@ namespace BookStore.Sys.Forms
             crystalReportViewer1.Refresh();
         }
 
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        private void crystalReportViewer2_Load(object sender, EventArgs e)
         {
 
         }
