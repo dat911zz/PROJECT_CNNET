@@ -44,8 +44,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtTotalSales = new System.Windows.Forms.Label();
+            this.txtTotalBooks = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -65,13 +65,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblAmount = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -115,8 +113,8 @@
             this.guna2ShadowPanel1.Controls.Add(this.label1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox3);
             this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox2);
-            this.guna2ShadowPanel1.Controls.Add(this.label4);
-            this.guna2ShadowPanel1.Controls.Add(this.label3);
+            this.guna2ShadowPanel1.Controls.Add(this.txtTotalSales);
+            this.guna2ShadowPanel1.Controls.Add(this.txtTotalBooks);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(783, 20);
             this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -302,29 +300,29 @@
             this.guna2PictureBox2.TabIndex = 19;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // label4
+            // txtTotalSales
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 28F);
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(340, 58);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 54);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "14";
+            this.txtTotalSales.AutoSize = true;
+            this.txtTotalSales.Font = new System.Drawing.Font("Franklin Gothic Medium", 28F);
+            this.txtTotalSales.ForeColor = System.Drawing.Color.Gray;
+            this.txtTotalSales.Location = new System.Drawing.Point(340, 58);
+            this.txtTotalSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtTotalSales.Name = "txtTotalSales";
+            this.txtTotalSales.Size = new System.Drawing.Size(79, 54);
+            this.txtTotalSales.TabIndex = 3;
+            this.txtTotalSales.Text = "14";
             // 
-            // label3
+            // txtTotalBooks
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 28F);
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(55, 58);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 54);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "26";
+            this.txtTotalBooks.AutoSize = true;
+            this.txtTotalBooks.Font = new System.Drawing.Font("Franklin Gothic Medium", 28F);
+            this.txtTotalBooks.ForeColor = System.Drawing.Color.Gray;
+            this.txtTotalBooks.Location = new System.Drawing.Point(55, 58);
+            this.txtTotalBooks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtTotalBooks.Name = "txtTotalBooks";
+            this.txtTotalBooks.Size = new System.Drawing.Size(79, 54);
+            this.txtTotalBooks.TabIndex = 2;
+            this.txtTotalBooks.Text = "26";
             // 
             // guna2Panel4
             // 
@@ -580,23 +578,12 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1029, 513);
+            this.label8.Location = new System.Drawing.Point(1017, 511);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(200, 23);
             this.label8.TabIndex = 84;
             this.label8.Text = "Doanh Thu Theo Tuần";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1029, 639);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(210, 23);
-            this.label9.TabIndex = 85;
-            this.label9.Text = "Doanh Thu Theo Tháng";
             // 
             // label10
             // 
@@ -645,29 +632,18 @@
             this.label13.TabIndex = 89;
             this.label13.Text = "103";
             // 
-            // label14
+            // lblAmount
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cambria", 28F);
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(1034, 552);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(188, 55);
-            this.label14.TabIndex = 90;
-            this.label14.Text = "26,000$";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Cambria", 28F);
-            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(1036, 674);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(188, 55);
-            this.label15.TabIndex = 91;
-            this.label15.Text = "35,000$";
+            this.lblAmount.AutoSize = true;
+            this.lblAmount.Font = new System.Drawing.Font("Cambria", 28F);
+            this.lblAmount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAmount.Location = new System.Drawing.Point(1000, 558);
+            this.lblAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAmount.Name = "lblAmount";
+            this.lblAmount.Size = new System.Drawing.Size(188, 55);
+            this.lblAmount.TabIndex = 90;
+            this.lblAmount.Text = "26,000$";
+            this.lblAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Panel5
             // 
@@ -866,13 +842,11 @@
             this.Controls.Add(this.guna2Panel8);
             this.Controls.Add(this.guna2Panel6);
             this.Controls.Add(this.guna2Panel5);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -919,8 +893,8 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label txtTotalSales;
+        private System.Windows.Forms.Label txtTotalBooks;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel13;
@@ -938,13 +912,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;

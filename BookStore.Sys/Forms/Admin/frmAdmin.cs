@@ -29,6 +29,7 @@ namespace BookStore.Sys.Forms.Admin
                 new DataColumn[1]
                 );
             InitializeComponent();
+            txtSalary.Maximum = 99999999;
         }
         private void dgv_Load()
         {
@@ -40,171 +41,130 @@ namespace BookStore.Sys.Forms.Admin
             //Reset dataset
             sys.Ds.Clear();
             //Load data
-            sys.Db.LoadDataIntoDgv(dgvBook, sys.Ds, "Book");
+            sys.Db.LoadDataIntoDgv(dgv, sys.Ds, "Employee");
             //Thêm primary key
-            sys.Ds.Tables["Book"].PrimaryKey = new DataColumn[] { sys.Ds.Tables["Book"].Columns[0] };
-            //Thêm tên cho các cột
-            AddColName();
-            //Thay đổi kích thước cột
-            dgvBook.Columns[0].Width = 30;
-            dgvBook.Columns[11].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //Load combobox
-            sys.Db.LoadDataIntoCbo(cboAuthor, sys.Ds, "Author", "Name", "Id");
-            sys.Db.LoadDataIntoCbo(cboCategory, sys.Ds, "BookCategory", "Name", "Id");
-            sys.Db.LoadDataIntoCbo(cboPublisher, sys.Ds, "Publisher", "Name", "Id");
+            sys.Ds.Tables["Employee"].PrimaryKey = new DataColumn[] { sys.Ds.Tables["Employee"].Columns[0] };
         }
-        private void frmBook_Load(object sender, EventArgs e)
+        private void frmEmployee_Load(object sender, EventArgs e)
         {
-            dgvBook.MultiSelect = false;
-            dgvBook.ReadOnly = true;
-            txtImg.Text = "";
-            string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\BookStore.Sys";
+            dgv.MultiSelect = false;
+            dgv.ReadOnly = true;
+            string rootPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\EmployeeStore.Sys";
             dgv_Load();      
             //Load dữ liệu lên các input control
             DataBinding();
-            txtImg.Text = txtImg.Text.Trim();
-            dgvBook.Refresh();
+            dgv.Refresh();
             //Vô hiệu hóa các btn, control trừ các label
             ManageInput(false, true);
-            btn_UploadImage.Enabled = btnEdit_Book.Enabled = btnDelete_Book.Enabled = btnSave_Book.Enabled = false;
+            btnEdit.Enabled = btnDelete.Enabled = btnSave.Enabled = false;
             //Đếm sách
-            lblBookCount.Text = dgvBook.Rows.Count.ToString();
-            //Set cho trường ảnh bìa readonly
-            txtImg.ReadOnly = true;
+            lblBookCount.Text = dgv.Rows.Count.ToString();
+
         }
 
         #region Các nút chức năng
-        private void btn_UploadImage_Click(object sender, EventArgs e)
-        {
-            String imageLocation = "";
-            try
-            {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
-                dialog.Multiselect = false;
-                if (dialog.ShowDialog() == DialogResult.OK)
-                {
-                    imageLocation = dialog.FileName;
-                    var fileName = Path.GetFileName(dialog.FileName);
-                    var path = Path.Combine(sys.Service.RootPath + "/Contents/Images/img-book/", fileName);
-                    txtImg.Text = fileName;
-                    Image.FromFile(imageLocation).Save(path);
-                    picBox_ImageProduct.ImageLocation = imageLocation;
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Đã xảy ra lỗi!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void btnAdd_Book_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             isAdd = true;
             isEdit = false;
-            btnSave_Book.Enabled = btn_UploadImage.Enabled = true;
-            btnDelete_Book.Enabled = btnEdit_Book.Enabled = false;
             //Mở khóa các textbox (trừ mã sách)
             ClearAllBinding();
             ManageInput(true, false);
-            txtID.Enabled = false;
-            dgvBook.AllowUserToAddRows = true;
-            dgvBook.ReadOnly = false;
+            btnDelete.Enabled = btnEdit.Enabled = txtID.Enabled = dgv.ReadOnly = false;
+            btnSave.Enabled = dgv.AllowUserToAddRows = true;
             ClearInput();
             panelInput.Refresh();
             //Khóa tất cả các trường trong dgv trừ trường mới dc thêm
-            for (int i = 0; i < dgvBook.Rows.Count - 1; i++)
+            for (int i = 0; i < dgv.Rows.Count - 1; i++)
             {
-                dgvBook.Rows[i].ReadOnly = true;
+                dgv.Rows[i].ReadOnly = true;
             }
-            dgvBook.FirstDisplayedScrollingRowIndex = dgvBook.Rows.Count - 1;
-            dgvBook.Rows[dgvBook.Rows.Count - 1].Selected = true;
+            dgv.FirstDisplayedScrollingRowIndex = dgv.Rows.Count - 1;
+            dgv.Rows[dgv.Rows.Count - 1].Selected = true;
             txtName.Focus();
         }
-        private void btnDelete_Book_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn xóa?", "Hệ thống", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
-                if (sys.Ds.Tables["OrderDetail"] == null)
+                if (sys.Ds.Tables["AccountEmployee"] == null)
                 {
-                    sys.Db.FillData(sys.Ds, "OrderDetail");
+                    sys.Db.FillData(sys.Ds, "AccountEmployee");
                 }
-                foreach (DataRow rowS in sys.Ds.Tables["OrderDetail"].Rows)
+                foreach (DataRow rowS in sys.Ds.Tables["AccountEmployee"].Rows)
                 {
-                    if (rowS["BookID"].ToString().Equals(txtID.Text.Trim()))
+                    if (rowS["EmployeeId"].ToString().Equals(txtID.Text.Trim()))
                     {
                         MessageBox.Show("Đã tồn tại mã sách tại bảng chi tiết đơn hàng!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                 }
-                DataRow row = sys.Ds.Tables["Book"].Rows.Find(txtID.Text.Trim());
+                DataRow row = sys.Ds.Tables["Employee"].Rows.Find(txtID.Text.Trim());
                 if (row != null)
                 {
                     row.Delete();
                     MessageBox.Show("Xóa thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                sys.Db.Update(sys.Ds, "Book");
+                sys.Db.Update(sys.Ds, "Employee");
             }
         }
-        private void btnEdit_Book_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
             isAdd = false;
             isEdit = true;
-            btnSave_Book.Enabled = true;
-            btnAdd_Book.Enabled = btnDelete_Book.Enabled = btnEdit_Book.Enabled = false;
-            //Mở khóa các textbox (trừ mã sách)
+            btnSave.Enabled = true;
+            btnAdd.Enabled = btnDelete.Enabled = btnEdit.Enabled = false;
+            //Mở khóa các textbox
             ManageInput(true, false);
             txtID.Enabled = false;
-            dgvBook.AllowUserToAddRows = false;
-            dgvBook.ReadOnly = false;
+            dgv.AllowUserToAddRows = false;
+            dgv.ReadOnly = false;
             //Khóa tất cả các trường trong dgv trừ trường mới dc thêm
-            for (int i = 0; i < dgvBook.Rows.Count - 1; i++)
+            for (int i = 0; i < dgv.Rows.Count - 1; i++)
             {
-                dgvBook.Rows[i].Cells[0].ReadOnly = true;
+                dgv.Rows[i].Cells[0].ReadOnly = true;
             }
         }
-        private void btnSave_Book_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             ManageInput(false, true);
-            btnAdd_Book.Enabled = true;
+            btnAdd.Enabled = true;
             if (!IsFullFill())
             {
                 MessageBox.Show("Vui lòng nhập đúng và đầy đủ thông tin!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 if (isAdd)
                 {
-                    btnAdd_Book_Click(sender, e);
+                    btnAdd_Click(sender, e);
                 }
                 else
                 {
                     if (isEdit)
                     {
-                        btnEdit_Book_Click(sender, e);
+                        btnEdit_Click(sender, e);
                     }
                 }
                 return;
             }
             if (isAdd)
             {
-                DataRow newRow = sys.Ds.Tables["Book"].NewRow();
+                DataRow newRow = sys.Ds.Tables["Employee"].NewRow();
                 if (newRow != null)
                 {
                     //Lấy giá trị các trường input thêm vào newrow
                     newRow.ItemArray = new object[] {
                         0,
-                        cboAuthor.SelectedValue.ToString(),
-                        cboPublisher.SelectedValue.ToString(),
-                        cboCategory.SelectedValue.ToString(),
                         txtName.Text.Trim(),
-                        txtImportPrice.Text.Trim(),
-                        txtPrice.Text.Trim(),
-                        txtYearOfPublish.Text,
-                        txtLang.Text.Trim(),
-                        txtInventoryNum.Text.Trim(),
-                        txtDescription.Text,
-                        txtImg.Text
+                        radNam.Checked ? "Nam" : "Nu",
+                        txtDateOfBirth.Value.ToShortDateString(),
+                        txtAddress.Text.Trim(),
+                        txtMission.Text.Trim(),
+                        txtEmail.Text.Trim(),
+                        txtPhone.Text.Trim(),
+                        txtSalary.Value.ToString()
                     };
-                    sys.Ds.Tables["Book"].Rows.Add(newRow);
-                    Update("Thêm", "Book");
-                    frmBook_Load(sender, e);
+                    sys.Ds.Tables["Employee"].Rows.Add(newRow);
+                    Update("Thêm", "Employee");
+                    frmEmployee_Load(sender, e);
                 }
                 else
                 {
@@ -215,8 +175,8 @@ namespace BookStore.Sys.Forms.Admin
             {
                 if (isEdit)
                 {
-                    Update("Cập nhật", "Book");
-                    btnSave_Book.Enabled = false;
+                    Update("Cập nhật", "Employee");
+                    btnSave.Enabled = false;
                 }
                 else
                 {
@@ -225,28 +185,10 @@ namespace BookStore.Sys.Forms.Admin
             }
         }
         #endregion
-        #region Các nút khác
-
-        #endregion
         #region Các phương thức hỗ trợ
         private void dgvBook_SelectionChanged(object sender, EventArgs e)
         {
             TrimAllTextBox();
-            DataGridViewRow row = dgvBook.CurrentRow;
-            if (row == null)
-            {
-                return;
-            }
-            picBox_ImageProduct.Image?.Dispose();
-            if (!IsValidImg(sys.Service.RootPath + @"\Contents\Images\img-book\" + row.Cells["Image"].Value.ToString()))
-            {
-                picBox_ImageProduct.Image = null;
-            }
-            else
-            {
-                picBox_ImageProduct.Image = Image.FromFile(sys.Service.RootPath + @"\Contents\Images\img-book\" + row.Cells["Image"].Value.ToString());
-            }
-            picBox_ImageProduct.Refresh();
         }
         /// <summary>
         /// Bắt buộc phải có hàm này trước khi lưu chỉnh sửa, nếu không sẽ xảy ra lỗi cập nhật
@@ -264,28 +206,6 @@ namespace BookStore.Sys.Forms.Admin
                     }
                 }
             }
-        }
-        /// <summary>
-        /// Kiểm tra ảnh có hợp lệ hay không
-        /// </summary>
-        /// <param name="filename"></param>
-        /// <returns></returns>
-        private bool IsValidImg(string filename)
-        {
-            try
-            {
-                using (Image newImg = Image.FromFile(filename))
-                { }
-            }
-            catch (OutOfMemoryException ex)
-            {
-                return false;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-            return true;
         }
         /// <summary>
         /// Thay đổi trạng thái các control trong PanelInput
@@ -316,7 +236,7 @@ namespace BookStore.Sys.Forms.Admin
                     }
                 }
             }
-            cboAuthor.Enabled = cboCategory.Enabled = cboPublisher.Enabled = inputEnable;
+            txtSalary.Enabled = inputEnable;
             this.Validate();
         }
         /// <summary>
@@ -346,41 +266,18 @@ namespace BookStore.Sys.Forms.Admin
                     }
                 }
             }
-            dgvBook.Refresh();
-        }
-        /// <summary>
-        /// Chỉnh sửa tên cột sang tiếng Việt
-        /// </summary>
-        private void AddColName()
-        {
-            dgvBook.Columns[0].HeaderText = "Mã sách";
-            dgvBook.Columns[1].HeaderText = "Mã tác giả tham gia";
-            dgvBook.Columns[2].HeaderText = "Mã người đăng";
-            dgvBook.Columns[3].HeaderText = "Thể loại";
-            dgvBook.Columns[4].HeaderText = "Tên sách";
-            dgvBook.Columns[5].HeaderText = "Giá nhập";
-            dgvBook.Columns[6].HeaderText = "Giá bán";
-            dgvBook.Columns[7].HeaderText = "Năm xuất bản";
-            dgvBook.Columns[8].HeaderText = "Ngôn ngữ";
-            dgvBook.Columns[9].HeaderText = "Số lượng tồn";
-            dgvBook.Columns[10].HeaderText = "Mô tả";
-            dgvBook.Columns[11].HeaderText = "Ảnh bìa";
+            dgv.Refresh();
         }
         private void DataBinding()
         {
             ClearAllBinding();
-            txtID.DataBindings.Add("Text", sys.Ds.Tables[0], "BookId");
-            cboAuthor.DataBindings.Add("SelectedValue", sys.Ds.Tables[0], "AuthorId");
-            txtName.DataBindings.Add("Text", sys.Ds.Tables[0], "BookName");
-            cboPublisher.DataBindings.Add("SelectedValue", sys.Ds.Tables[0], "PublisherId");
-            cboCategory.DataBindings.Add("SelectedValue", sys.Ds.Tables[0], "BookCategoryId");
-            txtImportPrice.DataBindings.Add("Text", sys.Ds.Tables[0], "ImportPrice");
-            txtPrice.DataBindings.Add("Text", sys.Ds.Tables[0], "Price");
-            txtYearOfPublish.DataBindings.Add("Text", sys.Ds.Tables[0], "PublishYear");
-            txtLang.DataBindings.Add("Text", sys.Ds.Tables[0], "Language");
-            txtInventoryNum.DataBindings.Add("Text", sys.Ds.Tables[0], "InventoryNum");
-            txtDescription.DataBindings.Add("Text", sys.Ds.Tables[0], "Description");
-            txtImg.DataBindings.Add("Text", sys.Ds.Tables[0], "Image");
+            txtID.DataBindings.Add("Text", sys.Ds.Tables[0], "Id");
+            txtName.DataBindings.Add("Text", sys.Ds.Tables[0], "FullName");
+            txtPhone.DataBindings.Add("Text", sys.Ds.Tables[0], "Phone");
+            txtAddress.DataBindings.Add("Text", sys.Ds.Tables[0], "Address");
+            txtSalary.DataBindings.Add("Value", sys.Ds.Tables[0], "Salary");
+            txtMission.DataBindings.Add("Text", sys.Ds.Tables[0], "Mission");
+            txtDateOfBirth.DataBindings.Add("Value", sys.Ds.Tables[0], "Birthday");
         }
         private bool IsFullFill()
         {
@@ -415,27 +312,13 @@ namespace BookStore.Sys.Forms.Admin
             else
             {
                 MessageBox.Show(actionName + " thành công!", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnSave_Book.Enabled = false;
+                btnSave.Enabled = false;
                 isEdit = isAdd = false;
             }
         }
-        private void dgvBook_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnEdit_Book.Enabled = btnDelete_Book.Enabled = true;
-        }
-
-        private void txtInventoryNum_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            Guna2TextBox ctr = (Guna2TextBox)sender;
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                errProvider.SetError(ctr, "Chỉ được nhập số nguyên");
-            }
-            else
-            {
-                errProvider.SetError(ctr, "");
-            }
+            btnEdit.Enabled = btnDelete.Enabled = true;
         }
 
         private void txtInputs_Leave(object sender, EventArgs e)
@@ -451,32 +334,26 @@ namespace BookStore.Sys.Forms.Admin
             }
         }
 
-        private void txtYearOfPublish_Leave(object sender, EventArgs e)
+        private void dgvBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Guna2TextBox ctr = (Guna2TextBox)sender;
-            if (ctr.Text.Trim().Length == 0)
+            if (string.IsNullOrEmpty(txtID.Text))
             {
-                errProvider.SetError(ctr, "Vui lòng nhập trường này");
                 return;
             }
-            else
+            DataRow dr = sys.Ds.Tables["Employee"].Rows.Find(txtID.Text.Trim());
+            if (dr != null)
             {
-                if (!new Regex(@"^(19[5-9]\d|20[0-4]\d|2050)$").IsMatch(ctr.Text.Trim()))
+                if (dr[2].ToString().Trim().Equals("Nam"))
                 {
-                    errProvider.SetError(ctr, "Năm đã nhập không hợp lệ");
+                    radNam.Checked = true;
                 }
                 else
                 {
-                    errProvider.SetError(ctr, "");
+                    radNu.Checked = true;
                 }
             }
-        }
-
-        private void cboAuthor_MouseHover(object sender, EventArgs e)
-        {
-            var cbo = (Guna.UI2.WinForms.Guna2ComboBox)sender;
-            toolTip1.SetToolTip(cbo, cbo.Text);
-        }     
+            this.Refresh();
+        }   
         #endregion        
     }
 }

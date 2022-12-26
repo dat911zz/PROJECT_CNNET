@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookStore
+namespace BookStore.Sys.Forms.Report
 {
     public partial class Report : Form
     {

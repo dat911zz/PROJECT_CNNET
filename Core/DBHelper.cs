@@ -94,6 +94,34 @@ namespace Core
             });
             return result;
         }
+        public string ExceuteScalarString(string query, params object[] obj)
+        {
+            string result = "";
+            BeginTransact(cmd =>
+            {
+                cmd.CommandText = query;
+                if (obj != null)
+                {
+                    AddParameters(ref cmd, obj);
+                }
+                result = (string)cmd.ExecuteScalar();
+            });
+            return result;
+        }
+        public double ExceuteScalarDouble(string query, params object[] obj)
+        {
+            double result = 0;
+            BeginTransact(cmd =>
+            {
+                cmd.CommandText = query;
+                if (obj != null)
+                {
+                    AddParameters(ref cmd, obj);
+                }
+                result = (double)cmd.ExecuteScalar();
+            });
+            return result;
+        }
         public int ExceuteScalar(string query, Dictionary<string, object> mapParams)
         {
             int result = 0;
